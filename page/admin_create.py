@@ -1,9 +1,9 @@
-from common.base import base
-import page, time
+from common.baseapi.BaseAppiumApi import BaseAppiumApi
+import page
 
-class admin_create(base):
+class admin_create(BaseAppiumApi):
     def __init__(self, driver):
-        base.__init__(self, driver)
+        BaseAppiumApi.__init__(self, driver)
 
     def click_admin_btn(self):
         self.click_element(page.admin_btn)
@@ -37,3 +37,12 @@ class admin_create(base):
 
     def click_complete(self):
         self.click_element(page.complete_btn)
+
+    def click_meituan_confirm_btn(self):
+        self.click_element(page.meituan_confirm_button)
+
+    def click_btn1(self):
+        self.click_element(page.btn1)
+
+    def get_amp_toast(self):
+        self.get_toast(page.toast)
