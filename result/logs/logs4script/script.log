@@ -1,0 +1,41 @@
+2020-07-26 23:08:43,492582 INFO common.utils.FileClearUtil.py 42 - 清空script.log
+2020-07-26 23:08:43,496887 INFO common.utils.FileClearUtil.py 34 - 历史报告文件已清空
+2020-07-26 23:08:43,498611 INFO common.utils.FileClearUtil.py 23 - 历史logcat已清理
+2020-07-26 23:08:43,500280 INFO common.utils.FileClearUtil.py 28 - 历史crash文件已清理
+2020-07-26 23:08:43,502037 INFO common.utils.FileClearUtil.py 18 - 历史截图已清理
+2020-07-26 23:08:43,503795 INFO common.utils.FileClearUtil.py 77 - 历史anr文件已清理
+2020-07-26 23:08:43,510560 DEBUG common.base.Command.py 408 - clear device crash
+2020-07-26 23:08:43,514810 DEBUG common.base.Command.py 416 - clear device anr
+2020-07-26 23:08:43,516646 INFO scripts.conftest.py 97 - 设备logcat已清空
+2020-07-26 23:08:43,518221 DEBUG scripts.conftest.py 98 - 历史文件清理完成
+2020-07-26 23:08:43,530057 INFO common.dev.DeviceInfo.py 18 - 开始获取设备信息.....
+2020-07-26 23:08:44,328209 INFO common.dev.DeviceInfo.py 27 - 1.设备连接信息：127.0.0.1:62001-{'brand': 'samsung', 'model': 'SM-N950N', 'os_version': '7.1.2', 'dpi': '320', 'screen_size': '1920x1080', 'name': '127.0.0.1:62001'}
+2020-07-26 23:08:45,418192 INFO common.dev.DeviceInfo.py 27 - 2.设备连接信息：fe80849-{'brand': 'Android', 'model': 'MSM8996 for arm64', 'os_version': '8.1.0', 'dpi': '160', 'screen_size': '1920x720', 'name': 'fe80849'}
+2020-07-26 23:08:45,420649 INFO common.dev.DeviceInfo.py 29 - 设备信息获取完毕，设备总数量：2
+2020-07-26 23:08:51,964514 INFO common.initdriver.InitDriver.py 68 - webdriver连接信息：http://127.0.0.1:4723/wd/hub：{'platformName': 'Android', 'platformVersion': '7.1.2', 'deviceName': '127.0.0.1:62001', 'appPackage': 'com.mogo.launcher.app', 'appActivity': 'com.zhidao.mogo.module.main.independent.MainIndependentActivity', 'unicodeKeyboard': True, 'resetKeyboard': True, 'noReset': True, 'automationName': 'Uiautomator2'}
+2020-07-26 23:08:51,967254 DEBUG scripts.conftest.py 33 - driver init:<appium.webdriver.webdriver.WebDriver (session="9addbc0e-d29e-4f6a-8304-23b55f13a73b")>
+2020-07-26 23:08:51,969048 INFO scripts.conftest.py 134 - 测试开始时间:2020-07-26 23:08:51
+2020-07-26 23:08:51,976499 DEBUG common.baseapi.BaseAppiumApi.py 22 - 【定位元素】元素:('xpath', "//*[contains(@text, '开启')]")
+2020-07-26 23:08:54,548379 INFO common.baseapi.BaseAppiumApi.py 40 - 【点击】元素:('xpath', "//*[contains(@text, '开启')]")
+2020-07-26 23:08:54,549943 INFO common.baseapi.BaseAppiumApi.py 109 - 【sleep】2s
+2020-07-26 23:08:56,561358 DEBUG scripts.conftest.py 126 - 【logcat】清空设备logcat
+2020-07-26 23:08:56,570172 DEBUG common.baseapi.BaseAppiumApi.py 22 - 【定位元素】元素:('xpath', "//*[contains(@text, '分享')]")
+2020-07-26 23:08:56,632192 INFO common.baseapi.BaseAppiumApi.py 40 - 【点击】元素:('xpath', "//*[contains(@text, '分享')]")
+2020-07-26 23:08:56,633894 INFO common.baseapi.BaseAppiumApi.py 109 - 【sleep】2s
+2020-07-26 23:08:58,640803 DEBUG common.baseapi.BaseAppiumApi.py 22 - 【定位元素】元素:('id', 'com.mogo.launcher.app:id/tvAccident')
+2020-07-26 23:08:58,668629 INFO common.baseapi.BaseAppiumApi.py 40 - 【点击】元素:('id', 'com.mogo.launcher.app:id/tvAccident')
+2020-07-26 23:08:58,670572 DEBUG common.baseapi.BaseAppiumApi.py 22 - 【定位元素】元素:('xpath', "//*[contains(@text, '分享成功')]")
+2020-07-26 23:09:02,511389 INFO common.baseapi.BaseAppiumApi.py 63 - Toast get success
+2020-07-26 23:09:02,516857 DEBUG scripts.conftest.py 126 - 【logcat】清空设备logcat
+2020-07-26 23:09:02,523330 DEBUG common.baseapi.BaseAppiumApi.py 22 - 【定位元素】元素:('xpath', "//*[contains(@text, '分享')]")
+2020-07-26 23:09:02,584738 INFO common.baseapi.BaseAppiumApi.py 40 - 【点击】元素:('xpath', "//*[contains(@text, '分享')]")
+2020-07-26 23:09:02,586436 INFO common.baseapi.BaseAppiumApi.py 109 - 【sleep】2s
+2020-07-26 23:09:04,595161 DEBUG common.baseapi.BaseAppiumApi.py 22 - 【定位元素】元素:('id', 'com.mogo.launcher.app:id/tvRealTimeTraffic')
+2020-07-26 23:09:04,630787 INFO common.baseapi.BaseAppiumApi.py 40 - 【点击】元素:('id', 'com.mogo.launcher.app:id/tvRealTimeTraffic')
+2020-07-26 23:09:04,632785 DEBUG common.baseapi.BaseAppiumApi.py 22 - 【定位元素】元素:('xpath', "//*[contains(@text, '分享成功')]")
+2020-07-26 23:09:05,193227 INFO common.baseapi.BaseAppiumApi.py 63 - Toast get success
+2020-07-26 23:09:05,198180 DEBUG scripts.conftest.py 126 - 【logcat】清空设备logcat
+2020-07-26 23:09:05,201537 INFO scripts.conftest.py 142 - 测试结束时间:2020-07-26 23:09:05
+2020-07-26 23:09:05,202919 INFO scripts.conftest.py 143 - 测试用时:13.23s
+2020-07-26 23:09:05,207614 DEBUG common.base.Command.py 404 - pull crash to result/logs/crash
+2020-07-26 23:09:05,211794 DEBUG common.base.Command.py 412 - pull anr to result/logs/anr

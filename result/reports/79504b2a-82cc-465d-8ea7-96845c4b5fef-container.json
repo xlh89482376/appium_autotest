@@ -1,0 +1,1 @@
+{"uuid": "d25d50f3-987f-4d2c-af94-5780b6b51811", "children": ["f3e0b21d-e92b-4356-bb95-6c1c8237464c"], "befores": [{"name": "清理logcat", "status": "passed", "start": 1595776136567, "stop": 1595776136567}], "afters": [{"name": "清理logcat::0", "status": "passed", "start": 1595776142513, "stop": 1595776142517}], "start": 1595776136567, "stop": 1595776142518}
