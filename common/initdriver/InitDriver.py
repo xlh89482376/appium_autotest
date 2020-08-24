@@ -52,7 +52,8 @@ class InitDriver(object):
         if not len(sno_list):
             return None
         for sno in sno_list:
-            self.cmd.set_serialno(sno)
+            # self.cmd.set_serialno(sno)
+            self.cmd.serialno = sno
             desired_caps = desired_caps_dict[sno]
 
             url = 'http://127.0.0.1:4723/wd/hub'

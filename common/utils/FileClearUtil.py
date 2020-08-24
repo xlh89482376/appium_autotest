@@ -54,7 +54,7 @@ class FileClearUtil():
         else:
             return False
 
-    def is_file_by_suffix_log(self, path):
+    def is_file_by_suffix_log(cls, path):
         Files = os.listdir(path)
         if Files != []:
             for k in range(len(Files)):

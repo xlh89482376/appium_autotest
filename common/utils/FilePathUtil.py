@@ -3,6 +3,8 @@ from common.utils.LoggingUtil import LoggingController
 
 
 class FilePathUtil():
+
+
     def __init__(self):
         self.log4py = LoggingController()
 
@@ -10,6 +12,11 @@ class FilePathUtil():
         abspath = os.getcwd()
         project_path = abspath.split("common")[0]
         return project_path
+
+    def get_broadcast_path(self):
+        # broadcast_path = self.get_project_path() + os.sep + "testdata" + os.sep + "yaml" + os.sep + "broadcast.yml"
+        broadcast_path = self.get_project_path() + "testdata" + os.sep + "yaml" + os.sep + "broadcast.yml"
+        return broadcast_path
 
     def get_config_run_path(self):
         config_run_path = self.get_project_path() + os.sep + "config" + os.sep + "run.ini"

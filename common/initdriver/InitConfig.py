@@ -21,7 +21,8 @@ class InitConfiger(object):
         if not len(sno_list):
             return None
         for sno in sno_list:
-            self.cmd.set_serialno(sno)
+            # self.cmd.set_serialno(sno)
+            self.cmd.serialno = sno
             if int(float(self.dev_info[sno]["os_version"][0])) < 5:
                 desired_caps_dict[sno] = {"platformName":"Android",
                                           "platformVersion":self.dev_info[sno]["os_version"],

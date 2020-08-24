@@ -1,0 +1,22 @@
+com.mogo.launcher.app:
+  '[175, 318]':
+    id: ''
+    text: ''
+  '[183, 204]':
+    id: com.mogo.launcher.app:id/tvModuleLeftPanelSpeed
+    text: '0'
+  '[183, 327]':
+    id: ''
+    text: 当前车速
+  '[426, 79]':
+    id: com.mogo.launcher.app:id/module_ext_id_weather_temp
+    text: 31°
+  '[512, 300]':
+    id: ''
+    text: ''
+  '[975, 464]':
+    id: com.mogo.launcher.app:id/module_entrance_id_upload
+    text: 分享
+  '[975, 551]':
+    id: com.mogo.launcher.app:id/module_entrance_id_move2_current_location
+    text: ''

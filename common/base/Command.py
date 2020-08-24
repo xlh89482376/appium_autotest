@@ -26,10 +26,12 @@ class Cmd(object):
         self.yml_path = FilePathUtil().get_yml_path()
         self.anr_path = FilePathUtil().get_anr_path()
 
-    def get_serialno(self):
+    @property
+    def serialno(self):
         return self.__serialno
 
-    def set_serialno(self, sno):
+    @serialno.setter
+    def serialno(self, sno):
         self.__serialno = sno
 
     def adb(self, args):
@@ -452,4 +454,4 @@ class Cmd(object):
 if __name__ == '__main__':
     adb = Cmd()
 
-    adb.get_uidump_xml("我要分享1.yml")
+    adb.get_uidump_xml("v2x_交通事故.yml")

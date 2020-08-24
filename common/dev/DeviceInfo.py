@@ -18,7 +18,8 @@ class DeviceInfo(object):
             self.log4py.info("开始获取设备信息.....")
             i = 1
             for sno in lists:
-                self.cmd.set_serialno(sno)
+                # self.cmd.set_serialno(sno)
+                self.cmd.serialno = sno
                 brand, model, os_version, dpi, screen_size, name = \
                     self.get_device_info()
                 info[sno] = {"brand":brand, "model":model, "os_version":os_version, "dpi":dpi,

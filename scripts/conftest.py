@@ -6,6 +6,7 @@ from common.utils.FileClearUtil import FileClearUtil
 from common.utils.FilePathUtil import FilePathUtil
 from page.page_obj import page_obj
 from page_intel.share_page_obj import share_page_obj
+from page_ddox.set_ll_obj import set_ll_page_obj
 from common.utils.LoggingUtil import LoggingController
 from poco.drivers.android.uiautomation import AndroidUiautomationPoco
 from common.utils.DateTimeUtil import DateTimeManager
@@ -59,12 +60,17 @@ def re_obj():
     admin_create_obj = page_obj(driver).re_admin_create()
     return admin_create_obj
 
-# 传递page_intel信息
+# 传递蘑菇出行页面信息
 @pytest.fixture(scope='session', autouse=False)
 def re_share_obj():
     share_obj = share_page_obj(driver).re_share()
     return share_obj
 
+# 传递位置模拟器页面信息
+@pytest.fixture(scope='session', autouse=False)
+def re_set_ll_obj():
+    set_ll_obj = set_ll_page_obj(driver).re_set_ll()
+    return set_ll_obj
 
 # 传递封装好的AppiumApi
 @pytest.fixture(scope='function', name="apm", autouse=False)

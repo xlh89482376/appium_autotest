@@ -48,7 +48,7 @@ class BaseAppiumApi():
         在元素中模拟输入（开启appium自带的输入法并配置了appium输入法后，可以输入中英文）
         """
         input = self.find_element_I(loc)
-        self.do_clear(input)
+        # self.do_clear(input)
         input.send_keys(text)
         self.log4py.info("【输入】元素:%s 文本:%s" % (str(loc), str(text)))
 
@@ -305,7 +305,7 @@ class BaseAppiumApi():
         按键码可参考：http://developer.android.com/reference/android/view/KeyEvent.html
         """
         self.driver.keyevent(keycode)
-        self.log4py.info("【发送按键码】keycode:%s" % keycode)
+        # self.log4py.info("【发送按键码】keycode:%s" % keycode)
 
     def do_press_keycode(self, keycode, metastate=None):
         """

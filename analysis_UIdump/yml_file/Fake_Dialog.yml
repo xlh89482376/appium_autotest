@@ -1,0 +1,22 @@
+请手动输入开始:
+  '[352, 206]':
+    id: com.glsx.ddbox:id/tvEndLatLng
+    text: 结束经度
+  '[360, 134]':
+    id: com.glsx.ddbox:id/tvStartLatLng
+    text: 开始经度
+  '[452, 272]':
+    id: com.glsx.ddbox:id/btnCancel
+    text: 取消
+  '[511, 195]':
+    id: ''
+    text: ''
+  '[570, 272]':
+    id: com.glsx.ddbox:id/btnCommit
+    text: 确认
+  '[571, 135]':
+    id: com.glsx.ddbox:id/etStartLatLng
+    text: 116.409984,39.96728
+  '[571, 207]':
+    id: com.glsx.ddbox:id/etEndLatLng
+    text: 116.417494,39.977048

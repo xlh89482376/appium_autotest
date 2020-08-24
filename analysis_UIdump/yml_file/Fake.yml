@@ -1,0 +1,25 @@
+com.glsx.ddbox:
+  '[22, 530]':
+    id: ''
+    text: ' 100米 '
+  '[512, 300]':
+    id: ''
+    text: ''
+  '[512, 324]':
+    id: com.glsx.ddbox:id/bmapView
+    text: ''
+  '[512, 68]':
+    id: com.glsx.ddbox:id/tvSelectPoc
+    text: 请点击地图选择模拟路线的「起点」和「终点🏁」
+  '[83, 332]':
+    id: com.glsx.ddbox:id/btnInputLatLng
+    text: 手动输入GPS
+  '[83, 407]':
+    id: com.glsx.ddbox:id/btnStartTrack
+    text: 开始模拟GPS
+  '[83, 482]':
+    id: com.glsx.ddbox:id/btnClearPosition
+    text: 清除
+  '[83, 557]':
+    id: com.glsx.ddbox:id/btnStopActivity
+    text: 关闭应用
