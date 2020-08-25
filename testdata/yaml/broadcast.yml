@@ -2,14 +2,14 @@
 sendlocation:
     action: com.example.LocationService
     params:
-        latLng: 116.411204,39.966187
+        latLng: 116.414435,39.964998
 
 # 发送起点和终点经纬度
 sendlatlon:
     action: com.example.LatLng
     params:
-        startLatLng: 116.411209,39.96712
-        endLatLng: 116.411214,39.965065
+        startLatLng: 116.415835,39.965043
+        endLatLng: 116.414065,39.964998
 
 # 发送开始模拟服务
 sendmockgps:

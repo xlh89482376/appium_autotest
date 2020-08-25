@@ -1,53 +1,18 @@
-2020-08-17 17:46:05,882459 DEBUG common.utils.FileClearUtil.py 42 - clear script.log
-2020-08-17 17:46:05,885525 DEBUG common.utils.FileClearUtil.py 34 - clear history report
-2020-08-17 17:46:05,886982 DEBUG common.utils.FileClearUtil.py 23 - clear history logcat
-2020-08-17 17:46:05,888553 DEBUG common.utils.FileClearUtil.py 28 - clear history crash
-2020-08-17 17:46:05,890331 DEBUG common.utils.FileClearUtil.py 18 - clear history screenshot
-2020-08-17 17:46:05,892553 DEBUG common.utils.FileClearUtil.py 77 - clear history anr
-2020-08-17 17:46:05,910495 DEBUG common.base.Command.py 410 - clear device crash
-2020-08-17 17:46:05,914820 DEBUG common.base.Command.py 418 - clear device anr
-2020-08-17 17:46:05,916724 DEBUG scripts.conftest.py 103 - clear device logcat
-2020-08-17 17:46:05,918346 DEBUG scripts.conftest.py 104 - clear history file successed
-2020-08-17 17:46:05,930351 INFO common.dev.DeviceInfo.py 18 - 开始获取设备信息.....
-2020-08-17 17:46:08,933917 INFO common.dev.DeviceInfo.py 28 - 1.设备连接信息：47471362361675-{'brand': 'SPRD', 'model': 'SL8541', 'os_version': '6.0', 'dpi': '160', 'screen_size': '1024x600', 'name': '47471362361675'}
-2020-08-17 17:46:08,936854 INFO common.dev.DeviceInfo.py 30 - 设备信息获取完毕，设备总数量：1
-2020-08-17 17:46:26,281847 INFO common.initdriver.InitDriver.py 69 - webdriver连接信息：http://127.0.0.1:4723/wd/hub：{'platformName': 'Android', 'platformVersion': '6.0', 'deviceName': '47471362361675', 'appPackage': 'com.mogo.launcher.app', 'appActivity': 'com.zhidao.mogo.module.main.independent.MainIndependentActivity', 'unicodeKeyboard': True, 'resetKeyboard': True, 'noReset': True, 'automationName': 'Uiautomator2'}
-2020-08-17 17:46:26,284127 DEBUG scripts.conftest.py 34 - driver init:<appium.webdriver.webdriver.WebDriver (session="2e0a825a-531f-4a01-aaf4-2429431d77a8")>
-2020-08-17 17:46:26,286623 INFO scripts.conftest.py 140 - 测试开始时间:2020-08-17 17:46:26
-2020-08-17 17:46:30,201361 DEBUG common.baseapi.BaseAppiumApi.py 22 - 【定位元素】元素:('id', 'com.glsx.ddbox:id/btnClearPosition')
-2020-08-17 17:46:30,460979 INFO common.baseapi.BaseAppiumApi.py 40 - 【点击】元素:('id', 'com.glsx.ddbox:id/btnClearPosition')
-2020-08-17 17:46:30,463442 DEBUG common.baseapi.BaseAppiumApi.py 22 - 【定位元素】元素:('id', 'com.glsx.ddbox:id/btnInputLatLng')
-2020-08-17 17:46:31,026611 INFO common.baseapi.BaseAppiumApi.py 40 - 【点击】元素:('id', 'com.glsx.ddbox:id/btnInputLatLng')
-2020-08-17 17:46:31,029154 DEBUG common.baseapi.BaseAppiumApi.py 22 - 【定位元素】元素:('id', 'com.glsx.ddbox:id/etStartLatLng')
-2020-08-17 17:46:32,334221 INFO common.baseapi.BaseAppiumApi.py 53 - 【输入】元素:('id', 'com.glsx.ddbox:id/etStartLatLng') 文本:116.41736,39.983787
-2020-08-17 17:46:32,336761 DEBUG common.baseapi.BaseAppiumApi.py 22 - 【定位元素】元素:('id', 'com.glsx.ddbox:id/etEndLatLng')
-2020-08-17 17:46:33,395991 INFO common.baseapi.BaseAppiumApi.py 53 - 【输入】元素:('id', 'com.glsx.ddbox:id/etEndLatLng') 文本:116.41735,39.983997
-2020-08-17 17:46:33,398503 DEBUG common.baseapi.BaseAppiumApi.py 22 - 【定位元素】元素:('id', 'com.glsx.ddbox:id/btnCommit')
-2020-08-17 17:46:33,924654 INFO common.baseapi.BaseAppiumApi.py 40 - 【点击】元素:('id', 'com.glsx.ddbox:id/btnCommit')
-2020-08-17 17:46:34,931397 DEBUG common.baseapi.BaseAppiumApi.py 22 - 【定位元素】元素:('id', 'com.glsx.ddbox:id/btnStartTrack')
-2020-08-17 17:46:34,989717 INFO common.baseapi.BaseAppiumApi.py 40 - 【点击】元素:('id', 'com.glsx.ddbox:id/btnStartTrack')
-2020-08-17 17:46:48,660276 DEBUG common.baseapi.BaseAppiumApi.py 22 - 【定位元素】元素:('id', 'module_entrance_id_upload')
-2020-08-17 17:46:52,845867 INFO common.baseapi.BaseAppiumApi.py 40 - 【点击】元素:('id', 'module_entrance_id_upload')
-2020-08-17 17:46:52,848329 INFO common.baseapi.BaseAppiumApi.py 109 - 【sleep】2s
-2020-08-17 17:46:54,856501 DEBUG common.baseapi.BaseAppiumApi.py 22 - 【定位元素】元素:('id', 'tvRealTimeTraffic')
-2020-08-17 17:46:54,918904 INFO common.baseapi.BaseAppiumApi.py 40 - 【点击】元素:('id', 'tvRealTimeTraffic')
-2020-08-17 17:46:54,920869 DEBUG common.baseapi.BaseAppiumApi.py 22 - 【定位元素】元素:('xpath', "//*[contains(@text, '分享成功')]")
-2020-08-17 17:46:58,912681 INFO common.baseapi.BaseAppiumApi.py 63 - Toast get success
-2020-08-17 17:46:58,920538 DEBUG scripts.conftest.py 132 - 【logcat】清空设备logcat
-2020-08-17 17:47:02,584463 DEBUG common.baseapi.BaseAppiumApi.py 22 - 【定位元素】元素:('id', 'com.glsx.ddbox:id/btnClearPosition')
-2020-08-17 17:47:02,827935 INFO common.baseapi.BaseAppiumApi.py 40 - 【点击】元素:('id', 'com.glsx.ddbox:id/btnClearPosition')
-2020-08-17 17:47:02,830444 DEBUG common.baseapi.BaseAppiumApi.py 22 - 【定位元素】元素:('id', 'com.glsx.ddbox:id/btnInputLatLng')
-2020-08-17 17:47:03,442961 INFO common.baseapi.BaseAppiumApi.py 40 - 【点击】元素:('id', 'com.glsx.ddbox:id/btnInputLatLng')
-2020-08-17 17:47:03,445563 DEBUG common.baseapi.BaseAppiumApi.py 22 - 【定位元素】元素:('id', 'com.glsx.ddbox:id/etStartLatLng')
-2020-08-17 17:47:04,802866 INFO common.baseapi.BaseAppiumApi.py 53 - 【输入】元素:('id', 'com.glsx.ddbox:id/etStartLatLng') 文本:116.417371,39.983245
-2020-08-17 17:47:04,805442 DEBUG common.baseapi.BaseAppiumApi.py 22 - 【定位元素】元素:('id', 'com.glsx.ddbox:id/etEndLatLng')
-2020-08-17 17:47:05,960210 INFO common.baseapi.BaseAppiumApi.py 53 - 【输入】元素:('id', 'com.glsx.ddbox:id/etEndLatLng') 文本:116.417323,39.984585
-2020-08-17 17:47:05,962707 DEBUG common.baseapi.BaseAppiumApi.py 22 - 【定位元素】元素:('id', 'com.glsx.ddbox:id/btnCommit')
-2020-08-17 17:47:06,498143 INFO common.baseapi.BaseAppiumApi.py 40 - 【点击】元素:('id', 'com.glsx.ddbox:id/btnCommit')
-2020-08-17 17:47:07,506855 DEBUG common.baseapi.BaseAppiumApi.py 22 - 【定位元素】元素:('id', 'com.glsx.ddbox:id/btnStartTrack')
-2020-08-17 17:47:07,578589 INFO common.baseapi.BaseAppiumApi.py 40 - 【点击】元素:('id', 'com.glsx.ddbox:id/btnStartTrack')
-2020-08-17 17:47:42,453231 DEBUG scripts.conftest.py 132 - 【logcat】清空设备logcat
-2020-08-17 17:47:42,458183 INFO scripts.conftest.py 148 - 测试结束时间:2020-08-17 17:47:42
-2020-08-17 17:47:42,460009 INFO scripts.conftest.py 149 - 测试用时:76.17s
-2020-08-17 17:47:42,465753 DEBUG common.base.Command.py 406 - pull crash to result/logs/crash
-2020-08-17 17:47:42,471657 DEBUG common.base.Command.py 414 - pull anr to result/logs/anr
+2020-08-25 00:40:15,677683 DEBUG common.utils.FileClearUtil.py 42 - clear script.log
+2020-08-25 00:40:15,681193 DEBUG common.utils.FileClearUtil.py 34 - clear history report
+2020-08-25 00:40:15,685062 DEBUG common.utils.FileClearUtil.py 23 - clear history logcat
+2020-08-25 00:40:15,687223 DEBUG common.utils.FileClearUtil.py 28 - clear history crash
+2020-08-25 00:40:15,689009 DEBUG common.utils.FileClearUtil.py 18 - clear history screenshot
+2020-08-25 00:40:15,690859 DEBUG common.utils.FileClearUtil.py 77 - clear history anr
+2020-08-25 00:40:15,697596 DEBUG common.base.Command.py 410 - clear device crash
+2020-08-25 00:40:15,703896 DEBUG common.base.Command.py 418 - clear device anr
+2020-08-25 00:40:15,706350 DEBUG scripts.conftest.py 103 - clear device logcat
+2020-08-25 00:40:15,708223 DEBUG scripts.conftest.py 104 - clear history file successed
+2020-08-25 00:40:16,344808 INFO common.dev.DeviceInfo.py 16 - 无任何设备处于连接状态
+2020-08-25 00:40:16,369693 DEBUG scripts.conftest.py 34 - driver init:None
+2020-08-25 00:40:16,373367 INFO scripts.conftest.py 140 - 测试开始时间:2020-08-25 00:40:16
+2020-08-25 00:40:45,546723 DEBUG scripts.conftest.py 132 - 【logcat】清空设备logcat
+2020-08-25 00:40:45,550493 INFO scripts.conftest.py 148 - 测试结束时间:2020-08-25 00:40:45
+2020-08-25 00:40:45,551259 INFO scripts.conftest.py 149 - 测试用时:29.18s
+2020-08-25 00:40:45,554967 DEBUG common.base.Command.py 406 - pull crash to result/logs/crash
+2020-08-25 00:40:45,558169 DEBUG common.base.Command.py 414 - pull anr to result/logs/anr

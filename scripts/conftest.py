@@ -11,12 +11,14 @@ from common.utils.LoggingUtil import LoggingController
 from poco.drivers.android.uiautomation import AndroidUiautomationPoco
 from common.utils.DateTimeUtil import DateTimeManager
 from common.baseapi.BaseAppiumApi import BaseAppiumApi
+from common.base.BroadcastCommand import BroadcastCommand
 
 
 DATE_FORMAT = '%Y-%m-%d %H:%M:%S'
 driver = None
 
 cmd = Cmd()
+bccmd = BroadcastCommand()
 fc = FileClearUtil()
 fp = FilePathUtil()
 dt = DateTimeManager()
@@ -78,15 +80,19 @@ def re_appium_api():
     apm = BaseAppiumApi(driver)
     return apm
 
-# aqy = aqy(driver)
-#
-# @pytest.fixture(name='play')
-# def search_and_play_video():
-#     aqy.click_search()
-#     aqy.click_search_edit_text()
-#     aqy.input_search()
-#     aqy.enter_search()
-#     aqy.continue_play()
+# 更新当前gps定位
+@pytest.fixture(scope=function, name='loc', autouse=False)
+def update_loc():
+    bccmd.send_broadcast('sendlocation')
+
+    yield
+
+    bccmd.send_broadcast('sendclear')
+
+# 更新起始点和结束点
+@pytest.fixture(scope=function, name='latlng', autouse=False)
+def update_latlng():
+    bccmd.send_broadcast('sendlatlon')
 
 # 开始测试前的历史文件清理
 @pytest.fixture(scope='session', name="清理历史数据", autouse=True)
