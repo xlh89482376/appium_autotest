@@ -72,6 +72,7 @@ class Cmd(object):
                 devices.append(line.decode('utf-8').split()[0])
             else:
                 break
+        # print(devices)
         return devices
 
     def get_device_num(self):
@@ -213,6 +214,10 @@ class Cmd(object):
         result.remove(result[0])
 
         return  pattern.findall(" ".join(result))[0]
+
+    # def is_app_running(self, packageName):
+    #     if self
+
 
     def get_focused_package_and_activity(self):
         """
@@ -454,4 +459,5 @@ class Cmd(object):
 if __name__ == '__main__':
     adb = Cmd()
 
-    adb.get_uidump_xml("v2x_交通事故.yml")
+    # adb.get_uidump_xml("v2x_交通事故.yml")
+    adb.get_device_list()

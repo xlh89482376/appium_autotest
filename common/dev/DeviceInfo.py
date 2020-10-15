@@ -26,8 +26,11 @@ class DeviceInfo(object):
                              "screen_size":screen_size, "name":name}
 
                 self.log4py.info("%d.设备连接信息：%s-%s" % (i, sno, info[sno]))
+                # print(info[sno])
                 i += 1
             self.log4py.info("设备信息获取完毕，设备总数量：%s" % len(lists))
+            # print(info)
+            # print(len(lists))
 
             return info
         except Exception as e:
@@ -60,4 +63,4 @@ if __name__ == '__main__':
     dev = DeviceInfo()
     res = {}
     dev = dev.get_infos_as_dict()
-    print(dev)
+    # print(dev)

@@ -1,18 +1,46 @@
-2020-08-25 00:40:15,677683 DEBUG common.utils.FileClearUtil.py 42 - clear script.log
-2020-08-25 00:40:15,681193 DEBUG common.utils.FileClearUtil.py 34 - clear history report
-2020-08-25 00:40:15,685062 DEBUG common.utils.FileClearUtil.py 23 - clear history logcat
-2020-08-25 00:40:15,687223 DEBUG common.utils.FileClearUtil.py 28 - clear history crash
-2020-08-25 00:40:15,689009 DEBUG common.utils.FileClearUtil.py 18 - clear history screenshot
-2020-08-25 00:40:15,690859 DEBUG common.utils.FileClearUtil.py 77 - clear history anr
-2020-08-25 00:40:15,697596 DEBUG common.base.Command.py 410 - clear device crash
-2020-08-25 00:40:15,703896 DEBUG common.base.Command.py 418 - clear device anr
-2020-08-25 00:40:15,706350 DEBUG scripts.conftest.py 103 - clear device logcat
-2020-08-25 00:40:15,708223 DEBUG scripts.conftest.py 104 - clear history file successed
-2020-08-25 00:40:16,344808 INFO common.dev.DeviceInfo.py 16 - 无任何设备处于连接状态
-2020-08-25 00:40:16,369693 DEBUG scripts.conftest.py 34 - driver init:None
-2020-08-25 00:40:16,373367 INFO scripts.conftest.py 140 - 测试开始时间:2020-08-25 00:40:16
-2020-08-25 00:40:45,546723 DEBUG scripts.conftest.py 132 - 【logcat】清空设备logcat
-2020-08-25 00:40:45,550493 INFO scripts.conftest.py 148 - 测试结束时间:2020-08-25 00:40:45
-2020-08-25 00:40:45,551259 INFO scripts.conftest.py 149 - 测试用时:29.18s
-2020-08-25 00:40:45,554967 DEBUG common.base.Command.py 406 - pull crash to result/logs/crash
-2020-08-25 00:40:45,558169 DEBUG common.base.Command.py 414 - pull anr to result/logs/anr
+2020-09-20 22:42:06,638859 DEBUG common.utils.FileClearUtil.py 42 - clear script.log
+2020-09-20 22:42:06,641862 DEBUG common.utils.FileClearUtil.py 34 - clear history report
+2020-09-20 22:42:06,643381 DEBUG common.utils.FileClearUtil.py 23 - clear history logcat
+2020-09-20 22:42:06,644848 DEBUG common.utils.FileClearUtil.py 28 - clear history crash
+2020-09-20 22:42:06,646236 DEBUG common.utils.FileClearUtil.py 18 - clear history screenshot
+2020-09-20 22:42:06,648296 DEBUG common.utils.FileClearUtil.py 77 - clear history anr
+2020-09-20 22:42:06,655896 DEBUG common.base.Command.py 415 - clear device crash
+2020-09-20 22:42:06,662932 DEBUG common.base.Command.py 423 - clear device anr
+2020-09-20 22:42:06,665245 DEBUG scripts.conftest.py 136 - clear device logcat
+2020-09-20 22:42:06,668038 DEBUG scripts.conftest.py 137 - clear history file successed
+2020-09-20 22:42:06,682790 INFO common.dev.DeviceInfo.py 18 - 开始获取设备信息.....
+2020-09-20 22:42:07,104790 INFO common.dev.DeviceInfo.py 28 - 1.设备连接信息：emulator-5554-{'brand': 'google', 'model': 'Android SDK built for x86', 'os_version': '8.0.0', 'dpi': '160', 'screen_size': '1920x720', 'name': 'emulator-5554'}
+2020-09-20 22:42:07,106780 INFO common.dev.DeviceInfo.py 30 - 设备信息获取完毕，设备总数量：1
+2020-09-20 22:42:11,492665 INFO common.initdriver.InitDriver.py 42 - webdriver连接信息：http://127.0.0.1:4723/wd/hub：{'platformName': 'Android', 'platformVersion': '8.0.0', 'deviceName': 'emulator-5554', 'appPackage': 'com.zhidaoauto.pre.qirui.personcenter', 'appActivity': 'com.zhidaoauto.pre.qirui.personcenter.ui.MainActivity', 'unicodeKeyboard': True, 'resetKeyboard': True, 'noReset': True, 'automationName': 'Uiautomator2'}
+2020-09-20 22:42:11,583500 INFO scripts.conftest.py 173 - 测试开始时间:2020-09-20 22:42:11
+2020-09-20 22:42:11,590663 DEBUG common.baseapi.BaseAppiumApi.py 22 - 【定位元素】元素:('id', 'com.zhidaoauto.pre.qirui.personcenter:id/bt_user1')
+2020-09-20 22:42:12,532767 INFO common.baseapi.BaseAppiumApi.py 40 - 【点击】元素:('id', 'com.zhidaoauto.pre.qirui.personcenter:id/bt_user1')
+2020-09-20 22:42:15,543416 DEBUG scripts.conftest.py 165 - 【logcat】清空设备logcat
+2020-09-20 22:42:15,550794 DEBUG common.baseapi.BaseAppiumApi.py 22 - 【定位元素】元素:('id', 'com.zhidaoauto.pre.qirui.personcenter:id/bt_start_create')
+2020-09-20 22:42:15,598209 INFO common.baseapi.BaseAppiumApi.py 40 - 【点击】元素:('id', 'com.zhidaoauto.pre.qirui.personcenter:id/bt_start_create')
+2020-09-20 22:42:18,604976 DEBUG scripts.conftest.py 165 - 【logcat】清空设备logcat
+2020-09-20 22:42:18,609404 INFO scripts.conftest.py 181 - 测试结束时间:2020-09-20 22:42:18
+2020-09-20 22:42:18,611152 INFO scripts.conftest.py 182 - 测试用时:7.03s
+2020-09-20 22:42:18,617240 DEBUG common.base.Command.py 411 - pull crash to result/logs/crash
+2020-09-20 22:42:18,622396 DEBUG common.base.Command.py 419 - pull anr to result/logs/anr
+2020-09-20 22:45:29,003206 INFO common.dev.DeviceInfo.py 18 - 开始获取设备信息.....
+2020-09-20 22:45:29,452886 INFO common.dev.DeviceInfo.py 28 - 1.设备连接信息：emulator-5554-{'brand': 'google', 'model': 'Android SDK built for x86', 'os_version': '8.0.0', 'dpi': '160', 'screen_size': '1920x720', 'name': 'emulator-5554'}
+2020-09-20 22:45:29,453206 INFO common.dev.DeviceInfo.py 31 - 设备信息获取完毕，设备总数量：1
+2020-09-20 22:46:12,832151 INFO common.dev.DeviceInfo.py 18 - 开始获取设备信息.....
+2020-09-20 22:46:13,235258 INFO common.dev.DeviceInfo.py 28 - 1.设备连接信息：emulator-5556-{'brand': 'google', 'model': 'Android SDK built for x86', 'os_version': '7.0', 'dpi': '160', 'screen_size': '1920x720', 'name': 'emulator-5556'}
+2020-09-20 22:46:13,662441 INFO common.dev.DeviceInfo.py 28 - 2.设备连接信息：emulator-5554-{'brand': 'google', 'model': 'Android SDK built for x86', 'os_version': '8.0.0', 'dpi': '160', 'screen_size': '1920x720', 'name': 'emulator-5554'}
+2020-09-20 22:46:13,662779 INFO common.dev.DeviceInfo.py 31 - 设备信息获取完毕，设备总数量：2
+2020-09-20 22:46:35,611950 INFO common.dev.DeviceInfo.py 18 - 开始获取设备信息.....
+2020-09-20 22:46:36,016628 INFO common.dev.DeviceInfo.py 28 - 1.设备连接信息：emulator-5556-{'brand': 'google', 'model': 'Android SDK built for x86', 'os_version': '7.0', 'dpi': '160', 'screen_size': '1920x720', 'name': 'emulator-5556'}
+2020-09-20 22:46:36,478585 INFO common.dev.DeviceInfo.py 28 - 2.设备连接信息：emulator-5554-{'brand': 'google', 'model': 'Android SDK built for x86', 'os_version': '8.0.0', 'dpi': '160', 'screen_size': '1920x720', 'name': 'emulator-5554'}
+2020-09-20 22:46:36,478928 INFO common.dev.DeviceInfo.py 31 - 设备信息获取完毕，设备总数量：2
+2020-09-20 22:47:09,119828 INFO common.dev.DeviceInfo.py 18 - 开始获取设备信息.....
+2020-09-20 22:47:09,522728 INFO common.dev.DeviceInfo.py 28 - 1.设备连接信息：emulator-5556-{'brand': 'google', 'model': 'Android SDK built for x86', 'os_version': '7.0', 'dpi': '160', 'screen_size': '1920x720', 'name': 'emulator-5556'}
+2020-09-20 22:47:09,977449 INFO common.dev.DeviceInfo.py 28 - 2.设备连接信息：emulator-5554-{'brand': 'google', 'model': 'Android SDK built for x86', 'os_version': '8.0.0', 'dpi': '160', 'screen_size': '1920x720', 'name': 'emulator-5554'}
+2020-09-20 22:47:09,977819 INFO common.dev.DeviceInfo.py 31 - 设备信息获取完毕，设备总数量：2
+2020-09-20 22:47:16,613992 INFO common.initdriver.InitDriver.py 42 - webdriver连接信息：http://127.0.0.1:4723/wd/hub：{'platformName': 'Android', 'platformVersion': '7.0', 'deviceName': 'emulator-5556', 'appPackage': 'com.zhidaoauto.pre.qirui.personcenter', 'appActivity': 'com.zhidaoauto.pre.qirui.personcenter.ui.MainActivity', 'unicodeKeyboard': True, 'resetKeyboard': True, 'noReset': True, 'automationName': 'Uiautomator2'}
+2020-09-20 22:49:52,510650 INFO common.dev.DeviceInfo.py 18 - 开始获取设备信息.....
+2020-09-20 22:49:52,919707 INFO common.dev.DeviceInfo.py 28 - 1.设备连接信息：emulator-5556-{'brand': 'google', 'model': 'Android SDK built for x86', 'os_version': '7.0', 'dpi': '160', 'screen_size': '1920x720', 'name': 'emulator-5556'}
+2020-09-20 22:49:53,385480 INFO common.dev.DeviceInfo.py 28 - 2.设备连接信息：emulator-5554-{'brand': 'google', 'model': 'Android SDK built for x86', 'os_version': '8.0.0', 'dpi': '160', 'screen_size': '1920x720', 'name': 'emulator-5554'}
+2020-09-20 22:49:53,385863 INFO common.dev.DeviceInfo.py 31 - 设备信息获取完毕，设备总数量：2
+2020-09-20 22:49:58,207155 INFO common.initdriver.InitDriver.py 43 - webdriver连接信息：http://127.0.0.1:4723/wd/hub：{'platformName': 'Android', 'platformVersion': '7.0', 'deviceName': 'emulator-5556', 'appPackage': 'com.zhidaoauto.pre.qirui.personcenter', 'appActivity': 'com.zhidaoauto.pre.qirui.personcenter.ui.MainActivity', 'unicodeKeyboard': True, 'resetKeyboard': True, 'noReset': True, 'automationName': 'Uiautomator2'}

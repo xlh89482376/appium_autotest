@@ -50,11 +50,11 @@ class Test_admin_create():
     #     time.sleep(5)
 
 
-    def test_dingwei(self, apm, re_obj):
-        apm.do_start_activity("com.zhidaoauto.pre.amaplocation", "com.zhidaoauto.pre.amaplocation.MainActivity")
-        re_obj.click_btn1()
-        result = re_obj.get_amp_toast()
-        assert result
+    # def test_dingwei(self, apm, re_obj):
+    #     apm.do_start_activity("com.zhidaoauto.pre.amaplocation", "com.zhidaoauto.pre.amaplocation.MainActivity")
+    #     re_obj.click_btn1()
+    #     result = re_obj.get_amp_toast()
+    #     assert result
 
     # @allure.step("点击开始识别按钮")
     # def test_click_start_recogniton(self, re_obj):

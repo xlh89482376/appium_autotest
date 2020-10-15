@@ -24,22 +24,43 @@ fp = FilePathUtil()
 dt = DateTimeManager()
 log = LoggingController()
 
+def pytest_addoption(parser):
+    parser.addoption("--cmdopt", action="store", default="device_info", help=None)
 
-# 初始化appium driver
+@pytest.fixture
+def cmdopt(pytestconfig):
+    #两种写法
+    return pytestconfig.getoption("--cmdopt")
+    #return pytestconfig.option.cmdopt
+
+#定义公共的fixture
 @pytest.fixture(scope='session', name="初始化driver", autouse=True)
 def get_driver():
-    # cmd.do_stop_and_restart_5037()
     try:
         global driver
-        if driver is None:
-            driver = InitDriver().init_driver()
-            log.debug("driver init:%s" % driver)
-        return driver
+        # base_driver = BaseDriver(eval(cmdopt))
+        # driver = base_driver.base_driver()
 
+        driver = InitDriver().init_driver()
+        return driver
     except Exception as e:
-        print(e)
-        log.error("driver init fail:%s" % e)
         return None
+
+# 初始化appium driver
+# @pytest.fixture(scope='session', name="初始化driver", autouse=True)
+# def get_driver():
+#     # cmd.do_stop_and_restart_5037()
+#     try:
+#         global driver
+#         if driver is None:
+#             driver = InitDriver().init_driver()
+#             log.debug("driver init:%s" % driver)
+#         return driver
+#
+#     except Exception as e:
+#         print(e)
+#         log.error("driver init fail:%s" % e)
+#         return None
 
 # 初始化airtest
 @pytest.fixture(scope='function', autouse=False, name='poco')
@@ -81,7 +102,7 @@ def re_appium_api():
     return apm
 
 # 更新当前gps定位
-@pytest.fixture(scope=function, name='loc', autouse=False)
+@pytest.fixture(scope='function', name='loc', autouse=False)
 def update_loc():
     bccmd.send_broadcast('sendlocation')
 
@@ -89,10 +110,16 @@ def update_loc():
 
     bccmd.send_broadcast('sendclear')
 
-# 更新起始点和结束点
-@pytest.fixture(scope=function, name='latlng', autouse=False)
+# 更新起始点和结束点，开始模拟gps
+@pytest.fixture(scope='function', name='latlng', autouse=False)
 def update_latlng():
     bccmd.send_broadcast('sendlatlon')
+
+    yield
+
+    bccmd.send_broadcast('sendclear')
+
+
 
 # 开始测试前的历史文件清理
 @pytest.fixture(scope='session', name="清理历史数据", autouse=True)
