@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 2020-08-17 17:46:05,882459 DEBUG common.utils.FileClearUtil.py 42 - clear script.log
 2020-08-17 17:46:05,885525 DEBUG common.utils.FileClearUtil.py 34 - clear history report
 2020-08-17 17:46:05,886982 DEBUG common.utils.FileClearUtil.py 23 - clear history logcat
@@ -51,3 +52,21 @@
 2020-08-17 17:47:42,460009 INFO scripts.conftest.py 149 - 测试用时:76.17s
 2020-08-17 17:47:42,465753 DEBUG common.base.Command.py 406 - pull crash to result/logs/crash
 2020-08-17 17:47:42,471657 DEBUG common.base.Command.py 414 - pull anr to result/logs/anr
+=======
+2020-10-15 19:50:50,616134 DEBUG common.utils.FileClearUtil.py 42 - clear script.log
+2020-10-15 19:50:50,630633 DEBUG common.utils.FileClearUtil.py 34 - clear history report
+2020-10-15 19:50:50,632160 DEBUG common.utils.FileClearUtil.py 23 - clear history logcat
+2020-10-15 19:50:50,633563 DEBUG common.utils.FileClearUtil.py 28 - clear history crash
+2020-10-15 19:50:50,635291 DEBUG common.utils.FileClearUtil.py 18 - clear history screenshot
+2020-10-15 19:50:50,637016 DEBUG common.utils.FileClearUtil.py 77 - clear history anr
+2020-10-15 19:50:50,643953 DEBUG common.base.Command.py 415 - clear device crash
+2020-10-15 19:50:50,648086 DEBUG common.base.Command.py 423 - clear device anr
+2020-10-15 19:50:50,649868 DEBUG scripts.conftest.py 136 - clear device logcat
+2020-10-15 19:50:50,651381 DEBUG scripts.conftest.py 137 - clear history file successed
+2020-10-15 19:50:50,664092 INFO common.dev.DeviceInfo.py 18 - 开始获取设备信息.....
+2020-10-15 19:50:54,611795 INFO common.dev.DeviceInfo.py 28 - 1.设备连接信息：172.30.32.69:5555-{'brand': 'Android', 'model': 'msm8953 for arm64', 'os_version': '7.1.2', 'dpi': '320', 'screen_size': '1920x1080', 'name': '172.30.32.69:5555'}
+2020-10-15 19:50:54,614723 INFO common.dev.DeviceInfo.py 31 - 设备信息获取完毕，设备总数量：1
+2020-10-15 19:51:05,317790 ERROR common.initdriver.InitDriver.py 40 - 连接appium服务，实例化driver时出错，尝试重连...(0)
+2020-10-15 19:51:16,323167 DEBUG common.base.Command.py 411 - pull crash to result/logs/crash
+2020-10-15 19:51:16,326993 DEBUG common.base.Command.py 419 - pull anr to result/logs/anr
+>>>>>>> Stashed changes

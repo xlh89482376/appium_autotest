@@ -1,3 +1,4 @@
+import random
 import subprocess
 import re, os, platform, time
 from common.utils.FilePathUtil import FilePathUtil
@@ -76,6 +77,12 @@ class Cmd(object):
 
     def get_device_num(self):
         return len(self.get_device_list())
+
+    def get_device_SN(self):
+        """
+        车机SN
+        """
+        return self.shell("getprop gsm.serial").stdout.read().decode('utf-8').strip()
 
     def get_android_os_version(self):
         """
@@ -441,7 +448,7 @@ class Cmd(object):
         self.shell("rm /data/local/tmp/uidump.xml").wait()
 
         xml_file_name = str(self.get_current_package_name()) + ".xml"
-        print(xml_file_name)
+        # print(xml_file_name)
 
         dict = {}
 
@@ -451,7 +458,8 @@ class Cmd(object):
 
         self.parm.write_yaml_data(yml_name, dict)
 
+
 if __name__ == '__main__':
     adb = Cmd()
 
-    adb.get_uidump_xml("v2x_交通事故.yml")
+

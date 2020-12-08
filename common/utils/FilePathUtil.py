@@ -7,11 +7,18 @@ class FilePathUtil():
 
     def __init__(self):
         self.log4py = LoggingController()
+        # self.project_path = os.getcwd().split("common")[0]
+        # self.monkey_config = self.project_path + "config" + os.sep + "monkey.ini"
+        # self.monkey_log = self.project_path + "monkey" + os.sep + "logs"
 
     def get_project_path(self):
         abspath = os.getcwd()
-        project_path = abspath.split("common")[0]
+        project_path = abspath.split("appium_autotest")[0] + "appium_autotest" + os.sep
         return project_path
+
+    def get_monkey_config_path(self):
+        monkey_config_path = self.get_project_path() + "config" + os.sep + "monkey.ini"
+        return monkey_config_path
 
     def get_broadcast_path(self):
         # broadcast_path = self.get_project_path() + os.sep + "testdata" + os.sep + "yaml" + os.sep + "broadcast.yml"
@@ -67,4 +74,6 @@ if __name__ == '__main__':
     f = FilePathUtil()
     # print(f.get_project_path())
     # print(f.get_config_run_path())
-    print(f.get_xml_path())
+    # print(f.get_xml_path())
+    print(os.getcwd().split("common")[0])
+    print(os.getcwd().split("appium_autotest")[0])

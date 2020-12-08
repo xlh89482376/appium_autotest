@@ -1,0 +1,2 @@
+2020-09-20 17:34:02,449163 DEBUG common.utils.FileClearUtil.py 42 - clear script.log
+2020-09-20 17:34:02,451060 DEBUG common.utils.FileClearUtil.py 37 - history report not exist
