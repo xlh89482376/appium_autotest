@@ -19,9 +19,9 @@ class AddPoiUtil():
         self.__env = env
         self.path = None
         if self.__env == 'online':
-            self.path = r'https://dzt.zhidaohulian.com/deva/pc/pathAndPoi/no/addInfo'
+            self.path = r'https://dzt.xxxxxx.com/deva/pc/pathAndPoi/no/addInfo'
         else:
-            self.path = r'https://dzt-test.zhidaohulian.com/deva/pc/pathAndPoi/no/addInfo'
+            self.path = r'https://dzt-test.xxxxxxxxx.com/deva/pc/pathAndPoi/no/addInfo'
 
     def get_data(self, poi_type, direction, lat, lon):
         data = {
