@@ -239,8 +239,6 @@ class MonkeyCmd(object):
 
         content = template.render(apps_list=apps_list, crash_cnt=crash_cnt, anr_cnt=anr_cnt, result=self.result, tester=tester, time=time, app_name=app_name, device_name=self.__serialno, sn=sn, total_time=total_time, crash_file_dict=crash_file_dict, anr_file_dict=anr_file_dict, color=self.color)
 
-        print(content)
-
         status, reason = SendMail().send_mail(rcpt_list, subject, content, att_list=att_list)
         if status:
             print("send email successed")
