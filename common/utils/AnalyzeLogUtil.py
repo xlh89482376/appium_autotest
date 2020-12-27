@@ -1,4 +1,5 @@
-import os, re, shutil, datetime
+import os, re, shutil, datetime, hashlib, time
+from itertools import islice
 from common.utils.FilePathUtil import FilePathUtil
 
 
@@ -26,10 +27,13 @@ class DeviceLog:
     def __init__(self, sn, path):
         self.sn = sn
         self.path = path + self.sn + os.sep
-        self.anr_dir = self.path + "anr"
-        self.crash_dir = self.path + "crash"
-        self.dump_dir = self.path + "dumpsys"
+        self.anr_dir = self.path + "anr" + os.sep
+        self.crash_dir = self.path + "crash" + os.sep
+        self.dump_dir = self.path + "dumpsys" + os.sep
         self.log_path = self.path + "monkey.log"
+
+    # def __repr__(self):
+    #     return repr(self.__dict__)
 
     @staticmethod
     def __remove_excess_traces(anr_info):
@@ -77,6 +81,7 @@ class DeviceLog:
             # anr和crash信息
             anr_info = []
             crash_info = []
+
             # 逐行读取日志信息
             for line in fp:
                 # ANR处理
@@ -92,7 +97,7 @@ class DeviceLog:
                         # 去掉多余的traces
                         anr_info = self.__remove_excess_traces(anr_info)
                         # 存成文件
-                        with open("{}/anr_{}_{}.txt".format(self.anr_dir, self.sn, anr_cnt), "w") as anr_fp:
+                        with open("{}/anr_{}_{}.txt".format(self.anr_dir, packageName, anr_cnt), "w") as anr_fp:
                             for anr_line in anr_info:
                                 anr_fp.write(anr_line)
                         # 清空
@@ -101,11 +106,13 @@ class DeviceLog:
                 if line.startswith("// CRASH: {} ".format(packageName)) or line.startswith("// CRASH: {}:".format(packageName)):
                     is_crash = True
                     crash_cnt += 1
+
                 if is_crash:
                     crash_info.append(line)
+
                 if is_crash and line.strip() == "//":
                     # 存成文件
-                    with open("{}/crash_{}_{}.txt".format(self.crash_dir, self.sn, crash_cnt), "w") as crash_fp:
+                    with open("{}/crash_{}_{}.txt".format(self.crash_dir, packageName, crash_cnt), "w") as crash_fp:
                         for crash_line in crash_info:
                             crash_fp.write(crash_line)
                     # 清空
@@ -136,5 +143,163 @@ class DeviceLog:
             att_list.append("{}/{}".format(self.crash_dir, fn))
         for fn in dumpsys_fn_list:
             att_list.append("{}/{}".format(self.dump_dir, fn))
+
+        # 获取crash和anr文件对象和次数
+        crash_file_dict = self.crashFileDict()
+        anr_file_dict = self.anrFileDict()
         # 返回anr_cnt、crash_cnt和att_list
-        return anr_cnt, crash_cnt, att_list
+        return anr_cnt, crash_cnt, att_list, crash_file_dict, anr_file_dict
+
+
+    def getCrashHash(self, f):
+        hash = hashlib.md5()
+        # Crash log首行pid不同，去掉首行进行比对
+        for line in islice(f , 10 , None):
+        # next(f)
+        # for line in f.readlines():
+            hash.update(line)
+
+        return hash.hexdigest()
+
+    def isCrashHashEqual(self, f1, f2):
+        str1 = self.getCrashHash(f1)
+        str2 = self.getCrashHash(f2)
+        return str1 == str2
+
+    def fileList(self):
+        '''
+        获取crash文件的file列表
+        '''
+        file_list = []
+        list = os.listdir(self.crash_dir)  # 列出文件夹下所有的目录与文件
+        for i in range(0, len(list)):
+            path = os.path.basename(list[i])
+            f = open(self.crash_dir + path, "rb")
+            file_list.append(f)
+
+        return file_list
+
+    def crashHashDict(self):
+        file_hash_list = []
+        file_hash_dict = {}
+        list = os.listdir(self.crash_dir)
+        for i in range(0, len(list)):
+            path = os.path.basename(list[i])
+            crash_log = self.crash_dir + path
+            f = open(crash_log, "rb")
+            file_hash_list.append(self.getCrashHash(f))
+
+        for hash in file_hash_list:
+            file_hash_dict.update({hash : file_hash_list.count(hash)})
+
+        return file_hash_dict
+
+    def crashFileDict(self):
+        file_list = []
+        # file_list = {}
+        list = os.listdir(self.crash_dir)  # 列出文件夹下所有的目录与文件
+        for i in range(0, len(list)):
+            path = os.path.basename(list[i])
+            f = open(self.crash_dir + path, "rb")
+            file_list.append(f)
+
+        file_hash_list = []
+        file_hash_dict = {}
+        file_dict = {}
+        list = os.listdir(self.crash_dir)
+        for i in range(0, len(list)):
+            path = os.path.basename(list[i])
+            crash_log = self.crash_dir + path
+            f = open(crash_log, "rb")
+            file_hash_list.append(self.getCrashHash(f))
+
+        for hash in file_hash_list:
+            file_hash_dict.update({hash: file_hash_list.count(hash)})
+
+        for k,v in file_hash_dict.items():
+            for file in file_list:
+                # file.seek(0)
+                if self.getCrashHash(file) == k:
+                    file.seek(0)
+                    # file_dict.update({file.read().decode('utf-8') : v})
+                    file_dict.update({self.convertReportFile(file) : v})
+                    break
+
+        return file_dict
+
+    def anrFileDict(self):
+        file_list = []
+        list = os.listdir(self.anr_dir)  # 列出文件夹下所有的目录与文件
+        for i in range(0, len(list)):
+            path = os.path.basename(list[i])
+            f = open(self.anr_dir + path, "rb")
+            file_list.append(f)
+
+        file_hash_list = []
+        file_hash_dict = {}
+        file_dict = {}
+        list = os.listdir(self.anr_dir)
+        for i in range(0, len(list)):
+            path = os.path.basename(list[i])
+            anr_log = self.anr_dir + path
+            f = open(anr_log, "rb")
+            file_hash_list.append(self.getCrashHash(f))
+
+        for hash in file_hash_list:
+            file_hash_dict.update({hash: file_hash_list.count(hash)})
+
+        for k, v in file_hash_dict.items():
+            for file in file_list:
+                if self.getCrashHash(file) == k:
+                    file.seek(0)
+                    # file_dict.update({file.read().decode('utf-8'): v})
+                    file_dict.update({self.convertReportFile(file): v})
+                    break
+
+        return file_dict
+
+    def convertReportFile(self, f):
+        lines = f.readlines()
+        str = ''
+        for line in lines:
+            line_new = line.decode('utf-8') + r'<br>'
+            str += line_new
+        return str
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

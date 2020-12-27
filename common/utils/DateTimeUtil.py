@@ -19,7 +19,7 @@ class DateTimeManager(object):
 
     # 20200714 YMD
     def getCurrentDate(self):
-        return datetime.datetime.now().strftime("%Y%m%d")
+        return datetime.datetime.now().strftime("%Y-%m-%d")
 
     # 105858 hms
     def getCurrentTime(self):
@@ -114,6 +114,10 @@ if __name__ == '__main__':
     # print(dt.formated_time('%Y-%m-%d %H:%M:%S'))
     print(time.time())
     print(datetime.datetime.now())
+
+    print(dt.getCurrentDate())
+
+    print(dt.getMilSecNow())
 
 
     

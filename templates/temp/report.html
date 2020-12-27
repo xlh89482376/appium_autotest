@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+</html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>{{ the }}</title>
+</head>
+
+<table id="summary">
+    <tr>
+        <th colspan="10" style="font-size: 18px;"><strong>【质量中心】【稳定性测试】-「{{ app_name }}」 -{{ tester }} -{{ time }}</strong></th>
+    </tr>
+
+
+    {% for app in apps_list %}
+    <tr>
+        <td class="configname">应用名称</td>
+        <td color="green">{{ app.0 }}</td>
+        <td class="configname">包名</td>
+        <td color="green">{{ app.1 }}</td>
+        <td class="configname">版本</td>
+        <td color="green">{{ app.2 }}</td>
+    </tr>
+    {% endfor %}
+
+    <tr>
+        <td class="configname">测试设备</td>
+        <td color="green">{{ device_name }}</td>
+        <td class="configname">SN</td>
+        <td color="green">{{ sn }}</td>
+        <td class="configname">测试时长</td>
+        <td color="green">{{ total_time }}小时</td>
+    </tr>
+
+    <tr>
+        <td class="configname">测试结果</td>
+        <td color="green">{{ result }}</td>
+        <td class="configname">Crash(次)</td>
+        <td color="green">{{ crash_cnt }}</td>
+        <td class="configname">ANR(次)</td>
+        <td color="green">{{ anr_cnt }}</td>
+    </tr>
+
+</table>
+
+<table id="summary">
+    <tr>
+        <td colspan="8" style="text-align: center;background: #2878f0;color:#FFFFFF;" class="configname"><strong>Crash详情</strong></td>
+
+    </tr>
+    <tr>
+        <th class="configname" width="50">编号</th>
+        <th class="configname">详情</th>
+        <th class="configname" width="50">次数</th>
+    </tr>
+        {% for key, value in crash_file_dict.items() %}
+        <tr>
+            <td class="td" height="150">{{ loop.index }}</td>
+            <td class="td1">{{ key }}</td>
+            <td class="td">{{ value }}</td>
+        </tr>
+        {% endfor %}
+</table>
+
+<table id="summary">
+    <tr>
+        <td colspan="8" style="text-align: center;background: #2878f0;color:#FFFFFF;" class="configname"><strong>Anr详情</strong></td>
+
+    </tr>
+    <tr>
+        <th class="configname" width="50">编号</th>
+        <th class="configname">详情</th>
+        <th class="configname" width="50">次数</th>
+    </tr>
+        {% for key, value in anr_file_dict.items() %}
+        <tr>
+            <td class="td">{{ loop.index }}</td>
+            <td class="td1">{{ key }}</td>
+                <td class="td">{{ value }}</td>
+        </tr>
+        {% endfor %}
+</table>
+
+<style type="text/css"></style>
+<style> #summary {
+        width: 1300px;
+        margin-bottom: 20px;
+        font-size: 15px;
+        border-top: 1px solid #999;
+        border-left: 1px solid #999;
+        border-right: 1px solid #999;
+        border-bottom: 1px solid #999;
+        border-spacing: 0;
+    }
+ #summary th {
+        background-color: #2878f0;
+        text-align: center;
+        padding: 5px 15px;
+        font-size: 15px;
+        color: #FFFFFF;
+        border-top: 1px solid #999;
+        border-left: 1px solid #999;
+        border-right: 1px solid #999;
+        border-bottom: 1px solid #999;
+        border-spacing: 0;
+    }
+ #summary td {
+        background-color: #FFFFFF;
+        padding: 4px 8px;
+        text-align: left;
+        font-size: 15px;
+        size: 3px;
+        border-top: 1px solid #999;
+        border-left: 1px solid #999;
+        border-right: 1px solid #999;
+        border-bottom: 1px solid #999;
+        border-spacing: 0;
+    }
+ #summary .configname {
+        background-color: #F0FFFF;
+        text-align: center;
+        padding: 4px 8px;
+        color: #1d1007;
+        font-weight: 500;
+    }
+ #summary .td {
+        background-color: white;
+        text-align: center;
+        padding: 4px 8px;
+        color: black;
+    }
+#summary .td1 {
+        background-color: white;
+        text-align: left;
+        padding: 4px 8px;
+        color: black;
+        display: block;
+        height: 150px;
+        overflow-y: scroll;
+}
+</style>

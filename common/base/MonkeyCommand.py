@@ -6,6 +6,8 @@ from common.utils.AnalyzeLogUtil import ProjectLog
 from common.utils.AnalyzeLogUtil import DeviceLog
 from common.utils.SendEmailUtil import SendMail
 from common.utils import timeout_command
+from jinja2 import Environment, PackageLoader
+from common.utils.DateTimeUtil import DateTimeManager
 
 Project_Path = os.getcwd().split('appium_autotest')[0] + 'appium_autotest' + os.sep + 'monkey' + os.sep
 Monkey_Config_Path = FilePathUtil().get_monkey_config_path()
@@ -36,6 +38,13 @@ class MonkeyCmd(object):
         self.package_list = ConfigController(Monkey_Config_Path).get(self.section, "packageName").split(',')
         self.nopackage_list = ConfigController(Monkey_Config_Path).get(self.section, "noPackageName").split(',')
         self.excute_package_list = []
+        self.app_name = ConfigController(Monkey_Config_Path).get(self.section, "appName")
+        self.tester = ConfigController(Monkey_Config_Path).get(self.section, "tester")
+        self.time = DateTimeManager().getCurrentDate()
+        self.result = None
+
+    # def __repr__(self):
+    #     return repr(self.__dict__)
 
     @property
     def serialno(self):
@@ -61,7 +70,6 @@ class MonkeyCmd(object):
 
     def rm_blacklist(self):
         rm_result = self.shell("rm sdcard/blacklist.txt").stdout.read().decode('utf-8')
-        print(rm_result)
         if rm_result is None:
             return True
         else:
@@ -69,7 +77,6 @@ class MonkeyCmd(object):
 
     def rm_whitelist(self):
         rm_result = self.shell("rm sdcard/whitelist.txt").stdout.read().decode('utf-8')
-        print(rm_result)
         if rm_result is None:
             return True
         else:
@@ -119,7 +126,25 @@ class MonkeyCmd(object):
             for list in self.nopackage_list:
                 f.write(list + '\n')
 
-        return serialno_list, throttle, count, rcpt_list
+        # app_name = ConfigController(Monkey_Config_Path).get(self.section, "appName")
+        app_names = self.app_name.split(',')
+        pack_names = ConfigController(Monkey_Config_Path).get(self.section, "packageName").split(',')
+        versions = ConfigController(Monkey_Config_Path).get(self.section, "version").split(',')
+
+        app_list = []
+        apps_list = []
+
+        for i in range(len(app_names)):
+            app_list.append(app_names[i])
+            app_list.append(pack_names[i])
+            app_list.append(versions[i])
+            apps_list.append(app_list)
+
+            app_list = []
+
+        sn = cmd.get_device_SN()
+
+        return serialno_list, throttle, count, rcpt_list, apps_list, sn, self.tester, self.time, self.app_name
 
     def dumpsys_activity(self):
         dumpsys_name = "dumpsys_{}.txt".format(self.serialno)
@@ -130,8 +155,6 @@ class MonkeyCmd(object):
     def run_monkey(self, serialno, path, throttle=700, cnt=5000):
         # 生成随机数
         rand = random.randint(0, 65535)
-        print(self.package_list)
-        print(self.nopackage_list)
 
         if len(self.package_list):
             self.push_whitelist()
@@ -140,9 +163,8 @@ class MonkeyCmd(object):
                 cmd = "adb -s {} shell am force-stop {}".format(serialno, list)
                 os.popen(cmd)
                 time.sleep(3)
-            cmd = "adb -s {} shell monkey --pkg-whitelist-file /sdcard/whitelist.txt -s {} --ignore-crashes --ignore-timeouts --throttle {} -v -v -v {} > {}".\
+            cmd = "adb -s {} shell monkey --pkg-whitelist-file /sdcard/whitelist.txt -s {} --ignore-crashes --ignore-timeouts --throttle {} -v -v -v {} > {} 2>&1".\
                 format(serialno, rand, throttle, cnt, path)
-            print(cmd)
             os.popen(cmd).read()
             time.sleep(5)
         elif len(self.nopackage_list):
@@ -150,13 +172,11 @@ class MonkeyCmd(object):
             for list in self.nopackage_list:
                 self.excute_package_list.append(list)
                 cmd = "adb -s {} shell am force-stop {}".format(serialno, list)
-                print(cmd)
                 os.popen(cmd)
                 time.sleep(3)
             # 执行monkey命令
-            cmd = "adb -s {} shell monkey --pkg-blacklist-file /sdcard/blacklist.txt -s {} --ignore-crashes --ignore-timeouts --throttle {} -v -v -v {} > {}".\
+            cmd = "adb -s {} shell monkey --pkg-blacklist-file /sdcard/blacklist.txt -s {} --ignore-crashes --ignore-timeouts --throttle {} -v -v -v {} > {} 2>&1 &".\
                 format(serialno, rand, throttle, cnt, path)
-            print(cmd)
             os.popen(cmd).read()
             time.sleep(5)
         else:
@@ -164,8 +184,8 @@ class MonkeyCmd(object):
 
     def monkey_test(self):
 
-        serialno_list, throttle, count, rcpt_list = self.init()
-
+        serialno_list, throttle, count, rcpt_list, apps_list, sn, tester, time, app_name = self.init()
+        start_time = DateTimeManager().getDateTime()
         device_log = DeviceLog(self.serialno, self.logs)
 
         self.run_monkey(self.serialno, self.monkey_log, throttle, count)
@@ -174,36 +194,52 @@ class MonkeyCmd(object):
         for package in self.excute_package_list:
             device_log.check(package)
 
-        anr_cnt, crash_cnt, att_list = device_log.get()
-        print(rcpt_list)
+        anr_cnt, crash_cnt, att_list, crash_file_dict, anr_file_dict = device_log.get()
+
+        end_time = DateTimeManager().getDateTime()
+
+        total_time = format((end_time-start_time).seconds/3600, '.1f')
+
         # 发送邮件
-        self.send_log(rcpt_list, anr_cnt, crash_cnt, att_list)
+        self.send_log(rcpt_list, anr_cnt, crash_cnt, att_list, apps_list, tester, time, app_name, sn, total_time, crash_file_dict, anr_file_dict)
 
-    def send_log(self, rcpt_list, anr_cnt, crash_cnt, att_list):
-        # 如果没有anr和crash，则不发邮件
-        # prj_name = prj_info["name"]
+        # Todo: 测试报告需要的数据。crash、anr总次数；crash、anr分类数量；crash、anr各个分类数量；crash、anr文件
 
-        # if anr_cnt == 0 and crash_cnt == 0:
-        #     subject = u"Monkey测试通过"
-        # else:
-        #     subject = u"Monkey测试异常提醒"
+    def monkey_stop(self):
+        monkey_name = 'com.android.commands.monkey'
+        pid = subprocess.Popen('adb -s ' + self.__serialno + ' shell ps | grep ' + monkey_name, shell=True, stdout=subprocess.PIPE,
+                               stderr=subprocess.PIPE).stdout.readlines()
+        if pid == '':
+            print('No monkey running in %s' % self.__serialno)
+        else:
+            for item in pid:
+                if item.split()[8].decode() == monkey_name:
+                    monkey_pid = item.split()[1].decode()
+                    cmd_monkey = 'adb -s ' + self.__serialno + ' shell kill %s' % (monkey_pid)
+                    os.popen(cmd_monkey)
+                    print('Monkey in %s was killed' % self.__serialno)
+                    time.sleep(2)
 
-        subject = u"Monkey测试通过"
+    def send_log(self, rcpt_list, anr_cnt, crash_cnt, att_list, apps_list, tester, time, app_name, sn, total_time, crash_file_dict, anr_file_dict):
 
-        content = "<table border='1' cellspacing='0' cellpadding='0'>" \
-                  + "</table>" \
-                  + "<br/><p>具体日志见附件</p>"
+        subject = u"【质量中心】【稳定性测试报告】「%s」-%s-%s" % (self.app_name, self.tester, self.time)
+
+        if anr_cnt == 0 and crash_cnt == 0:
+            self.result = "PASS"
+        else:
+            self.result = "FAIL"
+
+        env = Environment(loader=PackageLoader('templates', 'temp'))
+
+        template = env.get_template("report.html")
+
+        content = template.render(apps_list=apps_list, crash_cnt=crash_cnt, anr_cnt=anr_cnt, result=self.result, tester=tester, time=time, app_name=app_name, device_name=self.__serialno, sn=sn, total_time=total_time, crash_file_dict=crash_file_dict, anr_file_dict=anr_file_dict)
 
         status, reason = SendMail().send_mail(rcpt_list, subject, content, att_list=att_list)
         if status:
-            # logging.info("Succeed in sending mails")
             print("send email successed")
         else:
-            # logging.error("Failed to send mails, reason: %s" % reason)
             print("send email failed")
-
-
-
 
 if __name__ == '__main__':
     cmd = Cmd()
@@ -211,5 +247,6 @@ if __name__ == '__main__':
     mk = MonkeyCmd(sn)
     # mk.init()
     mk.monkey_test()
-    # print(mk.whitelist)
-    # print(mk.blacklist)
+    # mk.monkey_stop()
+
+    # mk.init()
