@@ -42,6 +42,7 @@ class MonkeyCmd(object):
         self.tester = ConfigController(Monkey_Config_Path).get(self.section, "tester")
         self.time = DateTimeManager().getCurrentDate()
         self.result = None
+        self.color = ''
 
     # def __repr__(self):
     #     return repr(self.__dict__)
@@ -226,14 +227,19 @@ class MonkeyCmd(object):
 
         if anr_cnt == 0 and crash_cnt == 0:
             self.result = "PASS"
+            self.color = "green"
         else:
             self.result = "FAIL"
+            self.color = "red"
+
 
         env = Environment(loader=PackageLoader('templates', 'temp'))
 
         template = env.get_template("report.html")
 
-        content = template.render(apps_list=apps_list, crash_cnt=crash_cnt, anr_cnt=anr_cnt, result=self.result, tester=tester, time=time, app_name=app_name, device_name=self.__serialno, sn=sn, total_time=total_time, crash_file_dict=crash_file_dict, anr_file_dict=anr_file_dict)
+        content = template.render(apps_list=apps_list, crash_cnt=crash_cnt, anr_cnt=anr_cnt, result=self.result, tester=tester, time=time, app_name=app_name, device_name=self.__serialno, sn=sn, total_time=total_time, crash_file_dict=crash_file_dict, anr_file_dict=anr_file_dict, color=self.color)
+
+        print(content)
 
         status, reason = SendMail().send_mail(rcpt_list, subject, content, att_list=att_list)
         if status:

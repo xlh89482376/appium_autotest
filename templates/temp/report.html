@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-</html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>{{ the }}</title>
+
 </head>
 
 <table id="summary">
@@ -34,7 +34,8 @@
 
     <tr>
         <td class="configname">测试结果</td>
-        <td color="green">{{ result }}</td>
+        <!--<td id="result">{{ result }}</td>-->
+        <td class="td2">{{ result }}</td>
         <td class="configname">Crash(次)</td>
         <td color="green">{{ crash_cnt }}</td>
         <td class="configname">ANR(次)</td>
@@ -81,6 +82,16 @@
         {% endfor %}
 </table>
 
+<!--<script type="text/javascript">-->
+    <!--window.onload = function(){-->
+        <!--if (document.getElementById("result").innerHTML == "PASS") {-->
+            <!--document.getElementById("result").style.color="green";-->
+        <!--} else if (document.getElementById("result").innerHTML == "FAIL") {-->
+            <!--document.getElementById("result").style.color="red";-->
+        <!--}-->
+    <!--}-->
+<!--</script>-->
+
 <style type="text/css"></style>
 <style> #summary {
         width: 1300px;
@@ -116,6 +127,8 @@
         border-bottom: 1px solid #999;
         border-spacing: 0;
     }
+
+
  #summary .configname {
         background-color: #F0FFFF;
         text-align: center;
@@ -137,5 +150,12 @@
         display: block;
         height: 150px;
         overflow-y: scroll;
-}
+    }
+     #summary .td2 {
+        background-color: white;
+        text-align: left;
+        padding: 4px 8px;
+        color: {{ color }};
+    }
 </style>
+</html>

@@ -46,12 +46,9 @@ f = open("/Users/xuanlonghua/Documents/ZD/Projects/appium_autotest/monkey/logs/e
 
 # print(type(f.read().decode('utf-8')))
 
-def convertReportFile(f):
-    lines = f.readlines()
-    str = ''
-    for line in lines:
-        line_new =line.decode('utf-8')+ r'<br>'
-        str += line_new
-    return str
+from jinja2 import Environment, PackageLoader
 
-convertReportFile(f)
+env = Environment(loader=PackageLoader('templates', 'temp'))
+
+template = env.get_template("report.html")
+print(template.render())
