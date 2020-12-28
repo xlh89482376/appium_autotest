@@ -10,13 +10,15 @@ from jinja2 import Environment, PackageLoader
 from common.utils.DateTimeUtil import DateTimeManager
 
 Project_Path = os.getcwd().split('appium_autotest')[0] + 'appium_autotest' + os.sep + 'monkey' + os.sep
-Monkey_Config_Path = FilePathUtil().get_monkey_config_path()
+# Monkey_Config_Path = FilePathUtil().get_monkey_config_path()
 
 
 class MonkeyCmd(object):
 
-    def __init__(self, serialno):
+    def __init__(self, serialno, config_path):
+        self.config_path = config_path
         self.section = 'monkey'
+        self.section1 = 'gmail'
         self.system = platform.system()
         self.find_type = None
         if self.system is "Windows":
@@ -35,11 +37,11 @@ class MonkeyCmd(object):
         self.crash_path = self.deviceroot + "crash"
         self.dump_path = self.deviceroot + "dumpsys"
         self.monkey_log = self.deviceroot + "monkey.log"
-        self.package_list = ConfigController(Monkey_Config_Path).get(self.section, "packageName").split(',')
-        self.nopackage_list = ConfigController(Monkey_Config_Path).get(self.section, "noPackageName").split(',')
+        self.package_list = ConfigController(self.config_path).get(self.section, "packageName").split(',')
+        self.nopackage_list = ConfigController(self.config_path).get(self.section, "noPackageName").split(',')
         self.excute_package_list = []
-        self.app_name = ConfigController(Monkey_Config_Path).get(self.section, "appName")
-        self.tester = ConfigController(Monkey_Config_Path).get(self.section, "tester")
+        self.app_name = ConfigController(self.config_path).get(self.section, "appName")
+        self.tester = ConfigController(self.config_path).get(self.section, "tester")
         self.time = DateTimeManager().getCurrentDate()
         self.result = None
         self.color = ''
@@ -112,10 +114,11 @@ class MonkeyCmd(object):
         os.makedirs(self.crash_path)
         os.makedirs(self.dump_path)
 
-        throttle = ConfigController(Monkey_Config_Path).get(self.section, "throttle")
-        count = ConfigController(Monkey_Config_Path).get(self.section, "count")
-        section1 = "gmail"
-        rcpt_list = ConfigController(Monkey_Config_Path).get(section1, "receiver").split(',')
+        throttle = ConfigController(self.config_path).get(self.section, "throttle")
+        count = ConfigController(self.config_path).get(self.section, "count")
+        # section1 = "gmail"
+        rcpt_list = ConfigController(self.config_path).get(self.section1, "receiver").split(',')
+        print(rcpt_list)
 
         with open(self.whitelist, 'a') as f:
             f.truncate(0)
@@ -129,8 +132,8 @@ class MonkeyCmd(object):
 
         # app_name = ConfigController(Monkey_Config_Path).get(self.section, "appName")
         app_names = self.app_name.split(',')
-        pack_names = ConfigController(Monkey_Config_Path).get(self.section, "packageName").split(',')
-        versions = ConfigController(Monkey_Config_Path).get(self.section, "version").split(',')
+        pack_names = ConfigController(self.config_path).get(self.section, "packageName").split(',')
+        versions = ConfigController(self.config_path).get(self.section, "version").split(',')
 
         app_list = []
         apps_list = []
@@ -142,6 +145,8 @@ class MonkeyCmd(object):
             apps_list.append(app_list)
 
             app_list = []
+
+        cmd = Cmd()
 
         sn = cmd.get_device_SN()
 
@@ -239,7 +244,7 @@ class MonkeyCmd(object):
 
         content = template.render(apps_list=apps_list, crash_cnt=crash_cnt, anr_cnt=anr_cnt, result=self.result, tester=tester, time=time, app_name=app_name, device_name=self.__serialno, sn=sn, total_time=total_time, crash_file_dict=crash_file_dict, anr_file_dict=anr_file_dict, color=self.color)
 
-        status, reason = SendMail().send_mail(rcpt_list, subject, content, att_list=att_list)
+        status, reason = SendMail(self.config_path).send_mail(rcpt_list, subject, content, att_list=att_list)
         if status:
             print("send email successed")
         else:

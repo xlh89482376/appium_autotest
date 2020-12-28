@@ -12,11 +12,11 @@ from email.utils import parseaddr, formataddr
 from common.utils.FilePathUtil import FilePathUtil
 from common.utils.ConfigUtil import ConfigController
 
-MONKEY_CONFIG = FilePathUtil().get_monkey_config_path()
+# MONKEY_CONFIG = FilePathUtil().get_monkey_config_path()
 
 class SendMail:
-    def __init__(self, config=ConfigController(MONKEY_CONFIG)):
-        self.config = config
+    def __init__(self, config_path):
+        self.config = ConfigController(config_path)
 
     def __get_mail_conf(self):
         section = "gmail"

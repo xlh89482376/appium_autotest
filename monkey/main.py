@@ -2,6 +2,8 @@ import threading
 from common.base.Command import Cmd
 from common.base.MonkeyCommand import MonkeyCmd
 
+CONFIG_PATH = "/Users/xuanlonghua/Documents/ZD/Projects/appium_autotest/monkey/config/launcher.ini"
+
 cmd = Cmd()
 serialno_list = cmd.get_device_list()
 
@@ -9,7 +11,7 @@ def main():
     # 多线程测试
     thread_list = []
     for serialno in serialno_list:
-        monkey_cmd = MonkeyCmd(serialno)
+        monkey_cmd = MonkeyCmd(serialno, CONFIG_PATH)
         print(serialno)
         thread = threading.Thread(
             target=monkey_cmd.monkey_test

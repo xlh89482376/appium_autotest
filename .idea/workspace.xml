@@ -4,6 +4,13 @@
     <list default="true" id="397d5a09-15ea-40e2-a94b-05d68f70c1fb" name="Default" comment="1.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/common/base/MonkeyCommand.py" afterPath="$PROJECT_DIR$/common/base/MonkeyCommand.py" />
+      <change beforePath="$PROJECT_DIR$/common/utils/FilePathUtil.py" afterPath="$PROJECT_DIR$/common/utils/FilePathUtil.py" />
+      <change beforePath="$PROJECT_DIR$/common/utils/SendEmailUtil.py" afterPath="$PROJECT_DIR$/common/utils/SendEmailUtil.py" />
+      <change beforePath="$PROJECT_DIR$/config/monkey.ini" afterPath="$PROJECT_DIR$/config/monkey.ini" />
+      <change beforePath="$PROJECT_DIR$/monkey/data/whitelist.txt" afterPath="$PROJECT_DIR$/monkey/data/whitelist.txt" />
+      <change beforePath="$PROJECT_DIR$/monkey/logs/dumpsys/dumpsys_.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/monkey/logs/monkey.log" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/monkey/main.py" afterPath="$PROJECT_DIR$/monkey/main.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,12 +43,12 @@
     <SUITE FILE_PATH="coverage/appium_autotest$analysisxml.coverage" NAME="analysis——xml Coverage Results" MODIFIED="1595402224428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xml_file" />
     <SUITE FILE_PATH="coverage/appium_autotest$DeviceInfo.coverage" NAME="DeviceInfo Coverage Results" MODIFIED="1600613195518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common/dev" />
     <SUITE FILE_PATH="coverage/appium_autotest$InitAppiumDriver.coverage" NAME="InitAppiumDriver Coverage Results" MODIFIED="1592414518258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common/initdriver" />
-    <SUITE FILE_PATH="coverage/appium_autotest$main.coverage" NAME="main Coverage Results" MODIFIED="1607246776630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/monkey" />
+    <SUITE FILE_PATH="coverage/appium_autotest$main.coverage" NAME="main Coverage Results" MODIFIED="1609138527889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/monkey" />
     <SUITE FILE_PATH="coverage/appium_autotest$InitDriver.coverage" NAME="InitDriver Coverage Results" MODIFIED="1600613392257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common/initdriver" />
     <SUITE FILE_PATH="coverage/appium_autotest$FileSetUtil.coverage" NAME="FileSetUtil Coverage Results" MODIFIED="1593757476641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common/utils" />
     <SUITE FILE_PATH="coverage/appium_autotest$FileClearUtil.coverage" NAME="FileClearUtil Coverage Results" MODIFIED="1594558763722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common/utils" />
     <SUITE FILE_PATH="coverage/appium_autotest$FileUtil.coverage" NAME="FileUtil Coverage Results" MODIFIED="1608259839005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common/utils" />
-    <SUITE FILE_PATH="coverage/appium_autotest$MonkeyCommand.coverage" NAME="MonkeyCommand Coverage Results" MODIFIED="1609070518078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common/base" />
+    <SUITE FILE_PATH="coverage/appium_autotest$MonkeyCommand.coverage" NAME="MonkeyCommand Coverage Results" MODIFIED="1609138447140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common/base" />
     <SUITE FILE_PATH="coverage/appium_autotest$BroadcastCommand.coverage" NAME="BroadcastCommand Coverage Results" MODIFIED="1598349893318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common/base" />
     <SUITE FILE_PATH="coverage/appium_autotest$airtest.coverage" NAME="airtest Coverage Results" MODIFIED="1591755296249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/appium_autotest$ParamCheckUtil.coverage" NAME="ParamCheckUtil Coverage Results" MODIFIED="1595415333305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common/utils" />
@@ -61,7 +68,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.24625374">
+    <splitter split-orientation="horizontal" split-proportion="0.39829606">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="FileUtil.py" pinned="false" current-in-tab="false">
@@ -73,70 +80,6 @@
                     <element signature="e#0#18#0" expanded="true" />
                     <marker date="1608801670102" expanded="true" signature="145:154" ph="..." />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="InitConfig.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/common/initdriver/InitConfig.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#52#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="InitDriver.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/common/initdriver/InitDriver.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="324">
-                  <caret line="26" column="59" lean-forward="false" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/page/__init__.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="admin_create.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/page/admin_create.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#54#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="test_admin_create.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/scripts/test_admin_create.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="test_admin_create1.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/scripts/test_admin_create1.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -156,9 +99,77 @@
           <file leaf-file-name="monkey.ini" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/config/monkey.ini">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="468">
-                  <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+                <state relative-caret-position="234">
+                  <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ParamCheckUtil.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/common/utils/ParamCheckUtil.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#0#14#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="FileClearUtil.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/common/utils/FileClearUtil.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#0#50#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AppMonitor.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app_performence/AppMonitor.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AppOperateFile.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app_performence/AppOperateFile.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AppOperatePick.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app_performence/AppOperatePick.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#0#9#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AppReport.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app_performence/AppReport.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#0#9#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -166,7 +177,7 @@
           <file leaf-file-name="DateTimeUtil.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/common/utils/DateTimeUtil.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
+                <state relative-caret-position="252">
                   <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="19" />
                   <folding>
                     <element signature="e#0#11#0" expanded="true" />
@@ -179,7 +190,7 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="FileUtil.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="FileUtil.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/common/utils/FileUtil.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="414">
@@ -195,8 +206,8 @@
           <file leaf-file-name="MonkeyCommand.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/common/base/MonkeyCommand.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="4302">
-                  <caret line="239" column="296" lean-forward="false" selection-start-line="239" selection-start-column="296" selection-end-line="239" selection-end-column="296" />
+                <state relative-caret-position="303">
+                  <caret line="233" column="32" lean-forward="true" selection-start-line="233" selection-start-column="32" selection-end-line="233" selection-end-column="32" />
                   <folding>
                     <element signature="e#0#53#0" expanded="true" />
                   </folding>
@@ -207,8 +218,8 @@
           <file leaf-file-name="AnalyzeLogUtil.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/common/utils/AnalyzeLogUtil.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="4572">
-                  <caret line="254" column="72" lean-forward="false" selection-start-line="254" selection-start-column="72" selection-end-line="254" selection-end-column="72" />
+                <state relative-caret-position="-719">
+                  <caret line="242" column="44" lean-forward="true" selection-start-line="242" selection-start-column="44" selection-end-line="242" selection-end-column="44" />
                   <folding>
                     <element signature="e#0#46#0" expanded="true" />
                   </folding>
@@ -216,11 +227,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/monkey/main.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="414">
-                  <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+                <state relative-caret-position="270">
+                  <caret line="17" column="9" lean-forward="true" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="52" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="launcher.ini" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/monkey/config/launcher.ini">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="216">
+                  <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
                   <folding />
                 </state>
               </provider>
@@ -229,7 +250,7 @@
           <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/monkey/test.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="954">
+                <state relative-caret-position="936">
                   <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="24" />
                   <folding>
                     <element signature="e#0#14#0" expanded="true" />
@@ -242,7 +263,7 @@
             <entry file="file://$PROJECT_DIR$/templates/temp/report.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="2250">
-                  <caret line="125" column="37" lean-forward="true" selection-start-line="125" selection-start-column="37" selection-end-line="125" selection-end-column="37" />
+                  <caret line="125" column="37" lean-forward="false" selection-start-line="125" selection-start-column="37" selection-end-line="125" selection-end-column="37" />
                   <folding>
                     <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#td#0;n#tr#0;n#table#1;n#html#0;n#!!top" expanded="true" />
@@ -255,9 +276,11 @@
           <file leaf-file-name="SendEmailUtil.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/common/utils/SendEmailUtil.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="108">
-                  <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="10" />
-                  <folding />
+                <state relative-caret-position="320">
+                  <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+                  <folding>
+                    <element signature="e#0#10#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -269,16 +292,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>operationCheck</find>
-      <find>do_press_k</find>
-      <find>appiumservice</find>
       <find>tap</find>
       <find>reset</find>
       <find>wait_activity</find>
@@ -306,6 +326,9 @@
       <find>head</find>
       <find>getprop gsm.serial</find>
       <find>print</find>
+      <find>get_device_SN</find>
+      <find>Monkey_Config_Path</find>
+      <find>gmail</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -319,7 +342,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scripts1/test_admin_create.py" />
         <option value="$PROJECT_DIR$/scripts1/conftest.py" />
         <option value="$PROJECT_DIR$/common/utils/FileClearUtil.py" />
         <option value="$PROJECT_DIR$/common/initdriver/InitConfig.py" />
@@ -352,10 +374,8 @@
         <option value="$PROJECT_DIR$/monkey/data/blacklist.txt" />
         <option value="$PROJECT_DIR$/common/base/Command.py" />
         <option value="$PROJECT_DIR$/common/utils/FilePathUtil.py" />
-        <option value="$PROJECT_DIR$/common/utils/SendEmailUtil.py" />
         <option value="$PROJECT_DIR$/monkey/data/whitelist.txt" />
         <option value="$PROJECT_DIR$/common/utils/AddPoiUtil.py" />
-        <option value="$PROJECT_DIR$/monkey/main.py" />
         <option value="$PROJECT_DIR$/monkey/logs/emulator-5554/crash/crash_com.zhidao.testapplication_1.txt" />
         <option value="$PROJECT_DIR$/monkey/logs/emulator-5554/crash/crash_com.zhidao.testapplication_2.txt" />
         <option value="$PROJECT_DIR$/monkey/report/simple_report/123.html" />
@@ -366,10 +386,13 @@
         <option value="$PROJECT_DIR$/common/utils/DateTimeUtil.py" />
         <option value="$PROJECT_DIR$/common/utils/AnalyzeLogUtil.py" />
         <option value="$PROJECT_DIR$/monkey/test.py" />
-        <option value="$PROJECT_DIR$/config/monkey.ini" />
         <option value="$PROJECT_DIR$/templates/temp/html1.html" />
         <option value="$PROJECT_DIR$/templates/temp/report.html" />
+        <option value="$PROJECT_DIR$/monkey/main.py" />
+        <option value="$PROJECT_DIR$/config/monkey.ini" />
+        <option value="$PROJECT_DIR$/monkey/config/launcher.ini" />
         <option value="$PROJECT_DIR$/common/base/MonkeyCommand.py" />
+        <option value="$PROJECT_DIR$/common/utils/SendEmailUtil.py" />
       </list>
     </option>
   </component>
@@ -380,9 +403,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="-2560" />
-    <option name="width" value="2560" />
-    <option name="height" value="1440" />
+    <option name="x" value="-1920" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -451,6 +474,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -461,17 +486,13 @@
             <path>
               <item name="appium_autotest" type="b2602c69:ProjectViewProjectNode" />
               <item name="appium_autotest" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="appium_autotest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="appium_autotest" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="monkey" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="appium_autotest" type="b2602c69:ProjectViewProjectNode" />
               <item name="appium_autotest" type="462c0819:PsiDirectoryNode" />
               <item name="monkey" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="appium_autotest" type="b2602c69:ProjectViewProjectNode" />
@@ -488,8 +509,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -511,11 +530,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/monkey/config" />
+      <recent name="$PROJECT_DIR$/app_performence" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/monkey/report/simple_report" />
       <recent name="$PROJECT_DIR$/config" />
-      <recent name="$PROJECT_DIR$/common/utils" />
-      <recent name="$PROJECT_DIR$/apks" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates/temp" />
@@ -537,7 +556,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.MonkeyCommand">
+  <component name="RunManager" selected="Python.main">
     <configuration name="AnalyzeLogUtil" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -595,20 +614,20 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="report" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/monkey/report/simple_report" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/monkey" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="appium_autotest" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/monkey/report/simple_report/report.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/monkey/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -636,17 +655,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.MonkeyCommand" />
       <item index="1" class="java.lang.String" itemvalue="Python.test" />
-      <item index="2" class="java.lang.String" itemvalue="Python.report" />
-      <item index="3" class="java.lang.String" itemvalue="Python.DateTimeUtil" />
-      <item index="4" class="java.lang.String" itemvalue="Python.AnalyzeLogUtil" />
+      <item index="2" class="java.lang.String" itemvalue="Python.DateTimeUtil" />
+      <item index="3" class="java.lang.String" itemvalue="Python.AnalyzeLogUtil" />
+      <item index="4" class="java.lang.String" itemvalue="Python.main" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.MonkeyCommand" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test" />
-        <item index="2" class="java.lang.String" itemvalue="Python.AnalyzeLogUtil" />
-        <item index="3" class="java.lang.String" itemvalue="Python.DateTimeUtil" />
-        <item index="4" class="java.lang.String" itemvalue="Python.report" />
+        <item index="0" class="java.lang.String" itemvalue="Python.main" />
+        <item index="1" class="java.lang.String" itemvalue="Python.MonkeyCommand" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test" />
+        <item index="3" class="java.lang.String" itemvalue="Python.AnalyzeLogUtil" />
+        <item index="4" class="java.lang.String" itemvalue="Python.DateTimeUtil" />
       </list>
     </recent_temporary>
   </component>
@@ -730,19 +749,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2560" y="0" width="2560" height="1440" extended-state="0" />
+    <frame x="-1920" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769045" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32770607" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7110461" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3920995" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09253376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38927507" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39126116" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13099042" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3247269" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -757,7 +778,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="SOQL Query" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882273" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3247269" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Log Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297145" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -820,25 +840,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/monkey/logs/emulator-5554/crash/crash_emulator-5554_5.txt" />
-    <entry file="file://$PROJECT_DIR$/monkey/logs/emulator-5554/crash/crash_emulator-5554_4.txt" />
-    <entry file="file://$PROJECT_DIR$/config/Config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/monkey/logs/emulator-5554/crash/crash_emulator-5554_3.txt" />
-    <entry file="file://$PROJECT_DIR$/monkey/logs/emulator-5554/crash/crash_emulator-5554_2.txt" />
-    <entry file="file://$PROJECT_DIR$/monkey/logs/emulator-5554/crash/crash_emulator-5554_1.txt" />
-    <entry file="file://$PROJECT_DIR$/monkey/data/whitelist.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/utils/FilePathUtil.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -866,20 +867,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/monkey/report/simple_report/123.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1746">
-          <caret line="97" column="11" lean-forward="false" selection-start-line="97" selection-start-column="11" selection-end-line="97" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/monkey/report/simple_report/report.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/monkey/report/simple_report/123.html" />
+    <entry file="file://$PROJECT_DIR$/monkey/report/simple_report/report.py" />
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pkg_resources/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -906,9 +895,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -916,7 +902,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="26" column="59" lean-forward="false" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -924,7 +909,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -932,9 +916,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -942,7 +923,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -950,7 +930,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -992,13 +971,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/monkey/report/simple_report/report.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="106" lean-forward="false" selection-start-line="16" selection-start-column="106" selection-end-line="16" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/monkey/report/simple_report/report.html" />
     <entry file="file://$PROJECT_DIR$/common/base/Command.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -1019,7 +992,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
           <caret line="42" column="8" lean-forward="false" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1027,13 +999,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-575">
           <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/utils/DateTimeUtil.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
+        <state relative-caret-position="252">
           <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="19" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
@@ -1041,21 +1012,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/monkey/logs/emulator-5554/monkey.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/monkey/logs/emulator-5554/crash/crash_com.zhidao.testapplication_1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="44" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/monkey/logs/emulator-5554/monkey.log" />
+    <entry file="file://$PROJECT_DIR$/monkey/logs/emulator-5554/crash/crash_com.zhidao.testapplication_1.txt" />
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm2017.3/python_stubs/-1199943126/time.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1068,30 +1026,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/temp/report1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="11" lean-forward="true" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/utils/SendEmailUtil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/temp/report1.html" />
     <entry file="file://$PROJECT_DIR$/templates/temp/report.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2250">
-          <caret line="125" column="37" lean-forward="true" selection-start-line="125" selection-start-column="37" selection-end-line="125" selection-end-column="37" />
+          <caret line="125" column="37" lean-forward="false" selection-start-line="125" selection-start-column="37" selection-end-line="125" selection-end-column="37" />
           <folding>
             <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#table#1;n#html#0;n#!!top" expanded="true" />
@@ -1102,7 +1044,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/monkey/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="954">
+        <state relative-caret-position="936">
           <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="24" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
@@ -1110,38 +1052,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/monkey/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/utils/AnalyzeLogUtil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4572">
-          <caret line="254" column="72" lean-forward="false" selection-start-line="254" selection-start-column="72" selection-end-line="254" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/base/MonkeyCommand.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4302">
-          <caret line="239" column="296" lean-forward="false" selection-start-line="239" selection-start-column="296" selection-end-line="239" selection-end-column="296" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/utils/FileUtil.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        <state relative-caret-position="414">
+          <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
             <marker date="1608801670102" expanded="true" signature="145:154" ph="..." />
@@ -1149,10 +1063,112 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/common/utils/ParamCheckUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/utils/FileClearUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_performence/AppOperateFile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_performence/AppOperatePick.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_performence/AppReport.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_performence/AppMonitor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/monkey.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="234">
+          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monkey/config/launcher.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/utils/AnalyzeLogUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-719">
+          <caret line="242" column="44" lean-forward="true" selection-start-line="242" selection-start-column="44" selection-end-line="242" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/utils/SendEmailUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/base/MonkeyCommand.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="233" column="32" lean-forward="true" selection-start-line="233" selection-start-column="32" selection-end-line="233" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monkey/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="52" />
           <folding />
         </state>
       </provider>

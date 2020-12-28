@@ -1,1 +1,1 @@
-com.zhidao.testapplication
+com.mogo.launcher.f

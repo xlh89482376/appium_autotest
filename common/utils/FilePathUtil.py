@@ -8,7 +8,7 @@ class FilePathUtil():
     def __init__(self):
         self.log4py = LoggingController()
         # self.project_path = os.getcwd().split("common")[0]
-        # self.monkey_config = self.project_path + "config" + os.sep + "monkey.ini"
+        # self.monkey_config = self.project_path + "config" + os.sep + "launcher.ini"
         # self.monkey_log = self.project_path + "monkey" + os.sep + "logs"
 
     def get_project_path(self):
@@ -17,7 +17,7 @@ class FilePathUtil():
         return project_path
 
     def get_monkey_config_path(self):
-        monkey_config_path = self.get_project_path() + "config" + os.sep + "monkey.ini"
+        monkey_config_path = self.get_project_path() + "config" + os.sep + "launcher.ini"
         return monkey_config_path
 
     def get_broadcast_path(self):

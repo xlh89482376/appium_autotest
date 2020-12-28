@@ -1,0 +1,72 @@
+:Monkey: seed=21537 count=10
+:AllowPackage: com.mogo.launcher.f
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Selecting main activities from category android.intent.category.LAUNCHER
+//   - NOT USING main activity cn.kuwo.kwmusiccar.WelcomeActivity (from package cn.kuwo.kwmusiccar)
+//   - NOT USING main activity com.abupdate.fota_demo_iot.view.activity.MainActivity (from package com.abupdate.fota_demo_iot)
+//   - NOT USING main activity com.android.contacts.activities.PeopleActivity (from package com.android.contacts)
+//   - NOT USING main activity com.android.dialer.DialtactsActivity (from package com.android.dialer)
+//   - NOT USING main activity com.android.messaging.ui.conversationlist.ConversationListActivity (from package com.android.messaging)
+//   - NOT USING main activity com.android.settings.Settings (from package com.android.settings)
+//   - NOT USING main activity com.autonavi.auto.remote.fill.UsbFillActivity (from package com.autonavi.amapauto)
+//   - NOT USING main activity com.zhidao.bluetooth.ui.MainActivity (from package com.zhidao.bluetooth)
+//   - NOT USING main activity com.zhidao.bluetooth.ui.MusicActivity (from package com.zhidao.bluetooth)
+//   + Using main activity com.zhidao.mogo.module.main.launcher.MainLauncherActivity (from package com.mogo.launcher.f)
+//   - NOT USING main activity com.android.documentsui.LauncherActivity (from package com.android.documentsui)
+//   - NOT USING main activity com.logtool.zhidaohulian.MainActivity (from package com.logtool.zhidaohulian)
+//   - NOT USING main activity com.ximalaya.ting.android.car.business.module.splash.WelActivity (from package com.ximalaya.ting.android.car)
+//   - NOT USING main activity com.zhidao.fpersonalcenter.activity.MainActivity (from package com.zhidao.auto.personal)
+//   - NOT USING main activity com.zhidao.autopilot.MainActivity (from package com.zhidao.autopilot)
+//   - NOT USING main activity com.zhidao.carcorder.ui.main.CarRecordActivity (from package com.zhidao.carcorder)
+//   - NOT USING main activity com.squareup.leakcanary.internal.DisplayLeakActivity (from package com.zhidao.guide.lock)
+//   - NOT USING main activity com.zhidao.services.MainActivity (from package com.zhidao.services)
+//   - NOT USING main activity com.zhidao.settings.main.MainActivity_ (from package com.zhidao.settings)
+//   - NOT USING main activity com.zhidao.video.ui.activity.MainActivity (from package com.zhidao.video)
+//   - NOT USING main activity com.zhidao.weather.view.activity.WeatherActivity (from package com.zhidao.weather)
+//   - NOT USING main activity com.iflytek.inputmethod.pad.WizardActivity (from package com.iflytek.inputmethod.pad)
+//   - NOT USING main activity org.qiyi.android.video.MainActivity (from package com.qiyi.video.pad)
+//   - NOT USING main activity com.zhidao.yiche.MainActivity (from package com.zhidao.anxinbao)
+//   - NOT USING main activity com.zhidao.yiche.MainActivity (from package com.zhidao.yiche)
+//   - NOT USING main activity com.zhidao.yiche.MainActivity (from package com.zhidao.yiche.price)
+//   - NOT USING main activity com.zhidao.yiche.MainActivity (from package com.zhidao.yiche.taoche)
+// Selecting main activities from category android.intent.category.MONKEY
+//   - NOT USING main activity com.android.settings.Settings$RunningServicesActivity (from package com.android.settings)
+//   - NOT USING main activity com.android.settings.Settings$StorageUseActivity (from package com.android.settings)
+// Seeded: 21537
+// Event percentages:
+//   0: 15.0%
+//   1: 10.0%
+//   2: 2.0%
+//   3: 15.0%
+//   4: -0.0%
+//   5: -0.0%
+//   6: 25.0%
+//   7: 15.0%
+//   8: 2.0%
+//   9: 2.0%
+//   10: 1.0%
+//   11: 13.0%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.mogo.launcher.f/com.zhidao.mogo.module.main.launcher.MainLauncherActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.mogo.launcher.f/com.zhidao.mogo.module.main.launcher.MainLauncherActivity } in package com.mogo.launcher.f
+Sleeping for 300 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(977.0,331.0)
+    // Injection Failed
+:Sending Touch (ACTION_UP): 0:(976.05585,332.1171)
+    // Injection Failed
+Sleeping for 300 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(577.0,808.0)
+    // Injection Failed
+:Sending Touch (ACTION_UP): 0:(573.9127,814.8559)
+    // Injection Failed
+Sleeping for 300 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-3.0)
+Events injected: 10
+:Sending rotation degree=0, persist=false
+:Dropped: keys=0 pointers=4 trackballs=0 flips=0 rotations=0
+## Network stats: elapsed time=995ms (0ms mobile, 0ms wifi, 995ms not connected)
+// Monkey finished
