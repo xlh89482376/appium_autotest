@@ -8,12 +8,15 @@ from common.utils.SendEmailUtil import SendMail
 from common.utils import timeout_command
 from jinja2 import Environment, PackageLoader
 from common.utils.DateTimeUtil import DateTimeManager
+from common.base.Mogo import Mogo
 
 Project_Path = os.getcwd().split('appium_autotest')[0] + 'appium_autotest' + os.sep + 'monkey' + os.sep
 # Monkey_Config_Path = FilePathUtil().get_monkey_config_path()
 
+cmd = Cmd()
 
-class MonkeyCmd(object):
+
+class MonkeyCmd():
 
     def __init__(self, serialno, config_path):
         self.config_path = config_path
@@ -45,6 +48,9 @@ class MonkeyCmd(object):
         self.time = DateTimeManager().getCurrentDate()
         self.result = None
         self.color = ''
+        self.sn = cmd.get_device_SN()
+        self.mogo = Mogo(self.sn)
+        self.device_name = self.mogo.set_product()
 
     # def __repr__(self):
     #     return repr(self.__dict__)
@@ -146,8 +152,6 @@ class MonkeyCmd(object):
 
             app_list = []
 
-        cmd = Cmd()
-
         sn = cmd.get_device_SN()
 
         return serialno_list, throttle, count, rcpt_list, apps_list, sn, self.tester, self.time, self.app_name
@@ -242,7 +246,7 @@ class MonkeyCmd(object):
 
         template = env.get_template("report.html")
 
-        content = template.render(apps_list=apps_list, crash_cnt=crash_cnt, anr_cnt=anr_cnt, result=self.result, tester=tester, time=time, app_name=app_name, device_name=self.__serialno, sn=sn, total_time=total_time, crash_file_dict=crash_file_dict, anr_file_dict=anr_file_dict, color=self.color)
+        content = template.render(apps_list=apps_list, crash_cnt=crash_cnt, anr_cnt=anr_cnt, result=self.result, tester=tester, time=time, app_name=app_name, device_name=self.device_name, sn=self.sn, total_time=total_time, crash_file_dict=crash_file_dict, anr_file_dict=anr_file_dict, color=self.color)
 
         status, reason = SendMail(self.config_path).send_mail(rcpt_list, subject, content, att_list=att_list)
         if status:
@@ -255,7 +259,7 @@ if __name__ == '__main__':
     sn = cmd.get_device_sno()
     mk = MonkeyCmd(sn)
     # mk.init()
-    mk.monkey_test()
-    # mk.monkey_stop()
+    # mk.monkey_test()
+    mk.monkey_stop()
 
     # mk.init()

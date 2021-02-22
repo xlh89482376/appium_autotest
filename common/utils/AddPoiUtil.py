@@ -19,13 +19,13 @@ class AddPoiUtil():
         self.__env = env
         self.path = None
         if self.__env == 'online':
-            self.path = r'https://dzt.xxxxxx.com/deva/pc/pathAndPoi/no/addInfo'
+            self.path = r'https://dzt.xxxxxxxx.com/deva/pc/pathAndPoi/no/addInfo'
         else:
-            self.path = r'https://dzt-test.xxxxxxxxx.com/deva/pc/pathAndPoi/no/addInfo'
+            self.path = r'https://dzt-test.xxxxxxxxxx.com/deva/pc/pathAndPoi/no/addInfo'
 
     def get_data(self, poi_type, direction, lat, lon):
         data = {
-            "uploadUser": "123",
+            " uploadUser": "123",
             "sn": 'ZD802B1932L00622',
             "sourceType": '10003',  # 新鲜事
             "poiType": poi_type,  # 交通检查
@@ -48,9 +48,11 @@ class AddPoiUtil():
         print(r.json())
 
 if __name__ == '__main__':
+    print(int(round(time.time() * 1000)))
+    print(int(str((time.mktime(time.strptime((datetime.datetime.now() + datetime.timedelta(days=3)).strftime("%Y-%m-%d 00:00:00"), '%Y-%m-%d %H:%M:%S'))) * 1000).split(".")[0]))
     env = 'qa'
     a = AddPoiUtil(env)
-    a.add_poi(a.poi_type['封路'], 180, 39.966487, 116.407653)
+    a.add_poi(a.poi_type['封路'], 180, 39.963789,116.407674)
 
 
 
