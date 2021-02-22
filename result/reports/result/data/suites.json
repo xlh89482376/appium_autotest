@@ -1,0 +1,43 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "scripts",
+    "children" : [ {
+      "name" : "test_share",
+      "children" : [ {
+        "name" : "Test_share",
+        "children" : [ {
+          "name" : "test_shigu",
+          "uid" : "deb3e5ad4d51c800",
+          "parentUid" : "d8993912a6cc471842c3d5279a7b08e2",
+          "status" : "passed",
+          "time" : {
+            "start" : 1597657614854,
+            "stop" : 1597657618913,
+            "duration" : 4059
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_trigger_shigu",
+          "uid" : "5f747da0dc4db092",
+          "parentUid" : "d8993912a6cc471842c3d5279a7b08e2",
+          "status" : "passed",
+          "time" : {
+            "start" : 1597657628581,
+            "stop" : 1597657662445,
+            "duration" : 33864
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "d8993912a6cc471842c3d5279a7b08e2"
+      } ],
+      "uid" : "c6bc0aacd3911176819b5a2c8bb45c76"
+    } ],
+    "uid" : "af586ea5ffb1b57fad0f98a55a6d147c"
+  } ]
+}

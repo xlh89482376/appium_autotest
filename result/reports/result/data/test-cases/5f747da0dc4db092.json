@@ -1,0 +1,282 @@
+{
+  "uid" : "5f747da0dc4db092",
+  "name" : "test_trigger_shigu",
+  "fullName" : "scripts.test_share.Test_share#test_trigger_shigu",
+  "historyId" : "fa8ac7bee61ab40ac8ee87022740feb8",
+  "time" : {
+    "start" : 1597657628581,
+    "stop" : 1597657662445,
+    "duration" : 33864
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "re_set_ll_obj",
+    "time" : {
+      "start" : 1597657586288,
+      "stop" : 1597657586289,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "fake_location_1",
+    "time" : {
+      "start" : 1597657618927,
+      "stop" : 1597657628579,
+      "duration" : 9652
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "记录时间",
+    "time" : {
+      "start" : 1597657586285,
+      "stop" : 1597657586287,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "__pytest_repeat_step_number",
+    "time" : {
+      "start" : 1597657618925,
+      "stop" : 1597657618925,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "初始化driver",
+    "time" : {
+      "start" : 1597657565919,
+      "stop" : 1597657586284,
+      "duration" : 20365
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "清理历史数据",
+    "time" : {
+      "start" : 1597657565880,
+      "stop" : 1597657565919,
+      "duration" : 39
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "清理logcat",
+    "time" : {
+      "start" : 1597657618926,
+      "stop" : 1597657618926,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "apm",
+    "time" : {
+      "start" : 1597657618926,
+      "stop" : 1597657618927,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "re_share_obj",
+    "time" : {
+      "start" : 1597657586287,
+      "stop" : 1597657586288,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "点击事故按钮",
+      "time" : {
+        "start" : 1597657628581,
+        "stop" : 1597657662445,
+        "duration" : 33864
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "apm",
+        "value" : "<common.baseapi.BaseAppiumApi.BaseAppiumApi object at 0x12b254590>"
+      }, {
+        "name" : "re_share_obj",
+        "value" : "<page_intel.share.share object at 0x12b254350>"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "e1fbe0c70fa92e99",
+      "name" : "log",
+      "source" : "e1fbe0c70fa92e99.txt",
+      "type" : "text/plain",
+      "size" : 2765
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "记录时间::0",
+    "time" : {
+      "start" : 1597657662456,
+      "stop" : 1597657662460,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "清理历史数据::0",
+    "time" : {
+      "start" : 1597657662461,
+      "stop" : 1597657665396,
+      "duration" : 2935
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "清理logcat::0",
+    "time" : {
+      "start" : 1597657662447,
+      "stop" : 1597657662454,
+      "duration" : 7
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "验证触发分享事故"
+  }, {
+    "name" : "feature",
+    "value" : "触发"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "parentSuite",
+    "value" : "scripts"
+  }, {
+    "name" : "suite",
+    "value" : "test_share"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_share"
+  }, {
+    "name" : "host",
+    "value" : "xuanlonghuadeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "9378-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test_share"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5f747da0dc4db092.json",
+  "parameterValues" : [ ]
+}

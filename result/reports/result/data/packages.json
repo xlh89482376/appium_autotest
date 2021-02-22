@@ -1,0 +1,35 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "scripts.test_share",
+    "children" : [ {
+      "name" : "test_shigu",
+      "uid" : "deb3e5ad4d51c800",
+      "parentUid" : "5fddb14fd3b261a035c7d4da9b5f0f91",
+      "status" : "passed",
+      "time" : {
+        "start" : 1597657614854,
+        "stop" : 1597657618913,
+        "duration" : 4059
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_trigger_shigu",
+      "uid" : "5f747da0dc4db092",
+      "parentUid" : "5fddb14fd3b261a035c7d4da9b5f0f91",
+      "status" : "passed",
+      "time" : {
+        "start" : 1597657628581,
+        "stop" : 1597657662445,
+        "duration" : 33864
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "scripts.test_share"
+  } ]
+}

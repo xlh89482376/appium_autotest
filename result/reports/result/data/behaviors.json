@@ -1,0 +1,47 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "分享",
+    "children" : [ {
+      "name" : "验证分享事故",
+      "children" : [ {
+        "name" : "test_shigu",
+        "uid" : "deb3e5ad4d51c800",
+        "parentUid" : "5438456760ae89b4fa74d5995f717fca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1597657614854,
+          "stop" : 1597657618913,
+          "duration" : 4059
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5438456760ae89b4fa74d5995f717fca"
+    } ],
+    "uid" : "db37fde5782d71cb71deccaff5cf4a90"
+  }, {
+    "name" : "触发",
+    "children" : [ {
+      "name" : "验证触发分享事故",
+      "children" : [ {
+        "name" : "test_trigger_shigu",
+        "uid" : "5f747da0dc4db092",
+        "parentUid" : "cf4cfe9ce53df2608175879058a6f09b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1597657628581,
+          "stop" : 1597657662445,
+          "duration" : 33864
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cf4cfe9ce53df2608175879058a6f09b"
+    } ],
+    "uid" : "c84ffbef0799269cf02af7c5fe14d5dd"
+  } ]
+}

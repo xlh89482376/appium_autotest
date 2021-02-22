@@ -1,0 +1,21 @@
+[ {
+  "uid" : "5f747da0dc4db092",
+  "name" : "test_trigger_shigu",
+  "time" : {
+    "start" : 1597657628581,
+    "stop" : 1597657662445,
+    "duration" : 33864
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "deb3e5ad4d51c800",
+  "name" : "test_shigu",
+  "time" : {
+    "start" : 1597657614854,
+    "stop" : 1597657618913,
+    "duration" : 4059
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+} ]

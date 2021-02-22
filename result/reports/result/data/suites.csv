@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Aug 17 17:47:08 CST 2020","Mon Aug 17 17:47:42 CST 2020","33864","scripts","test_share","Test_share","","","test_trigger_shigu",""
+"passed","Mon Aug 17 17:46:54 CST 2020","Mon Aug 17 17:46:58 CST 2020","4059","scripts","test_share","Test_share","","","test_shigu",""
