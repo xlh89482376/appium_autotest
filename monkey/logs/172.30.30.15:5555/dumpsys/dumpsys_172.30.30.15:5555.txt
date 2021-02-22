@@ -1,0 +1,1279 @@
+ACTIVITY MANAGER PENDING INTENTS (dumpsys activity intents)
+  * PendingIntentRecord{a8ca323 com.zhidao.weather startService}
+  * PendingIntentRecord{7a85020 android broadcastIntent}
+  * PendingIntentRecord{3d40dd9 android broadcastIntent}
+  * PendingIntentRecord{c58339e android broadcastIntent}
+  * PendingIntentRecord{b7c4e7f com.qualcomm.qti.qs broadcastIntent}
+  * PendingIntentRecord{4f91093 com.ximalaya.ting.android.car broadcastIntent (whitelist: +30s0ms)}
+  * PendingIntentRecord{9124e4c com.qualcomm.qti.qs broadcastIntent}
+  * PendingIntentRecord{b6eae95 com.zhidao.iot.iotservice broadcastIntent}
+  * PendingIntentRecord{38febaa com.abupdate.fota_demo_iot broadcastIntent}
+  * PendingIntentRecord{33c0338 com.qualcomm.embms broadcastIntent}
+  * PendingIntentRecord{ed89f11 android broadcastIntent}
+  * PendingIntentRecord{672e49a android startActivity}
+  * PendingIntentRecord{ad91876 com.qualcomm.qti.qs broadcastIntent}
+  * PendingIntentRecord{5278e77 com.android.phone broadcastIntent}
+  * PendingIntentRecord{64a1ae4 android broadcastIntent}
+  * PendingIntentRecord{67c9b13 android broadcastIntent}
+  * PendingIntentRecord{e000150 android broadcastIntent}
+  * PendingIntentRecord{a471f49 android broadcastIntent}
+  * PendingIntentRecord{746c04e com.qualcomm.qti.qs broadcastIntent}
+  * PendingIntentRecord{20bd56f com.qualcomm.qti.qs broadcastIntent}
+  * PendingIntentRecord{cebe27c com.qualcomm.qti.qs broadcastIntent}
+  * PendingIntentRecord{7596705 android startActivity}
+  * PendingIntentRecord{152935a android startActivity}
+  * PendingIntentRecord{92d2182 com.ximalaya.ting.android.car startActivity (whitelist: +30s0ms)}
+  * PendingIntentRecord{242fc2c android startActivity}
+  * PendingIntentRecord{aaa598b com.android.phone broadcastIntent}
+  * PendingIntentRecord{e52aa68 android broadcastIntent}
+  * PendingIntentRecord{d8e6e81 android broadcastIntent}
+  * PendingIntentRecord{4168b26 android broadcastIntent}
+  * PendingIntentRecord{170b1ab android startActivity}
+  * PendingIntentRecord{b0fd3ce com.ximalaya.ting.android.car broadcastIntent (whitelist: +30s0ms)}
+  * PendingIntentRecord{5cb08d0 com.ximalaya.ting.android.car broadcastIntent (whitelist: +30s0ms)}
+  * PendingIntentRecord{1630367 com.qualcomm.qti.qs broadcastIntent}
+  * PendingIntentRecord{50250c9 com.ximalaya.ting.android.car broadcastIntent (whitelist: +30s0ms)}
+  * PendingIntentRecord{adc0514 com.qualcomm.qti.qs broadcastIntent}
+  * PendingIntentRecord{201cd50 com.zhidao.socketservice broadcastIntent}
+  * PendingIntentRecord{1d033b2 android broadcastIntent}
+  * PendingIntentRecord{3126f03 android broadcastIntent}
+  * PendingIntentRecord{bfe5e80 android startActivity}
+  * PendingIntentRecord{3196cb9 com.qualcomm.qti.qs broadcastIntent}
+  * PendingIntentRecord{109d8fe com.qualcomm.qti.qs broadcastIntent}
+  * PendingIntentRecord{3c2f85f android broadcastIntent}
+
+ACTIVITY MANAGER BROADCAST STATE (dumpsys activity broadcasts)
+  Historical broadcasts [foreground]:
+  #0: BroadcastRecord{332fb49 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #1: BroadcastRecord{8bb6c4e u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #2: BroadcastRecord{521116f u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #3: BroadcastRecord{d3e6e7c u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #4: BroadcastRecord{9270305 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #5: BroadcastRecord{a2ae2ac u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #6: BroadcastRecord{25b1b75 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #7: BroadcastRecord{4a6870a u-1 android.intent.action.CLOSE_SYSTEM_DIALOGS}
+    act=android.intent.action.CLOSE_SYSTEM_DIALOGS flg=0x50000010 (has extras)
+    extras: Bundle[{reason=homekey}]
+  #8: BroadcastRecord{3c8bb7b u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #9: BroadcastRecord{1b97d98 u-1 android.intent.action.CONFIGURATION_CHANGED}
+    act=android.intent.action.CONFIGURATION_CHANGED flg=0x70000010
+  #10: BroadcastRecord{bcef9f1 u0 android.intent.action.USER_UNLOCKED}
+    act=android.intent.action.USER_UNLOCKED flg=0x50000010 (has extras)
+    extras: Bundle[{android.intent.extra.user_handle=0}]
+  #11: BroadcastRecord{8ae09d6 u-1 android.media.VOLUME_CHANGED_ACTION}
+    act=android.media.VOLUME_CHANGED_ACTION flg=0x14000010 (has extras)
+    extras: Bundle[{android.media.EXTRA_VOLUME_STREAM_TYPE_ALIAS=3, android.media.EXTRA_VOLUME_STREAM_TYPE=9, android.media.EXTRA_VOLUME_STREAM_VALUE=10, android.media.EXTRA_PREV_VOLUME_STREAM_VALUE=15}]
+  #12: BroadcastRecord{a9d9457 u-1 android.media.VOLUME_CHANGED_ACTION}
+    act=android.media.VOLUME_CHANGED_ACTION flg=0x14000010 (has extras)
+    extras: Bundle[{android.media.EXTRA_VOLUME_STREAM_TYPE_ALIAS=3, android.media.EXTRA_VOLUME_STREAM_TYPE=9, android.media.EXTRA_VOLUME_STREAM_VALUE=10, android.media.EXTRA_PREV_VOLUME_STREAM_VALUE=15}]
+  #13: BroadcastRecord{a94db44 u-1 android.media.VOLUME_CHANGED_ACTION}
+    act=android.media.VOLUME_CHANGED_ACTION flg=0x14000010 (has extras)
+    extras: Bundle[{android.media.EXTRA_VOLUME_STREAM_TYPE_ALIAS=2, android.media.EXTRA_VOLUME_STREAM_TYPE=8, android.media.EXTRA_VOLUME_STREAM_VALUE=0, android.media.EXTRA_PREV_VOLUME_STREAM_VALUE=15}]
+  #14: BroadcastRecord{6c8442d u-1 android.media.VOLUME_CHANGED_ACTION}
+    act=android.media.VOLUME_CHANGED_ACTION flg=0x14000010 (has extras)
+    extras: Bundle[{android.media.EXTRA_VOLUME_STREAM_TYPE_ALIAS=2, android.media.EXTRA_VOLUME_STREAM_TYPE=7, android.media.EXTRA_VOLUME_STREAM_VALUE=0, android.media.EXTRA_PREV_VOLUME_STREAM_VALUE=7}]
+  #15: BroadcastRecord{fd8ed62 u-1 android.media.VOLUME_CHANGED_ACTION}
+    act=android.media.VOLUME_CHANGED_ACTION flg=0x14000010 (has extras)
+    extras: Bundle[{android.media.EXTRA_VOLUME_STREAM_TYPE_ALIAS=2, android.media.EXTRA_VOLUME_STREAM_TYPE=5, android.media.EXTRA_VOLUME_STREAM_VALUE=0, android.media.EXTRA_PREV_VOLUME_STREAM_VALUE=7}]
+  #16: BroadcastRecord{37d1ef3 u-1 android.media.VOLUME_CHANGED_ACTION}
+    act=android.media.VOLUME_CHANGED_ACTION flg=0x14000010 (has extras)
+    extras: Bundle[{android.media.EXTRA_VOLUME_STREAM_TYPE_ALIAS=2, android.media.EXTRA_VOLUME_STREAM_TYPE=1, android.media.EXTRA_VOLUME_STREAM_VALUE=0, android.media.EXTRA_PREV_VOLUME_STREAM_VALUE=7}]
+  #17: BroadcastRecord{ea667b0 u-1 android.intent.action.USER_SWITCHED}
+    act=android.intent.action.USER_SWITCHED flg=0x50000010 (has extras)
+    extras: Bundle[{android.intent.extra.user_handle=0}]
+  #18: BroadcastRecord{291f629 u0 android.intent.action.USER_FOREGROUND}
+    act=android.intent.action.USER_FOREGROUND flg=0x50000010 (has extras)
+    extras: Bundle[{android.intent.extra.user_handle=0}]
+  #19: BroadcastRecord{ddc7dae u0 android.intent.action.USER_STARTED}
+    act=android.intent.action.USER_STARTED flg=0x50000010 (has extras)
+    extras: Bundle[{android.intent.extra.user_handle=0}]
+  #20: BroadcastRecord{7c0b74f u0 android.hardware.usb.action.USB_DEVICE_ATTACHED}
+    act=android.hardware.usb.action.USB_DEVICE_ATTACHED flg=0x10000010 (has extras)
+    extras: Bundle[{device=UsbDevice[mName=/dev/bus/usb/001/004,mVendorId=1155,mProductId=22336,mClass=2,mSubclass=2,mProtocol=0,mManufacturerName=STMicroelectronics,mProductName=STM32 Virtual ComPort,mVersion=2.0,mSerialNumber=208030605242,mConfigurations=[
+UsbConfiguration[mId=1,mName=null,mAttributes=192,mMaxPower=50,mInterfaces=[
+UsbInterface[mId=0,mAlternateSetting=0,mName=null,mClass=2,mSubclass=2,mProtocol=1,mEndpoints=[
+UsbEndpoint[mAddress=130,mAttributes=3,mMaxPacketSize=8,mInterval=16]]
+UsbInterface[mId=1,mAlternateSetting=0,mName=null,mClass=10,mSubclass=0,mProtocol=0,mEndpoints=[
+UsbEndpoint[mAddress=1,mAttributes=2,mMaxPacketSize=64,mInterval=0]
+UsbEndpoint[mAddress=129,mAttributes=2,mMaxPacketSize=64,mInterval=0]]]]}]
+  #21: BroadcastRecord{b024edc u0 android.hardware.usb.action.USB_DEVICE_ATTACHED}
+    act=android.hardware.usb.action.USB_DEVICE_ATTACHED flg=0x10000010 (has extras)
+    extras: Bundle[{device=UsbDevice[mName=/dev/bus/usb/001/005,mVendorId=8146,mProductId=24577,mClass=239,mSubclass=2,mProtocol=1,mManufacturerName=Melfas,mProductName=LGDisplay Incell Touch,mVersion=2.0,mSerialNumber=null,mConfigurations=[
+UsbConfiguration[mId=1,mName=null,mAttributes=224,mMaxPower=50,mInterfaces=[
+UsbInterface[mId=0,mAlternateSetting=0,mName=Touch Interface,mClass=3,mSubclass=0,mProtocol=0,mEndpoints=[
+UsbEndpoint[mAddress=1,mAttributes=3,mMaxPacketSize=64,mInterval=1]
+UsbEndpoint[mAddress=130,mAttributes=3,mMaxPacketSize=64,mInterval=1]]
+UsbInterface[mId=1,mAlternateSetting=0,mName=Custom Interface,mClass=3,mSubclass=0,mProtocol=0,mEndpoints=[
+UsbEndpoint[mAddress=3,mAttributes=3,mMaxPacketSize=64,mInterval=1]
+UsbEndpoint[mAddress=132,mAttributes=3,mMaxPacketSize=64,mInterval=1]]]]}]
+  #22: BroadcastRecord{e2acbe5 u-1 android.hardware.usb.action.USB_STATE}
+    act=android.hardware.usb.action.USB_STATE flg=0x30000010 (has extras)
+    extras: Bundle[{host_connected=false, rmnet_ipa=true, serial_smd=true, connected=false, unlocked=false, adb=true, diag=true, configured=false}]
+  #23: BroadcastRecord{a76c6ba u-1 android.intent.action.CONFIGURATION_CHANGED}
+    act=android.intent.action.CONFIGURATION_CHANGED flg=0x70000010
+  #24: act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    0 dispatch +19ms finish
+    enq=2021-02-22 20:16:00 disp=2021-02-22 20:16:00 fin=2021-02-22 20:16:00
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #25: act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    +1ms dispatch +15ms finish
+    enq=2021-02-22 20:15:00 disp=2021-02-22 20:15:00 fin=2021-02-22 20:15:00
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #26: act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    +19ms dispatch +22ms finish
+    enq=2021-02-22 20:14:00 disp=2021-02-22 20:14:00 fin=2021-02-22 20:14:00
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #27: act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    0 dispatch +15ms finish
+    enq=2021-02-22 20:13:00 disp=2021-02-22 20:13:00 fin=2021-02-22 20:13:00
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #28: act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    0 dispatch +26ms finish
+    enq=2021-02-22 20:11:59 disp=2021-02-22 20:11:59 fin=2021-02-22 20:12:00
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #29: act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    0 dispatch +18ms finish
+    enq=2021-02-22 20:10:59 disp=2021-02-22 20:10:59 fin=2021-02-22 20:11:00
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #30: act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    0 dispatch +26ms finish
+    enq=2021-02-22 20:10:00 disp=2021-02-22 20:10:00 fin=2021-02-22 20:10:00
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #31: act=android.intent.action.CLOSE_SYSTEM_DIALOGS flg=0x50000010 (has extras)
+    0 dispatch 0 finish
+    enq=2021-02-22 20:09:38 disp=2021-02-22 20:09:38 fin=2021-02-22 20:09:38
+    extras: Bundle[{reason=homekey}]
+  #32: act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    0 dispatch +39ms finish
+    enq=2021-02-22 20:09:00 disp=2021-02-22 20:09:00 fin=2021-02-22 20:09:00
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #33: act=android.intent.action.CONFIGURATION_CHANGED flg=0x70000010
+    +6ms dispatch 0 finish
+    enq=2021-02-22 20:08:52 disp=2021-02-22 20:08:52 fin=2021-02-22 20:08:52
+  #34: act=android.intent.action.USER_UNLOCKED flg=0x50000010 (has extras)
+    +2ms dispatch 0 finish
+    enq=2021-02-22 20:08:52 disp=2021-02-22 20:08:52 fin=2021-02-22 20:08:52
+    extras: Bundle[{android.intent.extra.user_handle=0}]
+  #35: act=android.media.VOLUME_CHANGED_ACTION flg=0x14000010 (has extras)
+    +3ms dispatch 0 finish
+    enq=2021-02-22 20:08:50 disp=2021-02-22 20:08:50 fin=2021-02-22 20:08:50
+    extras: Bundle[{android.media.EXTRA_VOLUME_STREAM_TYPE_ALIAS=3, android.media.EXTRA_VOLUME_STREAM_TYPE=9, android.media.EXTRA_VOLUME_STREAM_VALUE=10, android.media.EXTRA_PREV_VOLUME_STREAM_VALUE=15}]
+  #36: act=android.media.VOLUME_CHANGED_ACTION flg=0x14000010 (has extras)
+    +1ms dispatch 0 finish
+    enq=2021-02-22 20:08:50 disp=2021-02-22 20:08:50 fin=2021-02-22 20:08:50
+    extras: Bundle[{android.media.EXTRA_VOLUME_STREAM_TYPE_ALIAS=3, android.media.EXTRA_VOLUME_STREAM_TYPE=9, android.media.EXTRA_VOLUME_STREAM_VALUE=10, android.media.EXTRA_PREV_VOLUME_STREAM_VALUE=15}]
+  #37: act=android.media.VOLUME_CHANGED_ACTION flg=0x14000010 (has extras)
+    +2ms dispatch 0 finish
+    enq=2021-02-22 20:08:50 disp=2021-02-22 20:08:50 fin=2021-02-22 20:08:50
+    extras: Bundle[{android.media.EXTRA_VOLUME_STREAM_TYPE_ALIAS=2, android.media.EXTRA_VOLUME_STREAM_TYPE=8, android.media.EXTRA_VOLUME_STREAM_VALUE=0, android.media.EXTRA_PREV_VOLUME_STREAM_VALUE=15}]
+  #38: act=android.media.VOLUME_CHANGED_ACTION flg=0x14000010 (has extras)
+    +4ms dispatch 0 finish
+    enq=2021-02-22 20:08:50 disp=2021-02-22 20:08:50 fin=2021-02-22 20:08:50
+    extras: Bundle[{android.media.EXTRA_VOLUME_STREAM_TYPE_ALIAS=2, android.media.EXTRA_VOLUME_STREAM_TYPE=7, android.media.EXTRA_VOLUME_STREAM_VALUE=0, android.media.EXTRA_PREV_VOLUME_STREAM_VALUE=7}]
+  #39: act=android.media.VOLUME_CHANGED_ACTION flg=0x14000010 (has extras)
+    0 dispatch 0 finish
+    enq=2021-02-22 20:08:50 disp=2021-02-22 20:08:50 fin=2021-02-22 20:08:50
+    extras: Bundle[{android.media.EXTRA_VOLUME_STREAM_TYPE_ALIAS=2, android.media.EXTRA_VOLUME_STREAM_TYPE=5, android.media.EXTRA_VOLUME_STREAM_VALUE=0, android.media.EXTRA_PREV_VOLUME_STREAM_VALUE=7}]
+  #40: act=android.media.VOLUME_CHANGED_ACTION flg=0x14000010 (has extras)
+    0 dispatch 0 finish
+    enq=2021-02-22 20:08:50 disp=2021-02-22 20:08:50 fin=2021-02-22 20:08:50
+    extras: Bundle[{android.media.EXTRA_VOLUME_STREAM_TYPE_ALIAS=2, android.media.EXTRA_VOLUME_STREAM_TYPE=1, android.media.EXTRA_VOLUME_STREAM_VALUE=0, android.media.EXTRA_PREV_VOLUME_STREAM_VALUE=7}]
+  #41: act=android.intent.action.USER_SWITCHED flg=0x50000010 (has extras)
+    +2ms dispatch 0 finish
+    enq=2021-02-22 20:08:50 disp=2021-02-22 20:08:50 fin=2021-02-22 20:08:50
+    extras: Bundle[{android.intent.extra.user_handle=0}]
+  #42: act=android.intent.action.USER_FOREGROUND flg=0x50000010 (has extras)
+    +2ms dispatch 0 finish
+    enq=2021-02-22 20:08:50 disp=2021-02-22 20:08:50 fin=2021-02-22 20:08:50
+    extras: Bundle[{android.intent.extra.user_handle=0}]
+  #43: act=android.intent.action.USER_STARTED flg=0x50000010 (has extras)
+    +3ms dispatch 0 finish
+    enq=2021-02-22 20:08:50 disp=2021-02-22 20:08:50 fin=2021-02-22 20:08:50
+    extras: Bundle[{android.intent.extra.user_handle=0}]
+  #44: act=android.hardware.usb.action.USB_DEVICE_ATTACHED flg=0x10000010 (has extras)
+    +6ms dispatch 0 finish
+    enq=2021-02-22 20:08:49 disp=2021-02-22 20:08:49 fin=2021-02-22 20:08:49
+    extras: Bundle[{device=UsbDevice[mName=/dev/bus/usb/001/004,mVendorId=1155,mProductId=22336,mClass=2,mSubclass=2,mProtocol=0,mManufacturerName=STMicroelectronics,mProductName=STM32 Virtual ComPort,mVersion=2.0,mSerialNumber=208030605242,mConfigurations=[
+UsbConfiguration[mId=1,mName=null,mAttributes=192,mMaxPower=50,mInterfaces=[
+UsbInterface[mId=0,mAlternateSetting=0,mName=null,mClass=2,mSubclass=2,mProtocol=1,mEndpoints=[
+UsbEndpoint[mAddress=130,mAttributes=3,mMaxPacketSize=8,mInterval=16]]
+UsbInterface[mId=1,mAlternateSetting=0,mName=null,mClass=10,mSubclass=0,mProtocol=0,mEndpoints=[
+UsbEndpoint[mAddress=1,mAttributes=2,mMaxPacketSize=64,mInterval=0]
+UsbEndpoint[mAddress=129,mAttributes=2,mMaxPacketSize=64,mInterval=0]]]]}]
+  #45: act=android.hardware.usb.action.USB_DEVICE_ATTACHED flg=0x10000010 (has extras)
+    0 dispatch 0 finish
+    enq=2021-02-22 20:08:49 disp=2021-02-22 20:08:49 fin=2021-02-22 20:08:49
+    extras: Bundle[{device=UsbDevice[mName=/dev/bus/usb/001/005,mVendorId=8146,mProductId=24577,mClass=239,mSubclass=2,mProtocol=1,mManufacturerName=Melfas,mProductName=LGDisplay Incell Touch,mVersion=2.0,mSerialNumber=null,mConfigurations=[
+UsbConfiguration[mId=1,mName=null,mAttributes=224,mMaxPower=50,mInterfaces=[
+UsbInterface[mId=0,mAlternateSetting=0,mName=Touch Interface,mClass=3,mSubclass=0,mProtocol=0,mEndpoints=[
+UsbEndpoint[mAddress=1,mAttributes=3,mMaxPacketSize=64,mInterval=1]
+UsbEndpoint[mAddress=130,mAttributes=3,mMaxPacketSize=64,mInterval=1]]
+UsbInterface[mId=1,mAlternateSetting=0,mName=Custom Interface,mClass=3,mSubclass=0,mProtocol=0,mEndpoints=[
+UsbEndpoint[mAddress=3,mAttributes=3,mMaxPacketSize=64,mInterval=1]
+UsbEndpoint[mAddress=132,mAttributes=3,mMaxPacketSize=64,mInterval=1]]]]}]
+  #46: act=android.hardware.usb.action.USB_STATE flg=0x30000010 (has extras)
+    0 dispatch 0 finish
+    enq=2021-02-22 20:08:49 disp=2021-02-22 20:08:49 fin=2021-02-22 20:08:49
+    extras: Bundle[{host_connected=false, rmnet_ipa=true, serial_smd=true, connected=false, unlocked=false, adb=true, diag=true, configured=false}]
+  #47: act=android.intent.action.CONFIGURATION_CHANGED flg=0x70000010
+    +1ms dispatch 0 finish
+    enq=2021-02-22 20:08:48 disp=2021-02-22 20:08:48 fin=2021-02-22 20:08:48
+
+  Historical broadcasts [background]:
+  #0: BroadcastRecord{365ff5a u-1 android.net.wifi.SCAN_RESULTS}
+    act=android.net.wifi.SCAN_RESULTS flg=0x4000010 (has extras)
+    extras: Bundle[{resultsUpdated=true}]
+  #1: BroadcastRecord{fd7558b u0 AUTONAVI_STANDARD_BROADCAST_SEND}
+    act=AUTONAVI_STANDARD_BROADCAST_SEND flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=72]
+  #2: BroadcastRecord{f41f668 u0 AUTONAVI_STANDARD_BROADCAST_SEND}
+    act=AUTONAVI_STANDARD_BROADCAST_SEND flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=72]
+  #3: BroadcastRecord{499ca81 u0 AUTONAVI_STANDARD_BROADCAST_RECV}
+    act=AUTONAVI_STANDARD_BROADCAST_RECV flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=100]
+  #4: BroadcastRecord{1f4b726 u0 AUTONAVI_STANDARD_BROADCAST_RECV}
+    act=AUTONAVI_STANDARD_BROADCAST_RECV flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=100]
+  #5: BroadcastRecord{263bf67 u-1 android.net.wifi.SCAN_RESULTS}
+    act=android.net.wifi.SCAN_RESULTS flg=0x4000010 (has extras)
+    extras: Bundle[{resultsUpdated=true}]
+  #6: BroadcastRecord{9741114 u0 com.zhidao.accountservice.ACTION_CLEAR_TOKEN}
+    act=com.zhidao.accountservice.ACTION_CLEAR_TOKEN flg=0x10
+  #7: BroadcastRecord{d178dbd u0 com.zhidao.accountservice.TOKEN_RESULT}
+    act=com.zhidao.accountservice.TOKEN_RESULT flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=524]
+  #8: BroadcastRecord{d651fb2 u0 com.zhidao.accountservice.LOGIN_RESULT}
+    act=com.zhidao.accountservice.LOGIN_RESULT flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=524]
+  #9: BroadcastRecord{962eb03 u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=260]
+  #10: BroadcastRecord{a0b2a80 u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=164]
+  #11: BroadcastRecord{cb448b9 u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=160]
+  #12: BroadcastRecord{f0184fe u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=160]
+  #13: BroadcastRecord{49f345f u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=148]
+  #14: BroadcastRecord{a386eac u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=168]
+  #15: BroadcastRecord{c7b775 u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=160]
+  #16: BroadcastRecord{86cf30a u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=160]
+  #17: BroadcastRecord{c2cb77b u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=168]
+  #18: BroadcastRecord{313c998 u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=172]
+  #19: BroadcastRecord{a6955f1 u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=172]
+  #20: BroadcastRecord{6f35d6 u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=176]
+  #21: BroadcastRecord{b455057 u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=180]
+  #22: BroadcastRecord{547e744 u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=160]
+  #23: BroadcastRecord{aac602d u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=164]
+  #24: BroadcastRecord{80d962 u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=180]
+  #25: BroadcastRecord{ce49af3 u0 AUTONAVI_STANDARD_BROADCAST_SEND}
+    act=AUTONAVI_STANDARD_BROADCAST_SEND flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=72]
+  #26: BroadcastRecord{f7e33b0 u0 AUTONAVI_STANDARD_BROADCAST_SEND}
+    act=AUTONAVI_STANDARD_BROADCAST_SEND flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=72]
+  #27: BroadcastRecord{69bd229 u-1 android.net.wifi.SCAN_RESULTS}
+    act=android.net.wifi.SCAN_RESULTS flg=0x4000010 (has extras)
+    extras: Bundle[{resultsUpdated=true}]
+  #28: BroadcastRecord{f1729ae u-1 android.net.wifi.SCAN_RESULTS}
+    act=android.net.wifi.SCAN_RESULTS flg=0x4000010 (has extras)
+    extras: Bundle[{resultsUpdated=true}]
+  #29: BroadcastRecord{623f34f u0 com.zhidao.accountservice.ACTION_CLEAR_TOKEN}
+    act=com.zhidao.accountservice.ACTION_CLEAR_TOKEN flg=0x10
+  #30: BroadcastRecord{f8adadc u0 com.zhidao.accountservice.TOKEN_RESULT}
+    act=com.zhidao.accountservice.TOKEN_RESULT flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=524]
+  #31: BroadcastRecord{ef667e5 u0 com.zhidao.accountservice.LOGIN_RESULT}
+    act=com.zhidao.accountservice.LOGIN_RESULT flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=524]
+  #32: BroadcastRecord{2b032ba u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=252]
+  #33: BroadcastRecord{a56756b u-1 com.android.server.action.NETWORK_STATS_UPDATED}
+    act=com.android.server.action.NETWORK_STATS_UPDATED flg=0x40000010
+  #34: BroadcastRecord{a58c8c8 u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=228]
+  #35: BroadcastRecord{7aa9d61 u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=220]
+  #36: BroadcastRecord{99ec086 u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=244]
+  #37: BroadcastRecord{4e4fd47 u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=216]
+  #38: BroadcastRecord{695a974 u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=264]
+  #39: BroadcastRecord{b12ae9d u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=216]
+  #40: BroadcastRecord{2965f12 u-1 android.net.wifi.SCAN_RESULTS}
+    act=android.net.wifi.SCAN_RESULTS flg=0x4000010 (has extras)
+    extras: Bundle[{resultsUpdated=true}]
+  #41: BroadcastRecord{4ea26e3 u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=224]
+  #42: BroadcastRecord{61de8e0 u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=224]
+  #43: BroadcastRecord{4f09799 u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=244]
+  #44: BroadcastRecord{1f75a5e u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=240]
+  #45: BroadcastRecord{68e4e3f u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=248]
+  #46: BroadcastRecord{a28b30c u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=252]
+  #47: BroadcastRecord{12a1455 u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=216]
+  #48: BroadcastRecord{fdabe6a u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=220]
+  #49: BroadcastRecord{6238f5b u0 com.zhidao.auto.wakeup.cmd.receiver}
+    act=com.zhidao.auto.wakeup.cmd.receiver flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=252]
+  #50: act=android.net.wifi.SCAN_RESULTS flg=0x4000010 (has extras)
+    0 dispatch +1ms finish
+    enq=2021-02-22 20:16:46 disp=2021-02-22 20:16:46 fin=2021-02-22 20:16:46
+    extras: Bundle[{resultsUpdated=true}]
+  ...
+
+  Sticky broadcasts for user -1:
+  * Sticky action android.intent.action.SERVICE_STATE
+  * Sticky action android.net.wifi.WIFI_STATE_CHANGED
+  * Sticky action android.net.wifi.p2p.CONNECTION_STATE_CHANGE
+  * Sticky action android.net.conn.TETHER_STATE_CHANGED
+  * Sticky action android.media.ACTION_SCO_AUDIO_STATE_UPDATED
+  * Sticky action android.intent.action.HEADSET_PLUG
+  * Sticky action android.intent.action.NETWORK_SET_TIME
+  * Sticky action android.net.wifi.p2p.THIS_DEVICE_CHANGED
+  * Sticky action android.intent.action.BATTERY_CHANGED
+  * Sticky action android.intent.action.ACTION_DEFAULT_SUBSCRIPTION_CHANGED
+  * Sticky action org.codeaurora.intent.action.ACTION_RADIO_CAPABILITY_UPDATED
+  * Sticky action android.intent.action.NETWORK_SET_TIMEZONE
+  * Sticky action android.net.conn.CONNECTIVITY_CHANGE
+  * Sticky action android.telephony.action.CARRIER_CONFIG_CHANGED
+  * Sticky action android.intent.action.RADIO_TECHNOLOGY
+  * Sticky action android.intent.action.ANY_DATA_STATE
+  * Sticky action android.provider.Telephony.SPN_STRINGS_UPDATED
+  * Sticky action android.net.nsd.STATE_CHANGED
+  * Sticky action android.hardware.usb.action.USB_STATE
+  * Sticky action android.net.wifi.RSSI_CHANGED
+  * Sticky action android.net.wifi.STATE_CHANGE
+  * Sticky action android.intent.action.SIM_STATE_CHANGED
+  * Sticky action android.intent.action.SIG_STR
+  * Sticky action android.intent.action.ACTION_DEFAULT_DATA_SUBSCRIPTION_CHANGED
+  * Sticky action android.media.INTERNAL_RINGER_MODE_CHANGED_ACTION
+  * Sticky action android.net.wifi.supplicant.STATE_CHANGE
+  * Sticky action android.net.wifi.p2p.PERSISTENT_GROUPS_CHANGED
+  * Sticky action android.net.conn.INET_CONDITION_ACTION
+  * Sticky action android.media.SCO_AUDIO_STATE_CHANGED
+  * Sticky action android.os.UpdateLock.UPDATE_LOCK_CHANGED
+  * Sticky action android.intent.action.internal_sim_state_changed
+  * Sticky action android.media.MASTER_MUTE_CHANGED_ACTION
+  * Sticky action wifi_scan_available
+  * Sticky action android.net.wifi.p2p.STATE_CHANGED
+  * Sticky action com.android.imscontection.DISCONNECTED
+  * Sticky action android.intent.action.HDMI_PLUGGED
+  * Sticky action android.media.RINGER_MODE_CHANGED
+
+  Sticky broadcasts for user 0:
+  * Sticky action com.qti.dpmframework.DPM_INTERNET_CONNECTED
+
+ACTIVITY MANAGER CONTENT PROVIDERS (dumpsys activity providers)
+  Published single-user content providers (by class):
+  * ContentProviderRecord{f887fb1 u0 com.android.providers.settings/.SettingsProvider}
+    proc=ProcessRecord{2a60fa2 1439:system/1000}
+    singleton=true
+    authority=settings
+    36 connections, 0 external handles
+      -> 1792:com.android.systemui/1000 s1/1 u0/0 +7m58s447ms
+      -> 2044:com.android.phone/1001 s1/1 u0/0 +7m57s705ms
+      -> 2025:.dataservices/1000 s1/1 u0/0 +7m56s800ms
+      -> 2395:com.zhidao.services/1000 s1/1 u0/0 +7m55s594ms
+      -> 2561:com.zhidao.carcorder/u0a91 s1/1 u0/0 +7m55s110ms
+      -> 2652:com.zhidao.guide.lock/1000 s1/1 u0/0 +7m54s833ms
+      -> 2679:com.zhidao.autopilot/u0a33 s1/1 u0/0 +7m54s224ms
+      -> 2842:android.process.media/u0a11 s1/1 u0/0 +7m54s124ms
+      -> 3026:com.zhidao.speech.adapter/u0a50 s1/1 u0/0 +7m53s412ms
+      -> 3108:com.zhidao.accountservice/u0a38 s1/1 u0/0 +7m52s989ms
+      -> 3155:com.zhidao.socketservice/u0a49 s1/1 u0/0 +7m52s717ms
+      -> 2977:com.qiyi.video.pad/u0a65 s1/1 u0/0 +7m52s662ms
+      -> 3196:cn.kuwo.kwmusiccar/u0a45 s1/1 u0/0 +7m52s582ms
+      -> 3277:cn.kuwo.kwmusiccar:remote/u0a45 s1/1 u0/0 +7m52s369ms
+      -> 3555:android.process.acore/u0a1 s1/1 u0/0 +7m51s390ms
+      -> 3533:com.qualcomm.qti.qs/1000 s1/1 u0/0 +7m51s313ms
+      -> 3629:com.android.messaging/u0a60 s1/1 u0/0 +7m50s943ms
+      -> 3757:com.autonavi.amapauto/u0a32 s1/1 u0/0 +7m50s497ms
+      -> 3799:com.autonavi.amapauto:selfupdate/u0a32 s1/1 u0/0 +7m50s367ms
+      -> 3849:com.qualcomm.embms:remote/u0a57 s1/1 u0/0 +7m49s936ms
+      -> 3959:com.autonavi.amapauto:locationservice/u0a32 s1/1 u0/0 +7m49s83ms
+      -> 4096:com.autonavi.amapauto:push/u0a32 s1/1 u0/0 +7m47s863ms
+      -> 2961:com.zhidao.speech/u0a61 s1/1 u0/0 +7m47s860ms
+      -> 4200:com.ximalaya.ting.android.car/u0a62 s1/1 u0/0 +7m46s947ms
+      -> 4254:com.iflytek.inputmethod.pad/u0a66 s1/1 u0/0 +7m45s960ms
+      -> 4294:com.zhidao.locationinfo/u0a31 s1/1 u0/0 +7m44s506ms
+      -> 4342:com.zhidao.iot.iotservice/u0a30 s1/1 u0/0 +7m44s213ms
+      -> 4325:com.zhidao.daemon/1000 s1/1 u0/0 +7m44s212ms
+      -> 4479:com.zhidao.upgrade/1000 s1/1 u0/0 +7m37s262ms
+      -> 3345:com.zhidao.weather/u0a56 s1/1 u0/0 +7m35s203ms
+      -> 4601:org.codeaurora.ims/1001 s1/1 u0/0 +7m33s478ms
+      -> 4677:com.qiyi.video.pad:bdservice_v1/u0a65 s1/1 u0/0 +7m30s11ms
+      -> 4785:com.zhidao.settings:process.main/1000 s1/1 u0/0 +7m25s193ms
+      -> 4701:com.android.cellbroadcastreceiver/u0a3 s1/1 u0/0 +7m22s331ms
+      -> 5821:com.mogo.launcher.f/1000 s1/1 u0/0 +16s95ms
+      -> 6011:com.android.settings/1000 s1/1 u0/0 +4s959ms
+  * ContentProviderRecord{7ec7c96 u0 com.android.providers.telephony/.HbpcdLookupProvider}
+    proc=ProcessRecord{cb08d40 2044:com.android.phone/1001}
+    singleton=true
+    authority=hbpcd_lookup
+  * ContentProviderRecord{faaf017 u0 com.android.providers.telephony/.TelephonyProvider}
+    proc=ProcessRecord{cb08d40 2044:com.android.phone/1001}
+    singleton=true
+    authority=telephony
+  * ContentProviderRecord{9b96c04 u0 com.android.providers.telephony/.SmsProvider}
+    proc=ProcessRecord{cb08d40 2044:com.android.phone/1001}
+    singleton=true
+    authority=sms
+  * ContentProviderRecord{1f465ed u0 android/com.android.server.am.DumpHeapProvider}
+    proc=ProcessRecord{2a60fa2 1439:system/1000}
+    singleton=true
+    authority=com.android.server.heapdump
+  * ContentProviderRecord{e6bcc22 u0 com.android.providers.telephony/.MmsSmsProvider}
+    proc=ProcessRecord{cb08d40 2044:com.android.phone/1001}
+    singleton=true
+    authority=mms-sms
+  * ContentProviderRecord{6476b3 u0 com.android.providers.telephony/.MmsProvider}
+    proc=ProcessRecord{cb08d40 2044:com.android.phone/1001}
+    singleton=true
+    authority=mms
+
+  Published user 0 content providers (by class):
+  * ContentProviderRecord{8634470 u0 com.logtool.zhidaohulian/com.tencent.mid.api.MidProvider}
+    proc=ProcessRecord{fbe73e9 2703:com.logtool.zhidaohulian/1000}
+    authority=com.logtool.zhidaohulian.TENCENT.MID.V4
+  * ContentProviderRecord{a9e886e u0 com.autonavi.amapauto/android.support.v4.content.FileProvider}
+    proc=ProcessRecord{44a4d33 3757:com.autonavi.amapauto/u0a32}
+    authority=com.autonavi.amapauto.bootstrap.fileProvider
+  * ContentProviderRecord{625cb0f u0 com.android.phone/.IccProvider}
+    proc=ProcessRecord{cb08d40 2044:com.android.phone/1001}
+    authority=icc
+  * ContentProviderRecord{e90379c u0 com.qualcomm.qti.appnetaccess/.AppNetAccessProvider}
+    proc=ProcessRecord{30165a5 4063:com.qualcomm.qti.appnetaccess/1000}
+    authority=com.qualcomm.qti.appnetaccess.AppNetAccessProvider
+  * ContentProviderRecord{72ebd7a u0 com.zhidao.weather/.provider.RemoteProvider}
+    proc=ProcessRecord{506b529 3345:com.zhidao.weather/u0a56}
+    authority=com.zeu.weather
+  * ContentProviderRecord{2fe092b u0 com.ximalaya.ting.android.car/.database.TingSharedDataContentProvider}
+    proc=ProcessRecord{6c4d72a 4200:com.ximalaya.ting.android.car/u0a62}
+    launchingApp=ProcessRecord{6c4d72a 4200:com.ximalaya.ting.android.car/u0a62}
+    authority=com.ximalaya.ting.android.util.TingSharedDataContentProvider2
+  * ContentProviderRecord{f373188 u0 com.android.providers.media/.MediaProvider}
+    proc=ProcessRecord{2c7b721 2842:android.process.media/u0a11}
+    authority=media
+  * ContentProviderRecord{d5b3746 u0 com.qiyi.video.pad/com.baidu.android.pushservice.PushInfoProvider}
+    proc=ProcessRecord{277311c 2977:com.qiyi.video.pad/u0a65}
+    authority=com.qiyi.video.pad.bdpush
+  * ContentProviderRecord{d20d07 u0 com.autonavi.amapauto/.socol.SocolParamsProvider}
+    proc=ProcessRecord{44a4d33 3757:com.autonavi.amapauto/u0a32}
+    authority=com.autonavi.amapautolite.provider.socol
+  * ContentProviderRecord{3d1de34 u0 com.qiyi.video.pad/com.facebook.FacebookContentProvider}
+    proc=ProcessRecord{277311c 2977:com.qiyi.video.pad/u0a65}
+    authority=com.facebook.app.FacebookContentProvider558274681001263
+  * ContentProviderRecord{247a45d u0 com.zhidao.carcorder/com.tencent.mid.api.MidProvider}
+    proc=ProcessRecord{6400c2d 2561:com.zhidao.carcorder/u0a91}
+    authority=com.zhidao.carcorder.TENCENT.MID.V4
+  * ContentProviderRecord{98381d2 u0 com.zhidao.upgrade/com.tencent.stat.SmartProvider}
+    proc=ProcessRecord{8f872a3 4479:com.zhidao.upgrade/1000}
+    authority=com.zhidao.upgrade.MTA.SmartProvider
+  * ContentProviderRecord{1c8a9a0 u0 com.android.cellbroadcastreceiver/.CellBroadcastContentProvider}
+    proc=ProcessRecord{7df2959 4701:com.android.cellbroadcastreceiver/u0a3}
+    authority=cellbroadcasts
+  * ContentProviderRecord{c73e91e u0 com.android.messaging/.datamodel.MediaScratchFileProvider}
+    proc=ProcessRecord{99595ff 3629:com.android.messaging/u0a60}
+    authority=com.android.messaging.datamodel.MediaScratchFileProvider
+  * ContentProviderRecord{a9ebfcc u0 com.android.providers.blockednumber/.BlockedNumberProvider}
+    proc=ProcessRecord{7d00215 3555:android.process.acore/u0a1}
+    authority=com.android.blockednumber
+  * ContentProviderRecord{571792a u0 com.zhidao.weather/.provider.RemoteProviderNew}
+    proc=ProcessRecord{506b529 3345:com.zhidao.weather/u0a56}
+    launchingApp=ProcessRecord{506b529 3345:com.zhidao.weather/u0a56}
+    authority=com.zhidao.weather
+  * ContentProviderRecord{4b7931b u0 com.android.providers.downloads/.DownloadProvider}
+    proc=ProcessRecord{2c7b721 2842:android.process.media/u0a11}
+    authority=downloads
+  * ContentProviderRecord{2de0cb8 u0 com.android.providers.contacts/.CallLogProvider}
+    proc=ProcessRecord{7d00215 3555:android.process.acore/u0a1}
+    launchingApp=ProcessRecord{7d00215 3555:android.process.acore/u0a1}
+    authority=call_log
+  * ContentProviderRecord{ebbaa91 u0 com.android.timerswitch/.provider.TimerSwitchProvider}
+    proc=ProcessRecord{105fdf6 4733:com.android.timerswitch/1000}
+    authority=com.android.timerswitch
+  * ContentProviderRecord{53245f7 u0 com.android.messaging/.datamodel.MessagingContentProvider}
+    proc=ProcessRecord{99595ff 3629:com.android.messaging/u0a60}
+    authority=com.android.messaging.datamodel.MessagingContentProvider
+  * ContentProviderRecord{bc33c64 u0 com.zhidao.upgrade/com.tencent.mid.api.MidProvider}
+    proc=ProcessRecord{8f872a3 4479:com.zhidao.upgrade/1000}
+    authority=com.zhidao.upgrade.TENCENT.MID.V4
+  * ContentProviderRecord{7df5ecd u0 com.qiyi.video.pad/org.qiyi.basecore.db.QiyiContentProvider}
+    proc=ProcessRecord{277311c 2977:com.qiyi.video.pad/u0a65}
+    authority=com.qiyi.video.pad
+  * ContentProviderRecord{88c0382 u0 com.qiyi.video.pad/org.qiyi.context.provider.QyContextProvider}
+    proc=ProcessRecord{277311c 2977:com.qiyi.video.pad/u0a65}
+    authority=com.qiyi.video.pad.qycontext
+  * ContentProviderRecord{53b4a93 u0 com.android.providers.contacts/.ContactMetadataProvider}
+    proc=ProcessRecord{7d00215 3555:android.process.acore/u0a1}
+    authority=com.android.contacts.metadata
+  * ContentProviderRecord{ba9bad0 u0 com.zhidao.accountservice/com.zhidao.accountsdk.provider.AccountInfoProvider}
+    proc=ProcessRecord{b101ac9 3108:com.zhidao.accountservice/u0a38}
+    launchingApp=ProcessRecord{b101ac9 3108:com.zhidao.accountservice/u0a38}
+    authority=com.zhidao.account.auth
+  * ContentProviderRecord{e7ad5ce u0 com.android.cellbroadcastreceiver/.CellBroadcastSearchIndexableProvider}
+    proc=ProcessRecord{7df2959 4701:com.android.cellbroadcastreceiver/u0a3}
+    authority=com.android.cellbroadcastreceiver
+  * ContentProviderRecord{2c5fcef u0 com.android.phone/.PhoneSearchIndexablesProvider}
+    proc=ProcessRecord{cb08d40 2044:com.android.phone/1001}
+    authority=com.android.phone
+  * ContentProviderRecord{137b3fc u0 com.android.providers.contacts/.ShadowCallLogProvider}
+    proc=ProcessRecord{7d00215 3555:android.process.acore/u0a1}
+    authority=call_log_shadow
+  * ContentProviderRecord{e769a85 u0 com.android.providers.contacts/.ContactsProvider2}
+    proc=ProcessRecord{7d00215 3555:android.process.acore/u0a1}
+    authority=contacts;com.android.contacts
+  * ContentProviderRecord{37280da u0 com.android.messaging/.datamodel.MmsFileProvider}
+    proc=ProcessRecord{99595ff 3629:com.android.messaging/u0a60}
+    authority=com.android.messaging.datamodel.MmsFileProvider
+  * ContentProviderRecord{d9f790b u0 com.android.providers.downloads/.DownloadStorageProvider}
+    proc=ProcessRecord{2c7b721 2842:android.process.media/u0a11}
+    authority=com.android.providers.downloads.documents
+  * ContentProviderRecord{e33f3f8 u0 com.mogo.launcher.f/com.tencent.mid.api.MidProvider}
+    proc=ProcessRecord{237d788 5821:com.mogo.launcher.f/1000}
+    authority=com.mogo.launcher.f.TENCENT.MID.V4
+  * ContentProviderRecord{80b5a01 u0 com.qiyi.video.pad/com.tencent.mmkv.MMKVContentProvider}
+    proc=ProcessRecord{277311c 2977:com.qiyi.video.pad/u0a65}
+    authority=com.qiyi.video.pad.MMKVContentProvider
+  * ContentProviderRecord{7d0a6 u0 com.qiyi.video.pad/org.qiyi.android.pingback.internal.db.PingbackContentProvider}
+    proc=ProcessRecord{277311c 2977:com.qiyi.video.pad/u0a65}
+    authority=com.qiyi.video.pad.pingback.provider
+  * ContentProviderRecord{b4a9ae7 u0 com.qiyi.video.pad/com.qiyi.utils.CompactFileProvider}
+    proc=ProcessRecord{277311c 2977:com.qiyi.video.pad/u0a65}
+    authority=com.qiyi.video.pad.fileprovider
+  * ContentProviderRecord{fa08694 u0 com.zhidao.carcorder/com.tencent.stat.SmartProvider}
+    proc=ProcessRecord{6400c2d 2561:com.zhidao.carcorder/u0a91}
+    authority=com.zhidao.carcorder.MTA.SmartProvider
+  * ContentProviderRecord{a44a0d1 u0 com.android.settings/android.support.v4.content.FileProvider}
+    proc=ProcessRecord{7e01d89 6011:com.android.settings/1000}
+    authority=com.android.settings.files
+  * ContentProviderRecord{ad2953d u0 com.autonavi.amapauto/.provider.ClusterContentProvider}
+    proc=ProcessRecord{44a4d33 3757:com.autonavi.amapauto/u0a32}
+    authority=com.autonavi.amapauto.provider.cluster
+  * ContentProviderRecord{ade5736 u0 com.mogo.launcher.f/com.tencent.stat.SmartProvider}
+    proc=ProcessRecord{237d788 5821:com.mogo.launcher.f/1000}
+    authority=com.mogo.launcher.f.MTA.SmartProvider
+  * ContentProviderRecord{c9bfe83 u0 com.android.providers.contacts/.VoicemailContentProvider}
+    proc=ProcessRecord{7d00215 3555:android.process.acore/u0a1}
+    authority=com.android.voicemail
+  * ContentProviderRecord{2497800 u0 com.qiyi.video.pad/com.iqiyi.video.download.recom.db.RecomContentProvider}
+    proc=ProcessRecord{277311c 2977:com.qiyi.video.pad/u0a65}
+    authority=com.qiyi.video.pad.recom
+  * ContentProviderRecord{bd84839 u0 com.android.providers.media/.MediaDocumentsProvider}
+    proc=ProcessRecord{2c7b721 2842:android.process.media/u0a11}
+    authority=com.android.providers.media.documents
+  * ContentProviderRecord{62e4e7e u0 com.zhidao.guide.lock/.provider.LockStatusProvider}
+    proc=ProcessRecord{115ffdf 2652:com.zhidao.guide.lock/1000}
+    launchingApp=ProcessRecord{115ffdf 2652:com.zhidao.guide.lock/1000}
+    authority=com.zhidao.guide.lock.product.bindstatus
+    1 connections, 0 external handles
+      -> 5821:com.mogo.launcher.f/1000 s0/0 u1/1 +16s71ms
+  * ContentProviderRecord{fce142c u0 com.autonavi.amapauto/com.autonavi.adiu.storage.AdiuContentProvider}
+    proc=ProcessRecord{44a4d33 3757:com.autonavi.amapauto/u0a32}
+    authority=com.autonavi.amapauto.adiuprovider
+  * ContentProviderRecord{aec2ef5 u0 com.qiyi.video.pad/android.arch.lifecycle.ProcessLifecycleOwnerInitializer}
+    proc=ProcessRecord{277311c 2977:com.qiyi.video.pad/u0a65}
+    authority=com.qiyi.video.pad.lifecycle-trojan
+  * ContentProviderRecord{35cd48a u0 com.zhidao.autopilot/com.zhidao.adasconfig.provider.AdasConfigContentProvider}
+    proc=ProcessRecord{b1c8570 2679:com.zhidao.autopilot/u0a33}
+    authority=com.zhidao.adasconfig.provider.AdasConfigContentProvider
+  * ContentProviderRecord{901c637 u0 com.android.settings/.search.SettingsSearchIndexablesProvider}
+    proc=ProcessRecord{7e01d89 6011:com.android.settings/1000}
+    authority=com.android.settings
+  * ContentProviderRecord{404bafb u0 com.android.providers.contacts/.debug.DumpFileProvider}
+    proc=ProcessRecord{7d00215 3555:android.process.acore/u0a1}
+    authority=com.android.contacts.dumpfile
+  * ContentProviderRecord{1e4718 u0 com.zhidao.accountservice/me.jessyan.autosize.InitProvider}
+    proc=ProcessRecord{b101ac9 3108:com.zhidao.accountservice/u0a38}
+    authority=com.zhidao.accountservice.autosize-init-provider
+  * ContentProviderRecord{b1dc571 u0 com.qiyi.video.pad/com.iqiyi.passportsdk.internal.ipc.PsdkContentProvider}
+    proc=ProcessRecord{277311c 2977:com.qiyi.video.pad/u0a65}
+    authority=com.qiyi.video.pad.qypassportsdk
+  * ContentProviderRecord{43baf56 u0 com.qiyi.video.pad/com.iqiyi.cable.CableProvider}
+    proc=ProcessRecord{277311c 2977:com.qiyi.video.pad/u0a65}
+    authority=com.qiyi.video.pad.cable
+  * ContentProviderRecord{f5a0bd7 u0 com.qiyi.video.pad/org.qiyi.video.module.v2.provider.DispatcherProvider}
+    proc=ProcessRecord{277311c 2977:com.qiyi.video.pad/u0a65}
+    authority=com.qiyi.video.pad.module.dispatcher
+  * ContentProviderRecord{83cbcc4 u0 com.autonavi.amapauto/com.autonavi.auto.search.provider.ThirdPartSearchProvider}
+    proc=ProcessRecord{44a4d33 3757:com.autonavi.amapauto/u0a32}
+    authority=com.autonavi.amapauto.provider.search
+
+ACTIVITY MANAGER URI PERMISSIONS (dumpsys activity permissions)
+  (nothing)
+
+ACTIVITY MANAGER SERVICES (dumpsys activity services)
+  User 0 active services:
+  * ServiceRecord{6f847ad u0 com.android.bluetooth/.hid.HidService}
+    app=null
+    created=-7m22s227ms started=false connections=1
+    Connections:
+      act=android.bluetooth.IBluetoothInputDevice -> 6011:com.android.settings/1000
+  * ServiceRecord{18b2f30 u0 com.iflytek.inputmethod.pad/com.iflytek.inputmethod.process.ImDecoderService}
+    app=ProcessRecord{5361dad 4254:com.iflytek.inputmethod.pad/u0a66}
+    created=-7m45s922ms started=false connections=1
+    Connections:
+       -> 4254:com.iflytek.inputmethod.pad/u0a66
+  * ServiceRecord{f41e957 u0 com.zhidao.weather/.view.widget.WidgetService}
+    app=ProcessRecord{506b529 3345:com.zhidao.weather/u0a56}
+    created=-7m35s369ms started=true connections=0
+  * ServiceRecord{cc61df2 u0 com.zhidao.daemon/.service.DaemonService}
+    app=ProcessRecord{a5b6ae2 4325:com.zhidao.daemon/1000}
+    created=-7m44s528ms started=true connections=0
+  * ServiceRecord{4ceba8f u0 com.qiyi.video.pad/org.qiyi.pluginlibrary.pm.PluginPackageManagerService}
+    app=ProcessRecord{277311c 2977:com.qiyi.video.pad/u0a65}
+    created=-7m52s755ms started=true connections=1
+    Connections:
+       -> 2977:com.qiyi.video.pad/u0a65
+  * ServiceRecord{59bd1d1 u0 com.qualcomm.qti.phonefeature/.FeatureService}
+    app=ProcessRecord{cb08d40 2044:com.android.phone/1001}
+    created=-7m29s721ms started=true connections=0
+  * ServiceRecord{78780fd u0 org.codeaurora.ims/.ImsService}
+    app=ProcessRecord{cb08d40 2044:com.android.phone/1001}
+    created=-7m57s123ms started=true connections=0
+  * ServiceRecord{cac7ae5 u0 com.qiyi.video.pad/org.qiyi.android.commonphonepad.pushmessage.PushMessageService}
+    app=ProcessRecord{277311c 2977:com.qiyi.video.pad/u0a65}
+    created=-7m52s54ms started=true connections=0
+  * ServiceRecord{6efb432 u0 com.autonavi.amapauto/.background.AutoBackgroundService}
+    app=ProcessRecord{44a4d33 3757:com.autonavi.amapauto/u0a32}
+    created=-7m50s205ms started=true connections=0
+  * ServiceRecord{5a725ae u0 com.zhidao.carcorder/com.zhidao.keeplive.KeepLiveService}
+    app=ProcessRecord{498e73 2888:com.zhidao.carcorder:keeplive/u0a91}
+    created=-7m54s263ms started=true connections=1
+    Connections:
+       -> 2561:com.zhidao.carcorder/u0a91
+  * ServiceRecord{9e738b6 u0 com.zhidao.accountservice/.service.AccountService}
+    app=ProcessRecord{b101ac9 3108:com.zhidao.accountservice/u0a38}
+    created=-7m53s75ms started=true connections=0
+  * ServiceRecord{f2bcad4 u0 com.qualcomm.location/.LocationService}
+    app=ProcessRecord{2a60fa2 1439:system/1000}
+    created=-7m55s596ms started=true connections=0
+  * ServiceRecord{6594786 u0 com.qiyi.video.pad/com.iqiyi.hcim.service.IMService}
+    app=ProcessRecord{277311c 2977:com.qiyi.video.pad/u0a65}
+    created=-7m51s950ms started=true connections=0
+  * ServiceRecord{d058b68 u0 com.qualcomm.qti.modemtestmode/.MbnSystemService}
+    app=ProcessRecord{fc2e94e 4506:com.qualcomm.qti.modemtestmode/1000}
+    created=-7m36s962ms started=true connections=0
+  * ServiceRecord{988b773 u0 com.zhidao.bluetooth/.bt.service.PbapService}
+    app=ProcessRecord{22d57cf 2577:com.zhidao.bluetooth/u0a35}
+    created=-7m55s259ms started=true connections=0
+  * ServiceRecord{16a247d u0 com.qualcomm.location/.izat.IzatService}
+    app=ProcessRecord{2a60fa2 1439:system/1000}
+    created=-7m55s595ms started=true connections=0
+  * ServiceRecord{a082747 u0 com.zhidao.speech/com.amap.api.location.APSService}
+    app=ProcessRecord{37aa3 2961:com.zhidao.speech/u0a61}
+    created=-7m47s923ms started=false connections=1
+    Connections:
+       -> 2961:com.zhidao.speech/u0a61
+  * ServiceRecord{3b877d5 u0 com.android.systemui/.ImageWallpaper}
+    app=ProcessRecord{e3d939 1792:com.android.systemui/1000}
+    created=-7m58s690ms started=false connections=1
+    Connections:
+      act=android.service.wallpaper.WallpaperService -> 1439:system/1000
+  * ServiceRecord{61bc7b1 u0 com.qualcomm.qti.tetherservice/.TetherService}
+    app=ProcessRecord{8aae130 2025:.dataservices/1000}
+    created=-7m53s918ms started=true connections=0
+  * ServiceRecord{4c446bd u0 com.mogo.launcher.f/com.mogo.module.main.service.MogoMainService}
+    app=ProcessRecord{237d788 5821:com.mogo.launcher.f/1000}
+    created=-11s682ms started=true connections=0
+  * ServiceRecord{bebaa2 u0 com.android.printspooler/.model.PrintSpoolerService}
+    app=ProcessRecord{5b057a4 2412:com.android.printspooler/u0a41}
+    created=-4s543ms started=false connections=1
+    Connections:
+       -> 1439:system/1000
+  * ServiceRecord{da32583 u0 com.dsi.ant.server/.AntService}
+    app=ProcessRecord{2a60fa2 1439:system/1000}
+    created=-7m50s188ms started=true connections=0
+  * ServiceRecord{1f92337 u0 com.qualcomm.location/.izatserviceprovider.service.UnifiedLocationService}
+    app=ProcessRecord{2a60fa2 1439:system/1000}
+    created=-7m55s659ms started=false connections=1
+    Connections:
+      act=com.android.location.service.FusedLocationProvider -> 1439:system/1000
+  * ServiceRecord{db52091 u0 com.ximalaya.ting.android.car/.service.TingCarLocalMediaService}
+    app=ProcessRecord{6c4d72a 4200:com.ximalaya.ting.android.car/u0a62}
+    created=-7m46s972ms started=true connections=0
+  * ServiceRecord{48a92d6 u0 com.zhidao.weather/.WeatherService}
+    app=ProcessRecord{506b529 3345:com.zhidao.weather/u0a56}
+    created=-7m35s375ms started=true connections=0
+  * ServiceRecord{6ff5a50 u0 com.mogo.launcher.f/com.mogo.chat.service.IMService}
+    app=ProcessRecord{237d788 5821:com.mogo.launcher.f/1000}
+    created=-11s788ms started=true connections=0
+  * ServiceRecord{244a201 u0 com.zhidao.speech.adapter/.service.AdapterService}
+    app=ProcessRecord{21922e7 3026:com.zhidao.speech.adapter/u0a50}
+    created=-7m53s491ms started=true connections=0
+  * ServiceRecord{78addc8 u0 org.simalliance.openmobileapi.service/.SmartcardService}
+    app=ProcessRecord{c7eb1a9 4634:org.simalliance.openmobileapi.service:remote/1000}
+    created=-7m33s389ms started=true connections=0
+  * ServiceRecord{dc9532e u0 com.android.bluetooth/.hfpclient.HeadsetClientService}
+    app=null
+    created=-7m55s243ms started=false connections=1
+    Connections:
+      act=android.bluetooth.IBluetoothHeadsetClient -> 2577:com.zhidao.bluetooth/u0a35
+  * ServiceRecord{9ae71cb u0 com.zhidao.carcorder/.service.CarcorderService}
+    app=ProcessRecord{6400c2d 2561:com.zhidao.carcorder/u0a91}
+    created=-7m55s106ms started=true connections=0
+  * ServiceRecord{55aaf42 u0 com.zhidao.bluetooth/com.example.keeplive.KeepLiveService}
+    app=ProcessRecord{9a49ecf 2632:com.zhidao.bluetooth:keeplive/u0a35}
+    created=-7m55s224ms started=false connections=1
+    Connections:
+       -> 2577:com.zhidao.bluetooth/u0a35
+  * ServiceRecord{8a6ac43 u0 com.zhidao.iot.iotservice/.MainService}
+    app=ProcessRecord{694e05c 4342:com.zhidao.iot.iotservice/u0a30}
+    created=-7m44s498ms started=false connections=2
+    Connections:
+      act=com.zhidao.iot.iotservice.ACTION_SERVICE -> 2561:com.zhidao.carcorder/u0a91
+      act=com.zhidao.iot.iotservice.ACTION_SERVICE -> 4294:com.zhidao.locationinfo/u0a31
+  * ServiceRecord{b61c252 u0 com.autonavi.amapauto/com.amap.api.service.AMapService}
+    app=ProcessRecord{ce7bf65 3959:com.autonavi.amapauto:locationservice/u0a32}
+    created=-7m49s261ms started=false connections=1
+    Connections:
+      pkg=com.autonavi.amapauto -> 3757:com.autonavi.amapauto/u0a32
+  * ServiceRecord{3de0213 u0 com.qiyi.video.pad/com.q.m.QS}
+    app=ProcessRecord{277311c 2977:com.qiyi.video.pad/u0a65}
+    created=-7m52s503ms started=true connections=0
+  * ServiceRecord{81b743a u0 com.android.bluetooth/.avrcp.AvrcpControllerService}
+    app=null
+    created=-7m55s248ms started=false connections=1
+    Connections:
+      act=android.bluetooth.IBluetoothAvrcpController -> 2577:com.zhidao.bluetooth/u0a35
+  * ServiceRecord{6d159dc u0 com.zhidao.weather/com.amap.api.location.APSService}
+    app=ProcessRecord{506b529 3345:com.zhidao.weather/u0a56}
+    created=-7m52s179ms started=false connections=1
+    Connections:
+       -> 3345:com.zhidao.weather/u0a56
+  * ServiceRecord{c99c45 u0 com.zhidao.socketservice/.SocketService}
+    app=ProcessRecord{6d20e9 3155:com.zhidao.socketservice/u0a49}
+    created=-7m53s64ms started=false connections=3
+    Connections:
+      act=com.zhidao.socketservice.ACTION_SERVICE -> 5821:com.mogo.launcher.f/1000
+      act=com.zhidao.socketservice.ACTION_SERVICE -> 2561:com.zhidao.carcorder/u0a91
+      act=com.zhidao.socketservice.ACTION_SERVICE -> 4294:com.zhidao.locationinfo/u0a31
+  * ServiceRecord{ff658eb u0 com.android.bluetooth/.pbap.BluetoothPbapService}
+    app=null
+    created=-7m22s211ms started=false connections=1
+    Connections:
+      act=android.bluetooth.IBluetoothPbap -> 6011:com.android.settings/1000
+  * ServiceRecord{bbda648 u0 org.codeaurora.bluetooth/.dun.BluetoothDunService}
+    app=null
+    created=-7m22s214ms started=false connections=1
+    Connections:
+      act=android.bluetooth.IBluetoothDun -> 6011:com.android.settings/1000
+  * ServiceRecord{92f291 u0 com.zhidao.speech.adapter/com.zhidao.mogo.speech.sdk.ZDSpeechService}
+    app=ProcessRecord{21922e7 3026:com.zhidao.speech.adapter/u0a50}
+    created=-7m53s704ms started=false connections=1
+    Connections:
+      act=com.zhidao.speech.adapter.service -> 2961:com.zhidao.speech/u0a61
+  * ServiceRecord{476759a u0 com.zhidao.locationinfo/com.amap.api.location.APSService}
+    app=ProcessRecord{323d6af 4294:com.zhidao.locationinfo/u0a31}
+    created=-7m44s512ms started=false connections=1
+    Connections:
+       -> 4294:com.zhidao.locationinfo/u0a31
+  * ServiceRecord{1708577 u0 cn.kuwo.kwmusiccar/com.baidu.location.f}
+    app=ProcessRecord{7f1a08b 3277:cn.kuwo.kwmusiccar:remote/u0a45}
+    created=-7m52s604ms started=false connections=2
+    Connections:
+       -> 3277:cn.kuwo.kwmusiccar:remote/u0a45
+       -> 3277:cn.kuwo.kwmusiccar:remote/u0a45
+       -> 3196:cn.kuwo.kwmusiccar/u0a45
+       -> 3196:cn.kuwo.kwmusiccar/u0a45
+  * ServiceRecord{c19ece1 u0 com.android.bluetooth/.a2dp.A2dpService}
+    app=null
+    created=-7m58s625ms started=false connections=1
+    Connections:
+      act=android.bluetooth.IBluetoothA2dp -> 1439:system/1000
+  * ServiceRecord{75da6e u0 com.qualcomm.qcrilmsgtunnel/.QcrilMsgTunnelService}
+    app=ProcessRecord{43c9a06 2155:com.qualcomm.qcrilmsgtunnel/1001}
+    created=-7m57s537ms started=true connections=6
+    Connections:
+       -> 2044:com.android.phone/1001
+       -> 2044:com.android.phone/1001
+       -> 2044:com.android.phone/1001
+       -> 2044:com.android.phone/1001
+       -> 4506:com.qualcomm.qti.modemtestmode/1000
+       -> 2044:com.android.phone/1001
+  * ServiceRecord{98aec0e u0 com.mogo.launcher.f/com.zhidao.roadcondition.service.MainService}
+    app=ProcessRecord{237d788 5821:com.mogo.launcher.f/1000}
+    created=-6s930ms started=true connections=0
+  * ServiceRecord{28161e5 u0 com.autonavi.amapauto/com.autonavi.mqtt.service.PushService}
+    app=ProcessRecord{b5f98c7 4096:com.autonavi.amapauto:push/u0a32}
+    created=-7m48s59ms started=false connections=1
+    Connections:
+       -> 3757:com.autonavi.amapauto/u0a32
+  * ServiceRecord{63ac924 u0 com.android.systemui/.SystemUIService}
+    app=ProcessRecord{e3d939 1792:com.android.systemui/1000}
+    created=-7m58s584ms started=true connections=0
+  * ServiceRecord{bcd5617 u0 com.ximalaya.ting.android.car/com.ximalaya.ting.android.opensdk.player.service.XmPlayerService}
+    app=ProcessRecord{addfba5 4150:com.ximalaya.ting.android.car:player/u0a62}
+    created=-7m47s602ms started=true connections=3
+    Connections:
+      act=com.ximalaya.ting.android.opensdk.player.service.XmPlayerService pkg=com.ximalaya.ting.android.car -> 3026:com.zhidao.speech.adapter/u0a50
+       -> 4150:com.ximalaya.ting.android.car:player/u0a62
+       -> 4150:com.ximalaya.ting.android.car:player/u0a62
+       -> 4200:com.ximalaya.ting.android.car/u0a62
+       -> 4200:com.ximalaya.ting.android.car/u0a62
+       -> 4200:com.ximalaya.ting.android.car/u0a62
+  * ServiceRecord{626d370 u0 android/.hardware.location.GeofenceHardwareService}
+    app=ProcessRecord{2a60fa2 1439:system/1000}
+    created=-7m57s937ms started=false connections=1
+    Connections:
+       -> 1439:system/1000
+  * ServiceRecord{1ea7671 u0 com.zhidao.bluetooth/.bt.service.BtSdkService}
+    app=ProcessRecord{22d57cf 2577:com.zhidao.bluetooth/u0a35}
+    created=-7m55s412ms started=false connections=2
+    Connections:
+      act=com.zhidao.bluetooth -> 1792:com.android.systemui/1000
+      act=com.zhidao.bluetooth -> 3026:com.zhidao.speech.adapter/u0a50
+  * ServiceRecord{a24c00b u0 com.autonavi.amapauto/.bootstrap.UpdateSevices}
+    app=ProcessRecord{92adef4 3799:com.autonavi.amapauto:selfupdate/u0a32}
+    created=-7m50s489ms started=true connections=0
+  * ServiceRecord{48721e8 u0 com.iflytek.inputmethod.pad/.FlyIME}
+    app=ProcessRecord{5361dad 4254:com.iflytek.inputmethod.pad/u0a66}
+    created=-7m46s182ms started=false connections=1
+    Connections:
+      act=android.view.InputMethod -> 1439:system/1000
+  * ServiceRecord{7234827 u0 com.qualcomm.location/.LBSSystemMonitorService}
+    app=ProcessRecord{2a60fa2 1439:system/1000}
+    created=-7m55s597ms started=true connections=0
+  * ServiceRecord{8b49aef u0 com.mogo.launcher.f/com.amap.api.location.APSService}
+    app=ProcessRecord{237d788 5821:com.mogo.launcher.f/1000}
+    created=-13s5ms started=false connections=4
+    Connections:
+       -> 5821:com.mogo.launcher.f/1000
+       -> 5821:com.mogo.launcher.f/1000
+       -> 5821:com.mogo.launcher.f/1000
+       -> 5821:com.mogo.launcher.f/1000
+  * ServiceRecord{96241fe u0 com.zhidao.auto.statistics/.UploadFlowService}
+    app=ProcessRecord{be7761d 4527:com.zhidao.auto.statistics/u0a48}
+    created=-7m36s400ms started=true connections=0
+  * ServiceRecord{ab97ce4 u0 com.android.server.telecom/.components.BluetoothPhoneService}
+    app=ProcessRecord{2a60fa2 1439:system/1000}
+    created=-7m57s737ms started=true connections=0
+  * ServiceRecord{c1da84a u0 com.zhidao.autopilot/com.zhidao.autopilotservice.AutoPilotService}
+    app=ProcessRecord{b1c8570 2679:com.zhidao.autopilot/u0a33}
+    created=-7m55s101ms started=true connections=1
+    Connections:
+      act=com.zhidao.autopilotservice.AutoPilotService pkg=com.zhidao.autopilot -> 5821:com.mogo.launcher.f/1000
+  * ServiceRecord{9459955 u0 com.qualcomm.location/.izatserviceprovider.service.NetworkLocationService}
+    app=ProcessRecord{2a60fa2 1439:system/1000}
+    created=-7m55s668ms started=false connections=1
+    Connections:
+      act=com.android.location.service.v3.NetworkLocationProvider -> 1439:system/1000
+  * ServiceRecord{d25978a u0 com.qti.dpmserviceapp/.DpmServiceApp}
+    app=ProcessRecord{8aae130 2025:.dataservices/1000}
+    created=-7m50s163ms started=true connections=0
+  * ServiceRecord{ea7794a u0 com.zhidao.upgrade/.service.AppUpgradeService}
+    app=ProcessRecord{8f872a3 4479:com.zhidao.upgrade/1000}
+    created=-7m44s54ms started=true connections=0
+  * ServiceRecord{1edcc99 u0 com.zhidao.services/.core.CarService}
+    app=ProcessRecord{ef85092 2395:com.zhidao.services/1000}
+    created=-7m55s680ms started=true connections=0
+  * ServiceRecord{4304944 u0 com.qualcomm.qti.appnetaccess/.AppNetAccessService}
+    app=ProcessRecord{30165a5 4063:com.qualcomm.qti.appnetaccess/1000}
+    created=-7m48s558ms started=true connections=0
+  * ServiceRecord{31d7eb3 u0 com.zhidao.speech/.SpeechCoreService}
+    app=ProcessRecord{37aa3 2961:com.zhidao.speech/u0a61}
+    created=-7m53s793ms started=true connections=1
+    Connections:
+      act=com.zhidao.speech.service.connect -> 3026:com.zhidao.speech.adapter/u0a50
+      act=com.zhidao.speech.service.connect -> 3026:com.zhidao.speech.adapter/u0a50
+  * ServiceRecord{1ab193 u0 com.android.stk/.StkAppService}
+    app=ProcessRecord{cb08d40 2044:com.android.phone/1001}
+    created=-7m50s773ms started=true connections=0
+  * ServiceRecord{ff21331 u0 cn.kuwo.kwmusiccar/cn.kuwo.autosdk.AutoSdkService}
+    app=ProcessRecord{f7194c 3196:cn.kuwo.kwmusiccar/u0a45}
+    created=-7m52s900ms started=false connections=2
+    Connections:
+      act=cn.kuwo.service.AutoSdkService pkg=cn.kuwo.kwmusiccar -> 5821:com.mogo.launcher.f/1000
+      act=cn.kuwo.service.AutoSdkService pkg=cn.kuwo.kwmusiccar -> 2961:com.zhidao.speech/u0a61
+  * ServiceRecord{f009559 u0 com.android.server.telecom/.components.TelecomService}
+    app=ProcessRecord{2a60fa2 1439:system/1000}
+    created=-7m58s729ms started=false connections=1
+    Connections:
+      act=com.android.ITelecomService -> 1439:system/1000
+  * ServiceRecord{b32fa63 u0 com.android.bluetooth/.hfp.HeadsetService}
+    app=null
+    created=-7m58s627ms started=false connections=4
+    Connections:
+      act=android.bluetooth.IBluetoothHeadset -> 1439:system/1000
+      act=android.bluetooth.IBluetoothHeadset -> 1439:system/1000
+      act=android.bluetooth.IBluetoothHeadset -> 2044:com.android.phone/1001
+      act=android.bluetooth.IBluetoothHeadset -> 1439:system/1000
+  * ServiceRecord{be9c1fb u0 com.qti.launcherunreadservice/.LauncherUnreadService}
+    app=ProcessRecord{890f660 2356:com.qti.launcherunreadservice/1000}
+    created=-7m50s150ms started=true connections=0
+  * ServiceRecord{e87573 u0 com.qti.qualcomm.datastatusnotification/.DataStatusNotificationService}
+    app=ProcessRecord{cb08d40 2044:com.android.phone/1001}
+    created=-7m50s129ms started=true connections=0
+  * ServiceRecord{6c395ea u0 com.zhidao.speech/.service.ProcessService}
+    app=ProcessRecord{37aa3 2961:com.zhidao.speech/u0a61}
+    created=-12s455ms started=false connections=1
+    Connections:
+       -> 5821:com.mogo.launcher.f/1000
+  * ServiceRecord{ebc7fd u0 com.abupdate.fota_demo_iot/com.abupdate.iot_libs.service.JobSchedulerService}
+    app=ProcessRecord{f0a5719 2527:com.abupdate.fota_demo_iot/1000}
+    created=-7m55s87ms started=true connections=0
+  * ServiceRecord{ad2618d u0 com.android.smspush/.WapPushManager}
+    app=ProcessRecord{446e3de 2619:com.android.smspush/u0a53}
+    created=-7m55s240ms started=false connections=4
+    Connections:
+      act=com.android.internal.telephony.IWapPushManager -> 2044:com.android.phone/1001
+      act=com.android.internal.telephony.IWapPushManager -> 2044:com.android.phone/1001
+      act=com.android.internal.telephony.IWapPushManager -> 2044:com.android.phone/1001
+      act=com.android.internal.telephony.IWapPushManager -> 2044:com.android.phone/1001
+  * ServiceRecord{cd300e6 u0 com.qualcomm.qti.qs/.QSService}
+    app=ProcessRecord{750d9bf 3533:com.qualcomm.qti.qs/1000}
+    created=-7m51s491ms started=true connections=0
+  * ServiceRecord{181867 u0 com.qualcomm.qti.modemtestmode/.MbnTestService}
+    app=ProcessRecord{cb08d40 2044:com.android.phone/1001}
+    created=-7m36s949ms started=false connections=1
+    Connections:
+       -> 4506:com.qualcomm.qti.modemtestmode/1000
+  * ServiceRecord{ae0e09 u0 com.zhidao.bootmanager/.service.PersistentService}
+    app=ProcessRecord{87f188c 2370:com.zhidao.bootmanager/1000}
+    created=-7m55s645ms started=true connections=0
+  * ServiceRecord{15fd54d u0 android/com.android.server.content.SyncJobService}
+    app=ProcessRecord{2a60fa2 1439:system/1000}
+    created=-7m57s735ms started=true connections=0
+  * ServiceRecord{1212042 u0 com.zhidao.locationinfo/.service.UploadDataService}
+    app=ProcessRecord{323d6af 4294:com.zhidao.locationinfo/u0a31}
+    created=-7m44s719ms started=true connections=0
+  * ServiceRecord{fe04bd5 u0 com.android.bluetooth/.map.BluetoothMapService}
+    app=null
+    created=-7m22s218ms started=false connections=1
+    Connections:
+      act=android.bluetooth.IBluetoothMap -> 6011:com.android.settings/1000
+  * ServiceRecord{be997e2 u0 com.zhidao.bluetooth/.bt.service.BTService}
+    app=ProcessRecord{22d57cf 2577:com.zhidao.bluetooth/u0a35}
+    created=-7m55s261ms started=true connections=0
+  * ServiceRecord{e270f6 u0 com.android.mms.service/.MmsService}
+    app=ProcessRecord{cb08d40 2044:com.android.phone/1001}
+    created=-7m50s896ms started=false connections=1
+    Connections:
+       -> 1439:system/1000
+  * ServiceRecord{9c343bf u0 com.android.phone/.TelephonyDebugService}
+    app=ProcessRecord{cb08d40 2044:com.android.phone/1001}
+    created=-7m57s406ms started=true connections=0
+  * ServiceRecord{85bf614 u0 com.qualcomm.simcontacts/.SimContactsService}
+    app=ProcessRecord{5595fea 4027:com.qualcomm.telephony/1000}
+    created=-7m36s907ms started=true connections=0
+  * ServiceRecord{6350c23 u0 android.ext.services/.notification.Ranker}
+    app=ProcessRecord{b4352db 2278:android.ext.services/u0a9}
+    created=-7m59s131ms started=false connections=1
+    Connections:
+      act=android.service.notification.NotificationRankerService -> 1439:system/1000
+  * ServiceRecord{f4b3178 u0 com.android.bluetooth/.pan.PanService}
+    app=null
+    created=-7m22s223ms started=false connections=1
+    Connections:
+      act=android.bluetooth.IBluetoothPan -> 6011:com.android.settings/1000
+  * ServiceRecord{d320e1c u0 com.zhidao.guide.lock/.MainService}
+    app=ProcessRecord{115ffdf 2652:com.zhidao.guide.lock/1000}
+    created=-7m54s950ms started=true connections=0
+  * ServiceRecord{ec4f340 u0 com.qualcomm.qti.services.secureui/.SecureUIService}
+    app=ProcessRecord{6e6d051 2380:com.qualcomm.qti.services.secureui:sui_service/1000}
+    created=-7m53s953ms started=true connections=0
+  * ServiceRecord{36590b6 u0 com.android.bluetooth/.a2dpsink.A2dpSinkService}
+    app=null
+    created=-7m55s252ms started=false connections=1
+    Connections:
+      act=android.bluetooth.IBluetoothA2dpSink -> 2577:com.zhidao.bluetooth/u0a35
+
+ACTIVITY MANAGER RECENT TASKS (dumpsys activity recents)
+  Recent tasks:
+  * Recent #0: TaskRecord{3a1790d #695 A=com.android.settings U=0 StackId=1 sz=1}
+  * Recent #1: TaskRecord{bb0b0c2 #694 I=com.mogo.launcher.f/com.zhidao.mogo.module.main.launcher.MainLauncherActivity U=0 StackId=1 sz=1}
+  * Recent #2: TaskRecord{bded24 #690 A=com.zhidao.settings U=0 StackId=1 sz=1}
+  * Recent #3: TaskRecord{b320242 #692 A=com.mogo.launcher.f U=0 StackId=-1 sz=0}
+  * Recent #4: TaskRecord{2074253 #688 I=com.mogo.launcher.f/com.zhidao.mogo.module.main.launcher.MainLauncherActivity U=0 StackId=-1 sz=0}
+  * Recent #5: TaskRecord{27eb790 #1 I=com.android.settings/.FallbackHome U=0 StackId=-1 sz=0}
+  * Recent #6: TaskRecord{5423889 #685 I=com.android.settings/.Settings$StorageUseActivity U=0 StackId=-1 sz=0}
+  * Recent #7: TaskRecord{d62008e #668 A=com.mogo.cloud U=0 StackId=-1 sz=0}
+  * Recent #8: TaskRecord{ab9b0af #625 A=com.zhidao.carcorder U=0 StackId=-1 sz=0}
+  * Recent #9: TaskRecord{b3fbcbc #617 A=com.autonavi.amapauto U=0 StackId=-1 sz=0}
+  * Recent #10: TaskRecord{b0cd445 #614 A=com.zhidao.auto.personal U=0 StackId=-1 sz=0}
+  * Recent #11: TaskRecord{f81979a #594 A=com.zhidao.logcat U=0 StackId=-1 sz=0}
+  * Recent #12: TaskRecord{17aa8cb #569 A=com.mogo.okhttptest U=0 StackId=-1 sz=0}
+  * Recent #13: TaskRecord{8a9e8a8 #556 A=com.mogo.testretrofit U=0 StackId=-1 sz=0}
+  * Recent #14: TaskRecord{f2b6fc1 #468 A=com.mogo.testmogoaicloudsdk U=0 StackId=-1 sz=0}
+  * Recent #15: TaskRecord{1d19366 #456 A=cn.kuwo.kwmusiccar U=0 StackId=-1 sz=0}
+  * Recent #16: TaskRecord{80906a7 #391 A=com.zhidao.yiche U=0 StackId=-1 sz=0}
+  * Recent #17: TaskRecord{808e754 #300 A=cn.darkal.networkdiagnosis U=0 StackId=-1 sz=0}
+  * Recent #18: TaskRecord{13e46fd #285 A=com.qiyi.video.pad U=0 StackId=-1 sz=0}
+  * Recent #19: TaskRecord{5d37ff2 #241 A=com.zhidao.autopilot U=0 StackId=-1 sz=0}
+  * Recent #20: TaskRecord{3356643 #146 A=com.zhidao.lib_base U=0 StackId=-1 sz=0}
+  * Recent #21: TaskRecord{db724c0 #47 A=com.abupdate.fota_demo_iot U=0 StackId=-1 sz=0}
+
+ACTIVITY MANAGER ACTIVITIES (dumpsys activity activities)
+Display #0 (activities from top to bottom):
+  Stack #1:
+  mFullscreen=true
+  mBounds=null
+    Task id #695
+    mFullscreen=true
+    mBounds=null
+    mMinWidth=-1
+    mMinHeight=-1
+    mLastNonFullscreenBounds=null
+      TaskRecord{3a1790d #695 A=com.android.settings U=0 StackId=1 sz=1}
+      Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.settings/.Settings }
+        Hist #0: ActivityRecord{aee1f79 u0 com.android.settings/.Settings t695}
+          Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.settings/.Settings }
+          ProcessRecord{7e01d89 6011:com.android.settings/1000}
+    Task id #694
+    mFullscreen=true
+    mBounds=null
+    mMinWidth=-1
+    mMinHeight=-1
+    mLastNonFullscreenBounds=null
+      TaskRecord{bb0b0c2 #694 I=com.mogo.launcher.f/com.zhidao.mogo.module.main.launcher.MainLauncherActivity U=0 StackId=1 sz=1}
+      Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.mogo.launcher.f/com.zhidao.mogo.module.main.launcher.MainLauncherActivity }
+        Hist #0: ActivityRecord{780b3ff u0 com.mogo.launcher.f/com.zhidao.mogo.module.main.launcher.MainLauncherActivity t694}
+          Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.mogo.launcher.f/com.zhidao.mogo.module.main.launcher.MainLauncherActivity }
+          ProcessRecord{237d788 5821:com.mogo.launcher.f/1000}
+    Task id #690
+    mFullscreen=true
+    mBounds=null
+    mMinWidth=-1
+    mMinHeight=-1
+    mLastNonFullscreenBounds=null
+      TaskRecord{bded24 #690 A=com.zhidao.settings U=0 StackId=1 sz=1}
+      Intent { flg=0x10000000 cmp=com.zhidao.settings/.main.MainActivity_ }
+        Hist #0: ActivityRecord{5dcd7db u0 com.zhidao.settings/.main.MainActivity_ t690}
+          Intent { flg=0x10000000 cmp=com.zhidao.settings/.main.MainActivity_ }
+          ProcessRecord{ad55f9 4785:com.zhidao.settings:process.main/1000}
+
+    Running activities (most recent first):
+      TaskRecord{3a1790d #695 A=com.android.settings U=0 StackId=1 sz=1}
+        Run #2: ActivityRecord{aee1f79 u0 com.android.settings/.Settings t695}
+      TaskRecord{bb0b0c2 #694 I=com.mogo.launcher.f/com.zhidao.mogo.module.main.launcher.MainLauncherActivity U=0 StackId=1 sz=1}
+        Run #1: ActivityRecord{780b3ff u0 com.mogo.launcher.f/com.zhidao.mogo.module.main.launcher.MainLauncherActivity t694}
+      TaskRecord{bded24 #690 A=com.zhidao.settings U=0 StackId=1 sz=1}
+        Run #0: ActivityRecord{5dcd7db u0 com.zhidao.settings/.main.MainActivity_ t690}
+
+    mResumedActivity: ActivityRecord{aee1f79 u0 com.android.settings/.Settings t695}
+
+  mFocusedActivity: ActivityRecord{aee1f79 u0 com.android.settings/.Settings t695}
+  mFocusedStack=ActivityStack{195a93e stackId=1, 3 tasks} mLastFocusedStack=ActivityStack{195a93e stackId=1, 3 tasks}
+  mSleepTimeout=false
+  mCurTaskIdForUser={0=695}
+  mUserStackInFront={}
+  mActivityContainers={0=ActivtyContainer{0}A, 1=ActivtyContainer{1}A}
+  mLockTaskModeState=NONE mLockTaskPackages (userId:packages)=
+    0:[]
+ mLockTaskModeTasks[]
+
+ACTIVITY MANAGER RUNNING PROCESSES (dumpsys activity processes)
+  Isolated process list (sorted by uid):
+    Isolated # 0: ProcessRecord{a3e239f 1831:WebViewLoader-arm64-v8a/1037}
+
+  UID states:
+    UID 1000: UidRecord{749ccec 1000 P  procs:25}
+    UID 1001: UidRecord{16458b5 1001 P  procs:3}
+    UID 1037: UidRecord{bbf1b4a 1037 CE bg:+7m58s586ms idle procs:2}
+    UID u0a1: UidRecord{feb5abb u0a1 CE bg:+7m28s848ms idle procs:1}
+    UID u0a3: UidRecord{47ccbd8 u0a3 LA bg:+4s823ms procs:1}
+    UID u0a9: UidRecord{4ecb31 u0a9 SB procs:1}
+    UID u0a11: UidRecord{c5ba216 u0a11 CE bg:+7m54s477ms idle procs:1}
+    UID u0a30: UidRecord{2decd84 u0a30 SF procs:1}
+    UID u0a31: UidRecord{393e96d u0a31 S  bg:+7m44s677ms idle procs:1}
+    UID u0a32: UidRecord{e67c9a2 u0a32 S  bg:+7m50s752ms idle procs:4}
+    UID u0a33: UidRecord{6ec6633 u0a33 SF procs:1}
+    UID u0a35: UidRecord{83d3df0 u0a35 SB procs:2}
+    UID u0a38: UidRecord{292af69 u0a38 S  bg:+2m6s820ms idle procs:1}
+    UID u0a41: UidRecord{e1cddee u0a41 SB procs:1}
+    UID u0a45: UidRecord{1fd328f u0a45 SB procs:2}
+    UID u0a48: UidRecord{7d0491c u0a48 S  bg:+7m36s463ms idle procs:1}
+    UID u0a49: UidRecord{19dd925 u0a49 SF procs:1}
+    UID u0a50: UidRecord{ffceafa u0a50 T  procs:1}
+    UID u0a53: UidRecord{5a468ab u0a53 IF procs:1}
+    UID u0a56: UidRecord{e26db08 u0a56 S  bg:+7m27s701ms idle procs:1}
+    UID u0a57: UidRecord{d77e2a1 u0a57 CE bg:+7m50s96ms idle procs:2}
+    UID u0a60: UidRecord{c9ebcc6 u0a60 CE bg:+7m51s329ms idle procs:1}
+    UID u0a61: UidRecord{43ee487 u0a61 T  procs:1}
+    UID u0a62: UidRecord{fd29fb4 u0a62 T  procs:2}
+    UID u0a65: UidRecord{28f07dd u0a65 S  bg:+7m53s888ms idle procs:2}
+    UID u0a66: UidRecord{d39df52 u0a66 IB procs:1}
+    UID u0a91: UidRecord{f1b4223 u0a91 SF procs:2}
+
+  UID validation:
+    UID 1001: UidRecord{6d40320 1001 P  procs:0}
+    UID 1037: UidRecord{bf944d9 1037 CE idle procs:0}
+    UID u0a1: UidRecord{4f29e9e u0a1 CE idle procs:0}
+    UID u0a3: UidRecord{3d5dd7f u0a3 LA procs:0}
+    UID u0a9: UidRecord{ac6314c u0a9 SB procs:0}
+    UID u0a11: UidRecord{6305595 u0a11 CE idle procs:0}
+    UID u0a30: UidRecord{374d29b u0a30 SF procs:0}
+    UID u0a31: UidRecord{fcb1638 u0a31 S  idle procs:0}
+    UID u0a32: UidRecord{18db611 u0a32 S  idle procs:0}
+    UID u0a33: UidRecord{8f5e376 u0a33 SF procs:0}
+    UID u0a35: UidRecord{f43fd77 u0a35 SB procs:0}
+    UID u0a38: UidRecord{8375de4 u0a38 S  idle procs:0}
+    UID u0a41: UidRecord{86a24d u0a41 SB procs:0}
+    UID u0a45: UidRecord{354c102 u0a45 SB procs:0}
+    UID u0a48: UidRecord{770fa13 u0a48 S  idle procs:0}
+    UID u0a49: UidRecord{4fe7450 u0a49 SF procs:0}
+    UID u0a50: UidRecord{da81649 u0a50 T  procs:0}
+    UID u0a53: UidRecord{cd1eb4e u0a53 IF procs:0}
+    UID u0a56: UidRecord{767246f u0a56 S  idle procs:0}
+    UID u0a57: UidRecord{de857c u0a57 CE idle procs:0}
+    UID u0a60: UidRecord{552ce05 u0a60 CE idle procs:0}
+    UID u0a61: UidRecord{be56e5a u0a61 T  procs:0}
+    UID u0a62: UidRecord{beb988b u0a62 T  procs:0}
+    UID u0a65: UidRecord{24c7d68 u0a65 S  idle procs:0}
+    UID u0a66: UidRecord{f374581 u0a66 IB procs:0}
+    UID u0a91: UidRecord{47c1626 u0a91 SF procs:0}
+
+  Process LRU list (sorted by oom_adj, 61 total, non-act at 7, non-svc at 7):
+    PERS #60: sys   F/ /P  trm: 0 1439:system/1000 (fixed)
+    PERS #59: pers  F/ /P  trm: 0 1792:com.android.systemui/1000 (fixed)
+    PERS #58: pers  F/ /P  trm: 0 2025:.dataservices/1000 (fixed)
+    PERS #57: pers  F/ /P  trm: 0 2044:com.android.phone/1001 (fixed)
+    PERS #55: pers  F/ /P  trm: 0 2356:com.qti.launcherunreadservice/1000 (fixed)
+    PERS #54: pers  F/ /P  trm: 0 2370:com.zhidao.bootmanager/1000 (fixed)
+    PERS #53: pers  F/ /P  trm: 0 2380:com.qualcomm.qti.services.secureui:sui_service/1000 (fixed)
+    PERS #52: pers  F/ /P  trm: 0 2395:com.zhidao.services/1000 (fixed)
+    Proc # 1: pers  B/ /S  trm: 0 5821:com.mogo.launcher.f/1000 (cch-started-ui-services)
+    Proc # 0: fore  T/A/T  trm: 0 6011:com.android.settings/1000 (top-activity)
+    Proc #56: vis   F/ /SB trm: 0 2278:android.ext.services/u0a9 (service)
+        android.ext.services/.notification.Ranker<=Proc{1439:system/1000}
+    Proc #39: vis   F/S/SB trm: 0 2632:com.zhidao.bluetooth:keeplive/u0a35 (service)
+        com.zhidao.bluetooth/com.example.keeplive.KeepLiveService<=Proc{2577:com.zhidao.bluetooth/u0a35}
+    Proc #35: vis   F/ /SB trm: 0 2577:com.zhidao.bluetooth/u0a35 (service)
+        com.zhidao.bluetooth/.bt.service.BtSdkService<=Proc{1792:com.android.systemui/1000}
+    Proc #11: vis   F/ /SB trm: 0 2412:com.android.printspooler/u0a41 (service)
+        com.android.printspooler/.model.PrintSpoolerService<=Proc{1439:system/1000}
+    Proc # 4: vis   F/S/SF trm: 0 2679:com.zhidao.autopilot/u0a33 (visible)
+    Proc #51: vis   F/ /IF trm: 0 2619:com.android.smspush/u0a53 (service)
+        com.android.smspush/.WapPushManager<=Proc{2044:com.android.phone/1001}
+    Proc #38: vis   F/ /IF trm: 0 2155:com.qualcomm.qcrilmsgtunnel/1001 (service)
+        com.qualcomm.qcrilmsgtunnel/.QcrilMsgTunnelService<=Proc{2044:com.android.phone/1001}
+    Proc #25: vis  +1 F/S/SF trm: 0 2561:com.zhidao.carcorder/u0a91 (visible)
+    Proc #15: vis  +2 F/S/T  trm: 0 3026:com.zhidao.speech.adapter/u0a50 (visible)
+    Proc # 3: vis  +2 F/S/T  trm: 0 2961:com.zhidao.speech/u0a61 (visible)
+    Proc # 7: vis  +3 B/ /S  trm: 0 3757:com.autonavi.amapauto/u0a32 (visible)
+    Proc #19: prcp  F/S/T  trm: 0 4150:com.ximalaya.ting.android.car:player/u0a62 (fg-service)
+    Proc #14: prcp  F/ /SB trm: 0 3277:cn.kuwo.kwmusiccar:remote/u0a45 (service)
+        cn.kuwo.kwmusiccar/com.baidu.location.f<=Proc{3196:cn.kuwo.kwmusiccar/u0a45}
+    Proc # 2: prcp  F/ /SB trm: 0 3196:cn.kuwo.kwmusiccar/u0a45 (service)
+        cn.kuwo.kwmusiccar/cn.kuwo.autosdk.AutoSdkService<=Proc{2961:com.zhidao.speech/u0a61}
+    Proc #28: prcp  F/S/SF trm: 0 2888:com.zhidao.carcorder:keeplive/u0a91 (fg-service)
+    Proc # 6: prcp  B/ /IB trm: 0 4254:com.iflytek.inputmethod.pad/u0a66 (service)
+        com.iflytek.inputmethod.pad/.FlyIME<=Proc{1439:system/1000}
+    Proc #10: svc   B/ /S  trm: 0 4096:com.autonavi.amapauto:push/u0a32 (service)
+        com.autonavi.amapauto/com.autonavi.mqtt.service.PushService<=Proc{3757:com.autonavi.amapauto/u0a32}
+    Proc # 9: svc   B/ /S  trm: 0 3959:com.autonavi.amapauto:locationservice/u0a32 (service)
+        com.autonavi.amapauto/com.amap.api.service.AMapService<=Proc{3757:com.autonavi.amapauto/u0a32}
+    Proc #26: home +1 F/ /SF trm: 0 4342:com.zhidao.iot.iotservice/u0a30 (service)
+        com.zhidao.iot.iotservice/.MainService<=Proc{2561:com.zhidao.carcorder/u0a91}
+    Proc #16: home +1 F/ /SF trm: 0 3155:com.zhidao.socketservice/u0a49 (service)
+        com.zhidao.socketservice/.SocketService<=Proc{2561:com.zhidao.carcorder/u0a91}
+    Proc #34: home +1 B/ /S  trm: 0 4294:com.zhidao.locationinfo/u0a31 (started-services)
+    Proc #13: home +1 B/ /S  trm: 0 3345:com.zhidao.weather/u0a56 (started-services)
+    Proc # 8: home +1 B/ /S  trm: 0 3108:com.zhidao.accountservice/u0a38 (started-services)
+    Proc #12: prev  B/ /LA trm: 0 4701:com.android.cellbroadcastreceiver/u0a3 (provider)
+    Proc #50: svcb  B/ /S  trm: 0 2527:com.abupdate.fota_demo_iot/1000 (started-services)
+    Proc #49: svcb  B/ /S  trm: 0 3533:com.qualcomm.qti.qs/1000 (started-services)
+    Proc #46: svcb  B/ /S  trm: 0 3799:com.autonavi.amapauto:selfupdate/u0a32 (started-services)
+    Proc #40: svcb  B/ /S  trm: 0 4063:com.qualcomm.qti.appnetaccess/1000 (started-services)
+    Proc #37: svcb  B/ /S  trm: 0 4506:com.qualcomm.qti.modemtestmode/1000 (started-services)
+    Proc #36: svcb  B/ /S  trm: 0 4527:com.zhidao.auto.statistics/u0a48 (started-services)
+    Proc #33: svcb  B/ /S  trm: 0 4479:com.zhidao.upgrade/1000 (started-services)
+    Proc #32: svcb  B/ /S  trm: 0 4634:org.simalliance.openmobileapi.service:remote/1000 (started-services)
+    Proc #30: svcb  B/ /S  trm: 0 2977:com.qiyi.video.pad/u0a65 (started-services)
+    Proc #29: svcb  B/ /S  trm: 0 4325:com.zhidao.daemon/1000 (started-services)
+    Proc #23: svcb  B/ /S  trm: 0 4027:com.qualcomm.telephony/1000 (started-services)
+    Proc #18: svcb  B/ /S  trm: 0 4200:com.ximalaya.ting.android.car/u0a62 (started-services)
+    Proc #17: cch   B/ /S  trm: 0 2652:com.zhidao.guide.lock/1000 (started-services)
+    Proc # 5: cch   B/ /CA trm: 0 4785:com.zhidao.settings:process.main/1000 (cch-act)
+    Proc #24: cch   B/ /CE trm: 0 4750:com.qualcomm.timeservice/1000 (cch-empty)
+    Proc #22: cch   B/ /CE trm: 0 4601:org.codeaurora.ims/1001 (cch-empty)
+    Proc #21: cch   B/ /CE trm: 0 4618:org.simalliance.openmobileapi.service/1000 (cch-empty)
+    Proc #20: cch   B/ /CE trm: 0 3555:android.process.acore/u0a1 (cch-empty)
+    Proc #42: cch+2 B/ /CE trm: 0 2501:com.qualcomm.location.XT/1000 (cch-empty)
+    Proc #41: cch+2 B/ /CE trm: 0 4046:com.qualcomm.qti.RIDL/1000 (cch-empty)
+    Proc #31: cch+2 B/ /CE trm: 0 4677:com.qiyi.video.pad:bdservice_v1/u0a65 (cch-empty)
+    Proc #27: cch+2 B/ /CE trm: 0 4733:com.android.timerswitch/1000 (cch-empty)
+    Proc #47: cch+4 B/ /CE trm: 0 3629:com.android.messaging/u0a60 (cch-empty)
+    Proc #45: cch+4 B/ /CE trm: 0 2703:com.logtool.zhidaohulian/1000 (cch-empty)
+    Proc #44: cch+4 B/ /CE trm: 0 3831:com.qualcomm.embms/u0a57 (cch-empty)
+    Proc #43: cch+4 B/ /CE trm: 0 3849:com.qualcomm.embms:remote/u0a57 (cch-empty)
+    Proc #48: cch+6 B/ /CE trm: 0 2842:android.process.media/u0a11 (cch-empty)
+
+  mStartedUsers:
+    User #0: state=RUNNING_UNLOCKED
+  mStartedUserArray: [0]
+  mUserLru: [0]
+  mPreviousProcess: ProcessRecord{237d788 5821:com.mogo.launcher.f/1000}
+  mConfiguration: {1.0 460mcc11mnc [zh_CN] ldltr sw540dp w912dp h516dp 320dpi lrg long land finger -keyb/v/h -nav/h s.6}
+  mWakefulness=Awake
+  mSleepTokens=[]
+  mSleeping=false mLockScreenShown=LOCK_SCREEN_HIDDEN
+  mShuttingDown=false mTestPssMode=false

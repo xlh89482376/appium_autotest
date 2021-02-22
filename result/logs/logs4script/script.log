@@ -70,3 +70,9 @@
 2020-10-15 19:51:16,323167 DEBUG common.base.Command.py 411 - pull crash to result/logs/crash
 2020-10-15 19:51:16,326993 DEBUG common.base.Command.py 419 - pull anr to result/logs/anr
 >>>>>>> Stashed changes
+2021-02-22 16:59:59,518241 INFO common.dev.DeviceInfo.py 18 - 开始获取设备信息.....
+2021-02-22 17:00:40,383253 INFO common.dev.DeviceInfo.py 18 - 开始获取设备信息.....
+2021-02-22 17:00:50,329819 ERROR common.dev.DeviceInfo.py 55 - Get device info happen ERROR :list index out of range
+2021-02-22 17:10:00,852031 INFO common.dev.DeviceInfo.py 18 - 开始获取设备信息.....
+2021-02-22 17:10:01,365372 INFO common.dev.DeviceInfo.py 28 - 1.设备连接信息：emulator-5554-{'brand': 'google', 'model': 'Android SDK built for x86', 'os_version': '8.0.0', 'dpi': '160', 'screen_size': '1920x720', 'name': 'emulator-5554'}
+2021-02-22 17:10:01,365916 INFO common.dev.DeviceInfo.py 30 - 设备信息获取完毕，设备总数量：1

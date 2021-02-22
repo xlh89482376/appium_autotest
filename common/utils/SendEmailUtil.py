@@ -27,8 +27,10 @@ class SendMail:
         try:
             mail_host = self.config.get(section, "host")
             mail_user = self.config.get(section, "user")
-            mail_passwd_base64  = self.config.get(section, "passwd")
-            mail_passwd = str(base64.b64decode(mail_passwd_base64), encoding='utf-8')
+            # mail_passwd_base64  = self.config.get(section, "passwd")
+            mail_passwd = self.config.get(section, "passwd")
+            # mail_passwd = str(base64.b64decode(mail_passwd_base64), encoding='utf-8')
+            # mail_passwd = str(base64.b64decode(mail_passwd_base64), encoding='utf8')
             sender_name = self.config.get(section, "name")
             sender_addr = self.config.get(section, "sender")
         except Exception as e:

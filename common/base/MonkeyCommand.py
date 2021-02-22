@@ -245,6 +245,7 @@ class MonkeyCmd():
         env = Environment(loader=PackageLoader('templates', 'temp'))
 
         template = env.get_template("report.html")
+        print(self.device_name)
 
         content = template.render(apps_list=apps_list, crash_cnt=crash_cnt, anr_cnt=anr_cnt, result=self.result, tester=tester, time=time, app_name=app_name, device_name=self.device_name, sn=self.sn, total_time=total_time, crash_file_dict=crash_file_dict, anr_file_dict=anr_file_dict, color=self.color)
 
@@ -260,6 +261,6 @@ if __name__ == '__main__':
     mk = MonkeyCmd(sn)
     # mk.init()
     # mk.monkey_test()
-    mk.monkey_stop()
+    # mk.monkey_stop()
 
     # mk.init()

@@ -1,0 +1,190 @@
+:Monkey: seed=43411 count=100
+:AllowPackage: com.android.settings
+:AllowPackage: com.mogo.launcher.f
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Selecting main activities from category android.intent.category.LAUNCHER
+//   - NOT USING main activity cn.kuwo.kwmusiccar.WelcomeActivity (from package cn.kuwo.kwmusiccar)
+//   - NOT USING main activity com.abupdate.fota_demo_iot.view.activity.MainActivity (from package com.abupdate.fota_demo_iot)
+//   - NOT USING main activity com.android.contacts.activities.PeopleActivity (from package com.android.contacts)
+//   - NOT USING main activity com.android.dialer.DialtactsActivity (from package com.android.dialer)
+//   - NOT USING main activity com.android.messaging.ui.conversationlist.ConversationListActivity (from package com.android.messaging)
+//   + Using main activity com.android.settings.Settings (from package com.android.settings)
+//   - NOT USING main activity com.autonavi.auto.remote.fill.UsbFillActivity (from package com.autonavi.amapauto)
+//   - NOT USING main activity com.zhidao.bluetooth.ui.MainActivity (from package com.zhidao.bluetooth)
+//   - NOT USING main activity com.zhidao.bluetooth.ui.MusicActivity (from package com.zhidao.bluetooth)
+//   + Using main activity com.zhidao.mogo.module.main.launcher.MainLauncherActivity (from package com.mogo.launcher.f)
+//   - NOT USING main activity com.android.documentsui.LauncherActivity (from package com.android.documentsui)
+//   - NOT USING main activity com.logtool.zhidaohulian.MainActivity (from package com.logtool.zhidaohulian)
+//   - NOT USING main activity com.ximalaya.ting.android.car.business.module.splash.WelActivity (from package com.ximalaya.ting.android.car)
+//   - NOT USING main activity com.zhidao.fpersonalcenter.activity.MainActivity (from package com.zhidao.auto.personal)
+//   - NOT USING main activity com.zhidao.autopilot.MainActivity (from package com.zhidao.autopilot)
+//   - NOT USING main activity com.zhidao.carcorder.ui.main.CarRecordActivity (from package com.zhidao.carcorder)
+//   - NOT USING main activity com.squareup.leakcanary.internal.DisplayLeakActivity (from package com.zhidao.guide.lock)
+//   - NOT USING main activity com.zhidao.services.MainActivity (from package com.zhidao.services)
+//   - NOT USING main activity com.zhidao.settings.main.MainActivity_ (from package com.zhidao.settings)
+//   - NOT USING main activity com.zhidao.video.ui.activity.MainActivity (from package com.zhidao.video)
+//   - NOT USING main activity com.zhidao.weather.view.activity.WeatherActivity (from package com.zhidao.weather)
+//   - NOT USING main activity cn.darkal.networkdiagnosis.Activity.MainActivity (from package cn.darkal.networkdiagnosis)
+//   - NOT USING main activity com.iflytek.inputmethod.pad.WizardActivity (from package com.iflytek.inputmethod.pad)
+//   - NOT USING main activity com.mogo.cloud.MainActivity (from package com.mogo.cloud)
+//   - NOT USING main activity com.mogo.okhttptest.MainActivity (from package com.mogo.okhttptest)
+//   - NOT USING main activity com.mogo.testmogoaicloudsdk.MainActivity (from package com.mogo.testmogoaicloudsdk)
+//   - NOT USING main activity com.mogo.testretrofit.MainActivity (from package com.mogo.testretrofit)
+//   - NOT USING main activity org.qiyi.android.video.MainActivity (from package com.qiyi.video.pad)
+//   - NOT USING main activity com.zhidao.yiche.MainActivity (from package com.zhidao.anxinbao)
+//   - NOT USING main activity com.zhidao.lib_base.MainActivity (from package com.zhidao.lib_base)
+//   - NOT USING main activity com.zhidao.logcat.MainActivity (from package com.zhidao.logcat)
+//   - NOT USING main activity com.zhidao.yiche.MainActivity (from package com.zhidao.yiche)
+//   - NOT USING main activity com.zhidao.yiche.MainActivity (from package com.zhidao.yiche.price)
+// Selecting main activities from category android.intent.category.MONKEY
+//   + Using main activity com.android.settings.Settings$RunningServicesActivity (from package com.android.settings)
+//   + Using main activity com.android.settings.Settings$StorageUseActivity (from package com.android.settings)
+// Seeded: 43411
+// Event percentages:
+//   0: 15.0%
+//   1: 10.0%
+//   2: 2.0%
+//   3: 15.0%
+//   4: -0.0%
+//   5: -0.0%
+//   6: 25.0%
+//   7: 15.0%
+//   8: 2.0%
+//   9: 2.0%
+//   10: 1.0%
+//   11: 13.0%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.mogo.launcher.f/com.zhidao.mogo.module.main.launcher.MainLauncherActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.mogo.launcher.f/com.zhidao.mogo.module.main.launcher.MainLauncherActivity } in package com.mogo.launcher.f
+Sleeping for 300 milliseconds
+:Sending Key (ACTION_DOWN): 21    // KEYCODE_DPAD_LEFT
+:Sending Key (ACTION_UP): 21    // KEYCODE_DPAD_LEFT
+Sleeping for 300 milliseconds
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 300 milliseconds
+:Sending Key (ACTION_DOWN): 80    // KEYCODE_FOCUS
+:Sending Key (ACTION_UP): 80    // KEYCODE_FOCUS
+Sleeping for 300 milliseconds
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 300 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(2.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,2.0)
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 300 milliseconds
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 300 milliseconds
+:Sending Key (ACTION_DOWN): 202    // KEYCODE_BUTTON_15
+:Sending Key (ACTION_UP): 202    // KEYCODE_BUTTON_15
+Sleeping for 300 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(1094.0,23.0)
+:Sending Touch (ACTION_MOVE): 0:(1092.7744,32.492363)
+:Sending Touch (ACTION_MOVE): 0:(1083.1497,42.74978)
+:Sending Touch (ACTION_UP): 0:(1078.4119,51.678165)
+Sleeping for 300 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(1481.0,228.0)
+:Sending Touch (ACTION_MOVE): 0:(1488.9875,223.35027)
+:Sending Touch (ACTION_MOVE): 0:(1507.3479,209.80324)
+:Sending Touch (ACTION_MOVE): 0:(1511.0768,206.35722)
+:Sending Touch (ACTION_MOVE): 0:(1519.947,192.16434)
+:Sending Touch (ACTION_UP): 0:(1533.6896,188.88913)
+Sleeping for 300 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(803.0,500.0)
+:Sending Touch (ACTION_UP): 0:(790.8052,496.1262)
+Sleeping for 300 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(1189.0,289.0)
+:Sending Touch (ACTION_UP): 0:(1187.6841,291.43124)
+Sleeping for 300 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(338.0,994.0)
+:Sending Touch (ACTION_UP): 0:(333.3089,998.4196)
+Sleeping for 300 milliseconds
+:Sending Flip keyboardOpen=false
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+Sleeping for 300 milliseconds
+:Sending Key (ACTION_DOWN): 194    // KEYCODE_BUTTON_7
+:Sending Key (ACTION_UP): 194    // KEYCODE_BUTTON_7
+Sleeping for 300 milliseconds
+:Sending Key (ACTION_DOWN): 175    // KEYCODE_CAPTIONS
+:Sending Key (ACTION_UP): 175    // KEYCODE_CAPTIONS
+Sleeping for 300 milliseconds
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 300 milliseconds
+:Sending Key (ACTION_DOWN): 251    // KEYCODE_TV_INPUT_VGA_1
+:Sending Key (ACTION_UP): 251    // KEYCODE_TV_INPUT_VGA_1
+Sleeping for 300 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-1.0)
+:Sending Trackball (ACTION_DOWN): 0:(0.0,0.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+Sleeping for 300 milliseconds
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 300 milliseconds
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 300 milliseconds
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 300 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(53.0,826.0)
+:Sending Touch (ACTION_UP): 0:(57.96663,828.9749)
+Sleeping for 300 milliseconds
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] pkg=cn.kuwo.kwmusiccar cmp=cn.kuwo.kwmusiccar/.WelcomeActivity } in package cn.kuwo.kwmusiccar
+:Sending Touch (ACTION_DOWN): 0:(436.0,792.0)
+:Sending Touch (ACTION_POINTER_DOWN 1): 0:(441.74377,790.2098) 1:(1813.0,118.0)
+:Sending Touch (ACTION_MOVE): 0:(448.78427,779.95764) 1:(1807.67,104.289085)
+:Sending Touch (ACTION_MOVE): 0:(450.37463,772.06244) 1:(1806.9443,80.33073)
+:Sending Touch (ACTION_MOVE): 0:(455.3364,769.10815) 1:(1800.0549,57.94292)
+:Sending Touch (ACTION_MOVE): 0:(461.8271,763.3684) 1:(1794.9799,49.67946)
+:Sending Touch (ACTION_MOVE): 0:(468.03802,761.5121) 1:(1789.8334,32.182587)
+:Sending Touch (ACTION_POINTER_UP 1): 0:(472.475,758.11536) 1:(1789.3881,9.951338)
+:Sending Touch (ACTION_UP): 0:(473.9179,754.58167)
+Sleeping for 300 milliseconds
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.android.settings/.Settings;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.android.settings/.Settings } in package com.android.settings
+Events injected: 100
+:Sending rotation degree=0, persist=false
+:Dropped: keys=0 pointers=0 trackballs=0 flips=1 rotations=0
+## Network stats: elapsed time=8166ms (0ms mobile, 0ms wifi, 8166ms not connected)
+// Monkey finished

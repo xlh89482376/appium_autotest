@@ -7,6 +7,7 @@ class Mogo(object):
         self.product = ''
 
     def set_product(self):
+        print(self.sn)
         if self.starts_with(self.sn, "XTCBA"):
             self.product = 'C80'
         elif self.starts_with(self.sn, "ZD821", "ZD822", "D801A", "D802A"):
@@ -27,10 +28,12 @@ class Mogo(object):
             self.product = 'E85'
         elif self.starts_with(self.sn, "F803B", "F803E"):
             self.product = 'F80'
+            print('F80')
         elif self.starts_with(self.sn, "H600C"):
             self.product = 'H600CD'
         else:
             print("sn匹配错误")
+        return self.product
 
     def starts_with(self, sn, *args):
         flag = False
@@ -41,6 +44,6 @@ class Mogo(object):
         return flag
 
 if __name__ == '__main__':
-    mogo = Mogo('H100CD000000000')
+    mogo = Mogo('H600CD000000000')
 
     mogo.set_product()

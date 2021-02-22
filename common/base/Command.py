@@ -461,5 +461,7 @@ class Cmd(object):
 
 if __name__ == '__main__':
     adb = Cmd()
+    list = adb.get_device_SN()
+    print(list)
 
 
