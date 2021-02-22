@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="397d5a09-15ea-40e2-a94b-05d68f70c1fb" name="Default" comment="1.0">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/common/base/Command.py" afterPath="$PROJECT_DIR$/common/base/Command.py" />
-      <change beforePath="$PROJECT_DIR$/common/base/Mogo.py" afterPath="$PROJECT_DIR$/common/base/Mogo.py" />
-      <change beforePath="$PROJECT_DIR$/common/base/MonkeyCommand.py" afterPath="$PROJECT_DIR$/common/base/MonkeyCommand.py" />
-      <change beforePath="$PROJECT_DIR$/common/utils/SendEmailUtil.py" afterPath="$PROJECT_DIR$/common/utils/SendEmailUtil.py" />
-      <change beforePath="$PROJECT_DIR$/monkey/config/launcher.ini" afterPath="$PROJECT_DIR$/monkey/config/launcher.ini" />
-      <change beforePath="$PROJECT_DIR$/monkey/data/whitelist.txt" afterPath="$PROJECT_DIR$/monkey/data/whitelist.txt" />
-      <change beforePath="$PROJECT_DIR$/monkey/logs/172.30.30.61:5555/dumpsys/dumpsys_172.30.30.61:5555.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/monkey/logs/172.30.30.61:5555/monkey.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/result/logs/logs4script/script.log" afterPath="$PROJECT_DIR$/result/logs/logs4script/script.log" />
-      <change beforePath="$PROJECT_DIR$/templates/temp/report.html" afterPath="$PROJECT_DIR$/templates/temp/report.html" />
-    </list>
+    <list default="true" id="397d5a09-15ea-40e2-a94b-05d68f70c1fb" name="Default" comment="1.0" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +60,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.37861094">
+    <splitter split-orientation="horizontal" split-proportion="0.36570376">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="launcher.ini" pinned="false" current-in-tab="false">
@@ -88,24 +76,10 @@
           <file leaf-file-name="MonkeyCommand.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/common/base/MonkeyCommand.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="253">
-                  <caret line="52" column="50" lean-forward="true" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+                <state relative-caret-position="627">
+                  <caret line="260" column="22" lean-forward="true" selection-start-line="260" selection-start-column="22" selection-end-line="260" selection-end-column="22" />
                   <folding>
                     <element signature="e#0#53#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="report.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/templates/temp/report.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-                  <folding>
-                    <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#td#0;n#tr#0;n#table#1;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#td#0;n#tr#0;n#table#2;n#html#0;n#!!top" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -148,8 +122,8 @@
           <file leaf-file-name="Mogo.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/common/base/Mogo.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="349">
-                  <caret line="30" column="23" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="23" />
+                <state relative-caret-position="393">
+                  <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
                   <folding />
                 </state>
               </provider>
@@ -693,7 +667,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769045" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39867842" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39867842" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32819384" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="-1899" y="375" width="1878" height="298" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270925" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39096916" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1096,18 +1070,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/temp/report.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-          <folding>
-            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#table#1;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#table#2;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/monkey/config/launcher.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -1124,10 +1086,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/temp/report.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1704">
+          <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#1;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#2;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/common/base/MonkeyCommand.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="52" column="50" lean-forward="true" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+        <state relative-caret-position="627">
+          <caret line="260" column="22" lean-forward="true" selection-start-line="260" selection-start-column="22" selection-end-line="260" selection-end-column="22" />
           <folding>
             <element signature="e#0#53#0" expanded="true" />
           </folding>
@@ -1136,8 +1110,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/base/Mogo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="30" column="23" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="23" />
+        <state relative-caret-position="393">
+          <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
           <folding />
         </state>
       </provider>
