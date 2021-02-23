@@ -70,7 +70,7 @@ class Cmd(object):
         result.reverse()
         for line in result[1:]:
             if "attached" not in line.decode('utf-8').strip() and "daemon" not in line.decode('utf-8').strip():
-                devices.append(line.decode('utf-8').split()[0])
+                devices.append(line.decode('utf-8').split()[0].split(':')[0])
             else:
                 break
         return devices

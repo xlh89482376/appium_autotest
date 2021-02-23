@@ -56,7 +56,9 @@ class AppMoni(object):
             print(type(battery))
             pick.writeInfo(battery, PATH(Config.info_path + target + '_battery.pickle'))
         else:
-            pick.writeInfo(battery, PATH(Config.info_path + target + '_battery.pickle'))
+           pick.writeInfo(battery, PATH(Config.info_path + target + '_battery.pickle'))
+    
+
         return battery
 
     def totalCpuTime(self, dev):

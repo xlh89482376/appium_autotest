@@ -6,7 +6,7 @@ class OperateFileUtil(object):
         self.method = method
         self.fileHandle = None
 
-    def mkdir_file(self):
+    def touch_file(self):
         if not os.path.isfile(self.file):
             f = open(self.file, self.method)
             f.close()
@@ -14,7 +14,7 @@ class OperateFileUtil(object):
         else:
             print("文件已经存在")
 
-    def remove_file(self):
+    def mv_file(self):
         if os.path.isfile(self.file):
             os.remove(self.file)
             print("删除文件成功")
