@@ -33,6 +33,8 @@ class Mogo(object):
             self.product = 'H600CD'
         else:
             print("sn匹配错误")
+            self.product = '未知'
+            return self.product
         return self.product
 
     def starts_with(self, sn, *args):
