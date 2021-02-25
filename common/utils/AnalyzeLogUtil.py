@@ -161,10 +161,23 @@ class DeviceLog:
 
         return hash.hexdigest()
 
+    def getAnrHash(self, f):
+        hash = hashlib.md5()
+        reason = f.readlines()[3]
+        print(reason)
+        hash.update(reason)
+        return hash.hexdigest()
+
     def isCrashHashEqual(self, f1, f2):
         str1 = self.getCrashHash(f1)
         str2 = self.getCrashHash(f2)
         return str1 == str2
+
+    def isAnrEqual(self, f1, f2):
+        if f1.readlines[3] == f2.readlines[3]:
+            return True
+        else:
+            return False
 
     def fileList(self):
         '''
@@ -243,19 +256,23 @@ class DeviceLog:
             path = os.path.basename(list[i])
             anr_log = self.anr_dir + path
             f = open(anr_log, "rb")
-            file_hash_list.append(self.getCrashHash(f))
+            file_hash_list.append(self.getAnrHash(f))
 
         for hash in file_hash_list:
             file_hash_dict.update({hash: file_hash_list.count(hash)})
 
         for k, v in file_hash_dict.items():
             for file in file_list:
-                if self.getCrashHash(file) == k:
+                if self.getAnrHash(file) == k:
                     file.seek(0)
                     # file_dict.update({file.read().decode('utf-8'): v})
                     file_dict.update({self.convertReportFile(file): v})
                     break
 
+        for k, v in file_dict.items():
+            print(k)
+            print(v)
+            print('=================================================================')
         return file_dict
 
     def convertReportFile(self, f):
@@ -265,6 +282,12 @@ class DeviceLog:
             line_new = line.decode('utf-8') + r'<br>'
             str += line_new
         return str
+
+if __name__ == '__main__':
+    sn = '111111'
+    path = '/Users/xuanlonghua/Documents/ZD/Projects/appium_autotest/monkey/logs/'
+    dl = DeviceLog(sn, path)
+    dl.anrFileDict()
 
 
 
