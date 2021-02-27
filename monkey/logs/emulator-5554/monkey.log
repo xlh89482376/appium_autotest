@@ -1,0 +1,253 @@
+  bash arg: --pkg-whitelist-file
+  bash arg: /sdcard/whitelist.txt
+  bash arg: -s
+  bash arg: 5676
+  bash arg: --ignore-crashes
+  bash arg: --ignore-timeouts
+  bash arg: --throttle
+  bash arg: 300
+  bash arg: -v
+  bash arg: -v
+  bash arg: -v
+  bash arg: 100
+args: [--pkg-whitelist-file, /sdcard/whitelist.txt, -s, 5676, --ignore-crashes, --ignore-timeouts, --throttle, 300, -v, -v, -v, 100]
+ arg: "--pkg-whitelist-file"
+ arg: "/sdcard/whitelist.txt"
+ arg: "-s"
+ arg: "5676"
+ arg: "--ignore-crashes"
+ arg: "--ignore-timeouts"
+ arg: "--throttle"
+ arg: "300"
+ arg: "-v"
+ arg: "-v"
+ arg: "-v"
+ arg: "100"
+arg="--pkg-whitelist-file" mCurArgData="null" mNextArg=1 argwas="--pkg-whitelist-file" nextarg="/sdcard/whitelist.txt"
+data="/sdcard/whitelist.txt"
+data="5676"
+arg="--ignore-crashes" mCurArgData="null" mNextArg=5 argwas="--ignore-crashes" nextarg="--ignore-timeouts"
+arg="--ignore-timeouts" mCurArgData="null" mNextArg=6 argwas="--ignore-timeouts" nextarg="--throttle"
+arg="--throttle" mCurArgData="null" mNextArg=7 argwas="--throttle" nextarg="300"
+data="300"
+:Monkey: seed=5676 count=100
+:AllowPackage: com.android.settings
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Selecting main activities from category android.intent.category.LAUNCHER
+//   - NOT USING main activity com.android.camera.CameraLauncher (from package com.android.camera2)
+//   - NOT USING main activity com.google.android.apps.chrome.Main (from package com.android.chrome)
+//   - NOT USING main activity com.android.contacts.activities.PeopleActivity (from package com.android.contacts)
+//   + Using main activity com.android.settings.Settings (from package com.android.settings)
+//   - NOT USING main activity com.google.android.apps.docs.app.NewMainProxyActivity (from package com.google.android.apps.docs)
+//   - NOT USING main activity com.google.android.maps.MapsActivity (from package com.google.android.apps.maps)
+//   - NOT USING main activity com.google.android.apps.messaging.ui.ConversationListActivity (from package com.google.android.apps.messaging)
+//   - NOT USING main activity com.google.android.apps.photos.home.HomeActivity (from package com.google.android.apps.photos)
+//   - NOT USING main activity com.android.calendar.AllInOneActivity (from package com.google.android.calendar)
+//   - NOT USING main activity com.android.deskclock.DeskClock (from package com.google.android.deskclock)
+//   - NOT USING main activity com.google.android.dialer.extensions.GoogleDialtactsActivity (from package com.google.android.dialer)
+//   - NOT USING main activity com.google.android.gm.ConversationListActivityGmail (from package com.google.android.gm)
+//   - NOT USING main activity com.android.music.activitymanagement.TopLevelActivity (from package com.google.android.music)
+//   - NOT USING main activity com.google.android.youtube.videos.EntryPoint (from package com.google.android.videos)
+//   - NOT USING main activity com.google.android.youtube.app.honeycomb.Shell$HomeActivity (from package com.google.android.youtube)
+//   - NOT USING main activity com.android.calculator2.Calculator (from package com.android.calculator2)
+//   - NOT USING main activity com.android.customlocale2.CustomLocaleActivity (from package com.android.customlocale2)
+//   - NOT USING main activity com.android.development.Development (from package com.android.development)
+//   - NOT USING main activity com.android.documentsui.LauncherActivity (from package com.android.documentsui)
+//   - NOT USING main activity com.google.android.apps.tachyon.MainActivity (from package com.google.android.apps.tachyon)
+//   - NOT USING main activity com.google.android.apps.wallpaper.picker.CategoryPickerActivity (from package com.google.android.apps.wallpaper)
+//   - NOT USING main activity com.google.android.googlequicksearchbox.VoiceSearchActivity (from package com.google.android.googlequicksearchbox)
+//   - NOT USING main activity com.google.android.googlequicksearchbox.SearchActivity (from package com.google.android.googlequicksearchbox)
+//   - NOT USING main activity org.chromium.webview_shell.WebViewBrowserActivity (from package org.chromium.webview_shell)
+//   - NOT USING main activity com.mogo.okhttptest.MainActivity (from package com.mogo.okhttptest)
+//   - NOT USING main activity com.zhidao.logcat.MainActivity (from package com.zhidao.logcat)
+// Selecting main activities from category android.intent.category.MONKEY
+//   + Using main activity com.android.settings.Settings$RunningServicesActivity (from package com.android.settings)
+//   + Using main activity com.android.settings.Settings$StorageUseActivity (from package com.android.settings)
+//   - NOT USING main activity com.google.android.apps.nexuslauncher.NexusLauncherActivity (from package com.google.android.apps.nexuslauncher)
+//   - NOT USING main activity com.google.android.googlequicksearchbox.SearchActivity (from package com.google.android.googlequicksearchbox)
+// Seeded: 5676
+// Event percentages:
+//   0: 15.0%
+//   1: 10.0%
+//   2: 2.0%
+//   3: 15.0%
+//   4: -0.0%
+//   5: -0.0%
+//   6: 25.0%
+//   7: 15.0%
+//   8: 2.0%
+//   9: 2.0%
+//   10: 1.0%
+//   11: 13.0%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.android.settings/.Settings%24StorageUseActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.android.settings/.Settings$StorageUseActivity } in package com.android.settings
+Sleeping for 300 milliseconds
+:Sending Key (ACTION_DOWN): 166    // KEYCODE_CHANNEL_UP
+:Sending Key (ACTION_UP): 166    // KEYCODE_CHANNEL_UP
+Sleeping for 300 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(709.0,368.0)
+:Sending Touch (ACTION_UP): 0:(707.77374,381.3306)
+Sleeping for 300 milliseconds
+    // Allowing start of Intent { act=android.intent.action.MAIN cmp=com.android.settings/.SubSettings } in package com.android.settings
+:Sending Trackball (ACTION_MOVE): 0:(1.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-1.0)
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 300 milliseconds
+// CRASH: com.android.settings (pid 3902)
+// Short Msg: java.util.IllegalFormatConversionException
+// Long Msg: java.util.IllegalFormatConversionException: d != java.lang.String
+// Build Label: google/sdk_gphone_x86/generic_x86:8.0.0/OSR1.180418.024/6450276:userdebug/dev-keys
+// Build Changelist: 6450276
+// Build Time: 1588295516000
+// java.util.IllegalFormatConversionException: d != java.lang.String
+// 	at java.util.Formatter$FormatSpecifier.failConversion(Formatter.java:4402)
+// 	at java.util.Formatter$FormatSpecifier.printInteger(Formatter.java:2884)
+// 	at java.util.Formatter$FormatSpecifier.print(Formatter.java:2838)
+// 	at java.util.Formatter.format(Formatter.java:2529)
+// 	at java.util.Formatter.format(Formatter.java:2458)
+// 	at java.lang.String.format(String.java:2814)
+// 	at android.content.res.Resources.getString(Resources.java:457)
+// 	at android.app.Fragment.getString(Fragment.java:896)
+// 	at com.android.settings.applications.InstalledAppDetails.updateBattery(InstalledAppDetails.java:781)
+// 	at com.android.settings.applications.InstalledAppDetails$1.onLoadFinished(InstalledAppDetails.java:227)
+// 	at com.android.settings.applications.InstalledAppDetails$1.onLoadFinished(InstalledAppDetails.java:220)
+// 	at android.app.LoaderManagerImpl$LoaderInfo.callOnLoadFinished(LoaderManager.java:489)
+// 	at android.app.LoaderManagerImpl$LoaderInfo.onLoadComplete(LoaderManager.java:457)
+// 	at android.content.Loader.deliverResult(Loader.java:144)
+// 	at com.android.settings.utils.AsyncLoader.deliverResult(AsyncLoader.java:68)
+// 	at android.content.AsyncTaskLoader.dispatchOnLoadComplete(AsyncTaskLoader.java:268)
+// 	at android.content.AsyncTaskLoader$LoadTask.onPostExecute(AsyncTaskLoader.java:92)
+// 	at android.os.AsyncTask.finish(AsyncTask.java:695)
+// 	at android.os.AsyncTask.-wrap1(Unknown Source:0)
+// 	at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:712)
+// 	at android.os.Handler.dispatchMessage(Handler.java:105)
+// 	at android.os.Looper.loop(Looper.java:164)
+// 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+// 
+:Sending Touch (ACTION_DOWN): 0:(982.0,179.0)
+:Sending Touch (ACTION_UP): 0:(982.96155,177.67993)
+Sleeping for 300 milliseconds
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 300 milliseconds
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 300 milliseconds
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 300 milliseconds
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.android.settings/.Settings;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.android.settings/.Settings } in package com.android.settings
+Sleeping for 300 milliseconds
+:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
+:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
+Sleeping for 300 milliseconds
+:Sending Key (ACTION_DOWN): 21    // KEYCODE_DPAD_LEFT
+:Sending Key (ACTION_UP): 21    // KEYCODE_DPAD_LEFT
+Sleeping for 300 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(1234.0,169.0)
+:Sending Touch (ACTION_UP): 0:(1224.9589,183.3645)
+Sleeping for 300 milliseconds
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 300 milliseconds
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 300 milliseconds
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.android.settings/.Settings;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.android.settings/.Settings } in package com.android.settings
+Sleeping for 300 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(140.0,191.0)
+:Sending Touch (ACTION_MOVE): 0:(149.02737,202.11993)
+:Sending Touch (ACTION_UP): 0:(157.72737,212.92255)
+Sleeping for 300 milliseconds
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 300 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(1382.0,61.0)
+:Sending Touch (ACTION_UP): 0:(1385.4233,44.677643)
+Sleeping for 300 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-3.0)
+:Sending Key (ACTION_DOWN): 21    // KEYCODE_DPAD_LEFT
+:Sending Key (ACTION_UP): 21    // KEYCODE_DPAD_LEFT
+Sleeping for 300 milliseconds
+:Sending Key (ACTION_DOWN): 67    // KEYCODE_DEL
+:Sending Key (ACTION_UP): 67    // KEYCODE_DEL
+Sleeping for 300 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(833.0,354.0)
+:Sending Touch (ACTION_UP): 0:(833.67175,354.5973)
+Sleeping for 300 milliseconds
+    // Allowing start of Intent { cmp=com.android.settings/.Settings$ConnectedDeviceDashboardActivity } in package com.android.settings
+:Sending Touch (ACTION_DOWN): 0:(1013.0,375.0)
+:Sending Touch (ACTION_UP): 0:(1005.3143,375.55267)
+Sleeping for 300 milliseconds
+    // Rejecting start of Intent { cmp=com.google.android.gms/.auth.proximity.multidevice.SettingsActivity } in package com.google.android.gms
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 300 milliseconds
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 300 milliseconds
+:Sending Key (ACTION_DOWN): 21    // KEYCODE_DPAD_LEFT
+:Sending Key (ACTION_UP): 21    // KEYCODE_DPAD_LEFT
+Sleeping for 300 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-3.0)
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 300 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-3.0)
+Events injected: 100
+:Sending rotation degree=0, persist=false
+:Dropped: keys=0 pointers=0 trackballs=0 flips=0 rotations=0
+## Network stats: elapsed time=8245ms (0ms mobile, 0ms wifi, 8245ms not connected)
+// Monkey finished

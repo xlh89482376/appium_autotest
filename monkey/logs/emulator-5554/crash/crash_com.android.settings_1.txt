@@ -1,0 +1,34 @@
+// CRASH: com.android.settings (pid 3902)
+// Short Msg: java.util.IllegalFormatConversionException
+// Long Msg: java.util.IllegalFormatConversionException: d != java.lang.String
+// Build Label: google/sdk_gphone_x86/generic_x86:8.0.0/OSR1.180418.024/6450276:userdebug/dev-keys
+// Build Changelist: 6450276
+// Build Time: 1588295516000
+// java.util.IllegalFormatConversionException: d != java.lang.String
+// 	at java.util.Formatter$FormatSpecifier.failConversion(Formatter.java:4402)
+// 	at java.util.Formatter$FormatSpecifier.printInteger(Formatter.java:2884)
+// 	at java.util.Formatter$FormatSpecifier.print(Formatter.java:2838)
+// 	at java.util.Formatter.format(Formatter.java:2529)
+// 	at java.util.Formatter.format(Formatter.java:2458)
+// 	at java.lang.String.format(String.java:2814)
+// 	at android.content.res.Resources.getString(Resources.java:457)
+// 	at android.app.Fragment.getString(Fragment.java:896)
+// 	at com.android.settings.applications.InstalledAppDetails.updateBattery(InstalledAppDetails.java:781)
+// 	at com.android.settings.applications.InstalledAppDetails$1.onLoadFinished(InstalledAppDetails.java:227)
+// 	at com.android.settings.applications.InstalledAppDetails$1.onLoadFinished(InstalledAppDetails.java:220)
+// 	at android.app.LoaderManagerImpl$LoaderInfo.callOnLoadFinished(LoaderManager.java:489)
+// 	at android.app.LoaderManagerImpl$LoaderInfo.onLoadComplete(LoaderManager.java:457)
+// 	at android.content.Loader.deliverResult(Loader.java:144)
+// 	at com.android.settings.utils.AsyncLoader.deliverResult(AsyncLoader.java:68)
+// 	at android.content.AsyncTaskLoader.dispatchOnLoadComplete(AsyncTaskLoader.java:268)
+// 	at android.content.AsyncTaskLoader$LoadTask.onPostExecute(AsyncTaskLoader.java:92)
+// 	at android.os.AsyncTask.finish(AsyncTask.java:695)
+// 	at android.os.AsyncTask.-wrap1(Unknown Source:0)
+// 	at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:712)
+// 	at android.os.Handler.dispatchMessage(Handler.java:105)
+// 	at android.os.Looper.loop(Looper.java:164)
+// 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+// 

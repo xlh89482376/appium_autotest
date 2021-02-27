@@ -1,2 +1,1 @@
 com.android.settings
-com.mogo.launcher.f
