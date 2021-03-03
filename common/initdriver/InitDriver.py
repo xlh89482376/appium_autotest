@@ -47,7 +47,7 @@ class InitDriver(object):
     def init_driver(self):
 
         desired_caps_dict = self.run_config.get_desired_caps_dict()
-        sno_list = self.cmd.get_device_list()
+        sno_list = self.cmd.get_device_list
 
         if not len(sno_list):
             return None

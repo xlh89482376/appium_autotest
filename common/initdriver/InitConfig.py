@@ -17,7 +17,7 @@ class InitConfiger(object):
     def get_desired_caps_dict(self):
         section = "desired_caps"
         desired_caps_dict = {}
-        sno_list = self.cmd.get_device_list()
+        sno_list = self.cmd.get_device_list
         if not len(sno_list):
             return None
         for sno in sno_list:

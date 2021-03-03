@@ -1,6 +1,7 @@
 import os
 
 class OperateFileUtil(object):
+
     def __init__(self, file, method='w+'):
         self.file = file
         self.method = method

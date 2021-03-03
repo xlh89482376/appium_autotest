@@ -6,7 +6,7 @@ class OperatePick(object):
     '''
     def readInfo(self, path):
         data = []
-        with open(path, 'rb') as  f:
+        with open(path, 'rb') as f:
             try:
                 data = pickle.load(f)
             except EOFError:
@@ -38,7 +38,7 @@ class OperatePick(object):
         with open(path, 'wb') as f:
             print('---------write---------')
             print(result)
-            pickle.dumps(result, f)
+            pickle.dump(result, f)
 
     def writeSum(self, init, data=None, path="data.pickle"):
         if init == 0:
@@ -49,4 +49,4 @@ class OperatePick(object):
         with open(path, 'wb') as f:
             print('---------writeSum---------')
             print("Sum:%s" % result)
-            pickle.dumps(result, f)
+            pickle.dump(result, f)

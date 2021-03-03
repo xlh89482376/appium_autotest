@@ -11,7 +11,7 @@ class DeviceInfo(object):
 
         try:
             info = {}
-            lists = self.cmd.get_device_list()
+            lists = self.cmd.get_device_list
             if not len(lists):
                 self.log4py.info("无任何设备处于连接状态")
                 return None

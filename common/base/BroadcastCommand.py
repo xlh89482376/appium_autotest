@@ -1,8 +1,10 @@
-import subprocess, platform, yaml
-from common.utils.ParamCheckUtil import ParamCheckUtil
+import subprocess
+import platform
+import yaml
 from common.utils.FilePathUtil import FilePathUtil
 
-class BroadcastCommand():
+
+class BroadcastCommand:
 
     def __init__(self):
         self.system = platform.system()
@@ -23,16 +25,23 @@ class BroadcastCommand():
     def serialno(self, sno):
         self.__serialno = sno
 
-    def broadcast(self, action ,**kwargs):
+    def broadcast(self, action, **kwargs):
         params = ""
         for key, value in kwargs.items():
             params = params + " --es " + key + " \"%s\"" % value
         if self.__serialno == "" or self.__serialno is None:
             cmd = "%s %s%s" % (self.command, str(action), str(params))
         else:
-            cmd = "%s -s %s %s %s" % (self.command, self.__serialno, str(action), str(params))
+            cmd = "%s -s %s %s %s" % (self.command,
+                                      self.__serialno,
+                                      str(action),
+                                      str(params))
 
-        s = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        s = subprocess.Popen(
+            cmd,
+            shell=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE)
         r = s.stdout.read().decode('utf-8').splitlines()[1][-1]
         if int(r) == 0:
             return True
@@ -50,6 +59,7 @@ class BroadcastCommand():
         try:
             return self.load_yaml()[bc_name]["params"]
         except Exception as e:
+            print(e)
             return None
 
     def send_broadcast(self, bc_name):

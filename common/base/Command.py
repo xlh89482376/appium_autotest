@@ -1,6 +1,5 @@
-import random
 import subprocess
-import re, os, platform, time
+import re, os, platform
 from common.utils.FilePathUtil import FilePathUtil
 from common.utils.DateTimeUtil import DateTimeManager
 from common.utils.LoggingUtil import LoggingController
@@ -61,6 +60,7 @@ class Cmd(object):
         """
         return self.adb("get-serialno").stdout.read().decode('utf-8').strip()
 
+    @property
     def get_device_list(self):
         """
         获取设备列表
@@ -76,11 +76,12 @@ class Cmd(object):
         return devices
 
     def get_device_num(self):
-        return len(self.get_device_list())
+        return len(self.get_device_list)
 
     def get_device_SN(self):
         """
         车机SN
+        @return:
         """
         return self.shell("getprop gsm.serial").stdout.read().decode('utf-8').strip()
 
@@ -241,6 +242,7 @@ class Cmd(object):
         """
         return self.get_focused_package_and_activity().split('/')[1]
 
+    @property
     def get_system_app_list(self):
         """
         获取设备中安装的系统应用包名列表
@@ -254,6 +256,7 @@ class Cmd(object):
     def get_all_app_list(self):
         """
         获取设备中安装的所有应用列表
+        @return: 返回安装的所有应用列表
         """
         allApp = []
         for packages in self.shell("pm list packages").stdout.readlines():
@@ -382,14 +385,16 @@ class Cmd(object):
         """
         self.shell("am force-stop %s" % packageName)
 
-    def get_adb_process_pid(self):
+    @staticmethod
+    def get_adb_process_pid():
         """
         获取adb进程pid
         """
         pid = os.popen("lsof -i tcp:5037").readlines()[1].split()[1]
         return pid
 
-    def port_is_used(self, port):
+    @staticmethod
+    def port_is_used(port):
         flag = False
         port_res = subprocess.Popen('lsof -i tcp:%s' % port, shell=True, stdout=subprocess.PIPE,
                                     stderr=subprocess.PIPE).stdout.readlines()
@@ -399,7 +404,8 @@ class Cmd(object):
 
         return flag
 
-    def do_stop_and_restart_5037(self):
+    @staticmethod
+    def do_stop_and_restart_5037():
         """
         杀掉并重启adb进程，目前只适配了mac
         """
@@ -428,7 +434,8 @@ class Cmd(object):
         self.shell("killall -2 logcat")
         # os.system("adb shell killall -2 logcat")
 
-    def clear_logcat(self):
+    @staticmethod
+    def clear_logcat():
         os.popen('adb logcat -b all -c')
 
     # 封装截图方法
@@ -450,18 +457,18 @@ class Cmd(object):
         xml_file_name = str(self.get_current_package_name()) + ".xml"
         # print(xml_file_name)
 
-        dict = {}
+        pk_dict = {}
 
         dict1 = self.parm.load_xml_data(xml_file_name)
 
-        dict[self.get_current_package_name()] = dict1
+        pk_dict[self.get_current_package_name()] = dict1
 
         self.parm.write_yaml_data(yml_name, dict)
 
 
 if __name__ == '__main__':
     adb = Cmd()
-    list = adb.get_device_SN()
-    print(list)
+    packageName = 'com.android.settings'
+    adb.get_pid(packageName)
 
 

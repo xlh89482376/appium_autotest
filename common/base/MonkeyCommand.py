@@ -102,7 +102,7 @@ class MonkeyCmd():
         初始化功能
         :return:设备列表、monkey参数、收件人列表
         """
-        serialno_list = Cmd().get_device_list()
+        serialno_list = Cmd().get_device_list
 
         if os.path.exists(self.logs):
             shutil.rmtree(self.logs)

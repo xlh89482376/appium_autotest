@@ -6,7 +6,8 @@ from common.base.MonkeyCommand import MonkeyCmd
 SETTINGS_CONFIG_PATH = "/Users/xuanlonghua/Documents/ZD/Projects/appium_autotest/monkey/config/launcher.ini"
 
 cmd = Cmd()
-serialno_list = cmd.get_device_list()
+serialno_list = cmd.get_device_list
+
 
 def main():
     # 多线程测试
