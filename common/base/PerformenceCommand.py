@@ -55,9 +55,11 @@ class PerformenceCmd(Cmd):
 
         @return: 电池百分比
         """
-        battery = self.shell("dumpsys battery").stdout.readlines()[10].decode('utf-8').split()[1]
-        print(battery)
-        return int(battery.rstrip())
+        try:
+            battery = self.shell("dumpsys battery").stdout.readlines()[10].decode('utf-8').split()[1]
+            return int(battery.rstrip())
+        except:
+            print("confirm the device is connected")
 
     @property
     def get_cpu_time(self):
