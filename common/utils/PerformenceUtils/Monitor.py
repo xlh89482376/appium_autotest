@@ -28,7 +28,7 @@ class Monitor(object):
         self.__serialno = serialno
         self.config_path = config_path
         self.packageName = packageName
-        self.info_path = PROJECT_PATH + os.sep + 'result' + os.sep + self.__serialno + os.sep + 'info' + os.sep
+        self.info_path = PROJECT_PATH + os.sep + 'result' +  os.sep + 'info' + os.sep + self.__serialno + os.sep
         self.battery_path = PATH(self.info_path + 'battery.pickle')
         self.mem_path = PATH(self.info_path + 'memory.pickle')
         self.cpu_path = PATH(self.info_path + 'cpu.pickle')
@@ -40,7 +40,7 @@ class Monitor(object):
         """
         初始化
         """
-        # 创建对应sn的info目录
+        # 在info目录创建对应的sn目录
         if os.path.exists(self.info_path):
             shutil.rmtree(self.info_path)
         os.makedirs(self.info_path)

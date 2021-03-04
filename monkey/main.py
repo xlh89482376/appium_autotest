@@ -14,7 +14,7 @@ def main():
     thread_list = []
     for serialno in serialno_list:
         monkey_cmd = MonkeyCmd(serialno, SETTINGS_CONFIG_PATH)
-        print(serialno)
+        # print(serialno)
         thread = threading.Thread(
             target=monkey_cmd.monkey_test
         )

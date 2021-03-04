@@ -8,13 +8,8 @@
 @desc    :  所有控制功能都在这里
 """
 
-import time, threading, os
+import time, threading
 from common.utils.PerformenceUtils.Monitor import Monitor
-from common.utils.PerformenceUtils.OperatePick import OperatePick
-
-PROJECT_PATH = os.getcwd().split('appium_autotest')[0] + 'appium_autotest' + os.sep + 'performence' + os.sep
-PATH = lambda p: os.path.abspath(os.path.join(os.path.dirname(os.path.realpath('__file__')), p))
-pick= OperatePick()
 
 class PerformenceManager():
 
@@ -23,13 +18,6 @@ class PerformenceManager():
         self.t1 = threading.Thread(target=self.write_pickle)
         self.flag = False
         self.__serialno = serialno
-        self.info_path = PROJECT_PATH + os.sep + 'result' + os.sep + self.__serialno + os.sep + 'info' + os.sep
-        self.battery_path = PATH(self.info_path + 'battery.pickle')
-        self.mem_path = PATH(self.info_path + 'memory.pickle')
-        self.cpu_path = PATH(self.info_path + 'cpu.pickle')
-        self.jiff_path = PATH(self.info_path + 'jiff.pickle')
-        self.fps_path = PATH(self.info_path + 'fps.pickle')
-        self.report_path = PROJECT_PATH + 'report' + os.sep
 
     def write_pickle(self):
         while True:

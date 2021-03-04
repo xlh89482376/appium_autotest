@@ -143,6 +143,8 @@ class DeviceLog:
             att_list.append("{}/{}".format(self.crash_dir, fn))
         for fn in dumpsys_fn_list:
             att_list.append("{}/{}".format(self.dump_dir, fn))
+        report_path = os.getcwd().split('appium_autotest')[0] + 'appium_autotest' + os.sep + 'performence' + os.sep + 'report' + os.sep + 'report.html'
+        att_list.append(report_path)
 
         # 获取crash和anr文件对象和次数
         crash_file_dict = self.crashFileDict()

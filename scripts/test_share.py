@@ -132,12 +132,6 @@ class Test_share():
         assert re_share_obj.find_toast()
 
 
-=======
-        apm.do_sleep(5)
-        re_share_obj.click_shigu_btn()
-        # assert re_share_obj.find_toast()
-        time.sleep(30)
-
     # @allure.step('点击事故按钮')
     # @pytest.mark.usefixtures('点击分享按钮')
     # @allure.feature('分享')
@@ -233,8 +227,7 @@ class Test_share():
     #     re_share_obj.click_nongwu_btn()
     #     assert re_share_obj.find_toast()
     #
-    #
->>>>>>> Stashed changes
+
     # @allure.step('点击事故按钮')
     # @pytest.mark.usefixtures('fake_location','点击分享按钮')
     # @allure.feature('分享')

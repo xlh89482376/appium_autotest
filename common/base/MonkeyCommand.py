@@ -1,20 +1,18 @@
 import os, platform, time, random, subprocess, shutil
 from common.utils.ConfigUtil import ConfigController
-from common.utils.FilePathUtil import FilePathUtil
 from common.base.Command import Cmd
-from common.utils.AnalyzeLogUtil import ProjectLog
 from common.utils.AnalyzeLogUtil import DeviceLog
 from common.utils.SendEmailUtil import SendMail
 from common.utils import timeout_command
 from jinja2 import Environment, PackageLoader
 from common.utils.DateTimeUtil import DateTimeManager
 from common.base.Mogo import Mogo
+from performence.PerformenceManager import PerformenceManager
 
 Project_Path = os.getcwd().split('appium_autotest')[0] + 'appium_autotest' + os.sep + 'monkey' + os.sep
 # Monkey_Config_Path = FilePathUtil().get_monkey_config_path()
 
 cmd = Cmd()
-
 
 class MonkeyCmd():
 
@@ -167,16 +165,26 @@ class MonkeyCmd():
         rand = random.randint(0, 65535)
 
         if len(self.package_list):
+            pm = PerformenceManager(self.package_list[0], self.__serialno)
             self.push_whitelist()
             for list in self.package_list:
                 self.excute_package_list.append(list)
                 cmd = "adb -s {} shell am force-stop {}".format(serialno, list)
                 os.popen(cmd)
                 time.sleep(3)
+
+            if len(self.package_list) == 1:
+                pm.run()
+
             cmd = "adb -s {} shell monkey --pkg-whitelist-file /sdcard/whitelist.txt -s {} --ignore-crashes --ignore-timeouts --throttle {} -v -v -v {} > {} 2>&1".\
                 format(serialno, rand, throttle, cnt, path)
             os.popen(cmd).read()
             time.sleep(5)
+
+            if len(self.package_list) == 1:
+                pm.stop()
+                pm.create_report()
+
         elif len(self.nopackage_list):
             self.push_blacklist()
             for list in self.nopackage_list:
@@ -213,8 +221,6 @@ class MonkeyCmd():
         # 发送邮件
         self.send_log(rcpt_list, anr_cnt, crash_cnt, att_list, apps_list, tester, time, app_name, sn, total_time, crash_file_dict, anr_file_dict)
 
-        # Todo: 测试报告需要的数据。crash、anr总次数；crash、anr分类数量；crash、anr各个分类数量；crash、anr文件
-
     def monkey_stop(self):
         monkey_name = 'com.android.commands.monkey'
         pid = subprocess.Popen('adb -s ' + self.__serialno + ' shell ps | grep ' + monkey_name, shell=True, stdout=subprocess.PIPE,
@@ -245,7 +251,24 @@ class MonkeyCmd():
         env = Environment(loader=PackageLoader('templates', 'temp'))
 
         template = env.get_template("report.html")
-        print(self.device_name)
+
+        # report_path = os.getcwd().split('appium_autotest')[0] + 'appium_autotest' + os.sep + 'performence' + os.sep + 'report' + os.sep + 'report.html'
+        #
+        # performence_report = ""
+        # flag = False
+        # with open(report_path, 'r', encoding='utf-8') as f:
+        #     for line in f.readlines():
+        #         if r"<title>性能测试报告</title>" in line:
+        #             flag = True
+        #             continue
+        #         if r"</html>" in line:
+        #             break
+        #         if flag:
+        #             performence_report += line.strip()
+        #
+        # print(performence_report)
+
+
 
         content = template.render(apps_list=apps_list, crash_cnt=crash_cnt, anr_cnt=anr_cnt, result=self.result, tester=tester, time=time, app_name=app_name, device_name=self.device_name, sn=self.sn, total_time=total_time, crash_file_dict=crash_file_dict, anr_file_dict=anr_file_dict, color=self.color)
 
