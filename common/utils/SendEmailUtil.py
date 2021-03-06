@@ -14,7 +14,10 @@ from common.utils.ConfigUtil import ConfigController
 
 # MONKEY_CONFIG = FilePathUtil().get_monkey_config_path()
 
-class SendMail:
+class SendMail(object):
+    """
+    发送邮件功能
+    """
     def __init__(self, config_path):
         self.config = ConfigController(config_path)
 
@@ -27,10 +30,10 @@ class SendMail:
         try:
             mail_host = self.config.get(section, "host")
             mail_user = self.config.get(section, "user")
+            # 建议各自进行base64位转码 稍微提高一点点安全性
             # mail_passwd_base64  = self.config.get(section, "passwd")
             mail_passwd = self.config.get(section, "passwd")
             # mail_passwd = str(base64.b64decode(mail_passwd_base64), encoding='utf-8')
-            # mail_passwd = str(base64.b64decode(mail_passwd_base64), encoding='utf8')
             sender_name = self.config.get(section, "name")
             sender_addr = self.config.get(section, "sender")
         except Exception as e:

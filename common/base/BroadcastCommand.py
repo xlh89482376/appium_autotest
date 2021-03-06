@@ -4,7 +4,7 @@ import yaml
 from common.utils.FilePathUtil import FilePathUtil
 
 
-class BroadcastCommand:
+class BroadcastCommand(object):
 
     def __init__(self):
         self.system = platform.system()
@@ -15,7 +15,7 @@ class BroadcastCommand:
             self.find_type = "grep"
         self.command = "adb shell am broadcast -a"
         self.__serialno = ""
-        self.yaml_path = FilePathUtil().get_broadcast_path()
+        self.yaml_path = FilePathUtil().get_broadcast_path
 
     @property
     def serialno(self):

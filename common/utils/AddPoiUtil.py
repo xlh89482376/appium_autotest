@@ -1,7 +1,7 @@
 import time, datetime, requests
 from common.utils.LoggingUtil import LoggingController
 
-class AddPoiUtil():
+class AddPoiUtil(object):
 
     def __init__(self, env):
         self.log4py = LoggingController()

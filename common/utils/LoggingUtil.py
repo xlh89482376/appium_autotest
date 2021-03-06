@@ -26,7 +26,8 @@ class LoggingController(object):
             logger.setLevel(level)
             self.__loggers.update({level: logger})
 
-    def time_now_formate(self):
+    @staticmethod
+    def time_now_formate():
         return datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S,%f')
 
     def get_log_message(self, level, message):

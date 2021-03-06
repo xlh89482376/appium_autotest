@@ -1,11 +1,9 @@
 import pickle
 
 class OperatePick(object):
-    '''
-    操作文件
-    '''
-    def readInfo(self, path):
-        data = []
+
+    @staticmethod
+    def readInfo(path):
         with open(path, 'rb') as f:
             try:
                 data = pickle.load(f)
@@ -16,8 +14,8 @@ class OperatePick(object):
         print(data)
         return data
 
-    def readSum(self, path):
-        data = {}
+    @staticmethod
+    def readSum(path):
         with open(path, 'rb') as f:
             try:
                 data = pickle.load(f)

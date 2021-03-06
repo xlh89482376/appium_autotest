@@ -4,7 +4,7 @@ from common.utils.FilePathUtil import FilePathUtil
 class testyaml():
 
     def __init__(self):
-        self.filepath = FilePathUtil().get_yaml_path()
+        self.filepath = FilePathUtil().get_yaml_path
         self.yamlcheck = ParamCheckUtil().load_yaml_data(self.filepath)
 
 

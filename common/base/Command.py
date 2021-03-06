@@ -17,14 +17,14 @@ class Cmd(object):
             self.find_type = "grep"
         self.command = "adb"
         self.__serialno = ""
-        self.crash_log_path = FilePathUtil().get_crash_log_path()
-        self.screenshot_path = FilePathUtil().get_screenshot_path()
+        self.crash_log_path = FilePathUtil().get_crash_log_path
+        self.screenshot_path = FilePathUtil().get_screenshot_path
         self.dt = DateTimeManager().getCurrentDateTime()
         self.log4py = LoggingController()
-        self.xml_path = FilePathUtil().get_xml_path()
+        self.xml_path = FilePathUtil().get_xml_path
         self.parm = ParamCheckUtil()
-        self.yml_path = FilePathUtil().get_yml_path()
-        self.anr_path = FilePathUtil().get_anr_path()
+        self.yml_path = FilePathUtil().get_yml_path
+        self.anr_path = FilePathUtil().get_anr_path
 
     @property
     def serialno(self):
@@ -358,9 +358,9 @@ class Cmd(object):
         """
         重置当前应用
         """
-        packageName = self.get_current_package_name()
+        package_name = self.get_current_package_name()
         component = self.get_focused_package_and_activity()
-        self.do_clear_app_data(packageName)
+        self.do_clear_app_data(package_name)
         self.do_start_activity(component)
 
     def do_reboot(self):
@@ -467,8 +467,6 @@ class Cmd(object):
 
 
 if __name__ == '__main__':
-    adb = Cmd()
-    packageName = 'com.android.settings'
-    adb.get_pid(packageName)
+    pass
 
 

@@ -44,7 +44,7 @@ class DeviceInfo(object):
             brand = self.cmd.get_device_brand()
             model = self.cmd.get_device_model()
             os_version = self.cmd.get_android_os_version()
-            ram = self.cmd.get_device_ram()
+            # ram = self.cmd.get_device_ram()
             dpi = self.cmd.get_device_dpi()
             # ip = self.cmd.get_device_ip()
             screen_size = self.cmd.get_screen_size()

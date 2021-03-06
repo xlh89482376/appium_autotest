@@ -7,7 +7,7 @@ LOG_ROOT = "monkey/logs"
 HISTORY_ROOT = "monkey/history_logs"
 
 
-class ProjectLog:
+class ProjectLog(object):
     def __init__(self):
         self.log_root = LOG_ROOT
         self.log_path = "{}/{}".format(LOG_ROOT, "log.txt")
@@ -153,38 +153,41 @@ class DeviceLog:
         return anr_cnt, crash_cnt, att_list, crash_file_dict, anr_file_dict
 
 
-    def getCrashHash(self, f):
-        hash = hashlib.md5()
+    @staticmethod
+    def getCrashHash(f):
+        crash_hash = hashlib.md5()
         # Crash log首行pid不同，去掉首行进行比对
         for line in islice(f , 10 , None):
         # next(f)
         # for line in f.readlines():
-            hash.update(line)
+            crash_hash.update(line)
 
-        return hash.hexdigest()
+        return crash_hash.hexdigest()
 
-    def getAnrHash(self, f):
-        hash = hashlib.md5()
+    @staticmethod
+    def getAnrHash(f):
+        anr_hash = hashlib.md5()
         reason = f.readlines()[3]
         print(reason)
-        hash.update(reason)
-        return hash.hexdigest()
+        anr_hash.update(reason)
+        return anr_hash.hexdigest()
 
     def isCrashHashEqual(self, f1, f2):
         str1 = self.getCrashHash(f1)
         str2 = self.getCrashHash(f2)
         return str1 == str2
 
-    def isAnrEqual(self, f1, f2):
+    @staticmethod
+    def isAnrEqual(f1, f2):
         if f1.readlines[3] == f2.readlines[3]:
             return True
         else:
             return False
 
     def fileList(self):
-        '''
+        """
         获取crash文件的file列表
-        '''
+        """
         file_list = []
         list = os.listdir(self.crash_dir)  # 列出文件夹下所有的目录与文件
         for i in range(0, len(list)):

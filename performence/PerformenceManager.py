@@ -2,8 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-@author  :  Xuanlh  
-@file    :  PerformenceManager.py
+@author  :  Xuanlh
 @since   :  2021/3/3 4:09 PM
 @desc    :  所有控制功能都在这里
 """
@@ -24,6 +23,7 @@ class PerformenceManager():
             self.monitor.write_cpu_rate()
             self.monitor.write_mem()
             self.monitor.write_fps()
+            # 采集频率
             time.sleep(5)
             if self.flag:
                 break

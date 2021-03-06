@@ -2,8 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-@author  :  Xuanlh  
-@file    :  Monitor.py
+@author  :  Xuanlh
 @since   :  2021/2/28 7:22 PM
 @desc    :  pickle文件初始化 写入
 """
@@ -22,12 +21,12 @@ pick = OperatePick()
 
 class Monitor(object):
 
-    def __init__(self, packageName, serialno, config_path=None):
-        self.pid = PerformenceCmd().get_pid(packageName)
+    def __init__(self, package_name, serialno, config_path=None):
+        self.pid = PerformenceCmd().get_pid(package_name)
         self.battery = PerformenceCmd().get_battery
         self.__serialno = serialno
         self.config_path = config_path
-        self.packageName = packageName
+        self.package_name = package_name
         self.info_path = PROJECT_PATH + os.sep + 'result' +  os.sep + 'info' + os.sep + self.__serialno + os.sep
         self.battery_path = PATH(self.info_path + 'battery.pickle')
         self.mem_path = PATH(self.info_path + 'memory.pickle')
@@ -62,7 +61,7 @@ class Monitor(object):
         """
         cpu占用写入pickle
         """
-        cpu_rate = PerformenceCmd().get_cpu_jiff_rate(self.packageName)
+        cpu_rate = PerformenceCmd().get_cpu_jiff_rate(self.package_name)
         if cpu_rate >= 0:
             pick.writeInfo(cpu_rate, PATH(self.cpu_path))
             pick.writeInfo(time.strftime('%H:%M:%S', time.localtime(time.time())), PATH(self.cpu_path))
@@ -73,7 +72,7 @@ class Monitor(object):
         """
         mem写入pickle
         """
-        mem = PerformenceCmd().get_mem(self.packageName)
+        mem = PerformenceCmd().get_mem(self.package_name)
         if mem >= 0:
             pick.writeInfo(mem, PATH(self.mem_path))
             pick.writeInfo(time.strftime('%H:%M:%S', time.localtime(time.time())), PATH(self.mem_path))
@@ -84,7 +83,7 @@ class Monitor(object):
         """
         fps写入pickle
         """
-        fps, total_frames, jumping_frames = PerformenceCmd().get_fps(self.packageName)
+        fps, total_frames, jumping_frames = PerformenceCmd().get_fps(self.package_name)
         print(type(fps))
         if fps >= 0:
             pick.writeInfo(fps, PATH(self.fps_path))

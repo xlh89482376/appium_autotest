@@ -1,6 +1,9 @@
 
 
 class Mogo(object):
+    """
+    mogo相关 都放这里 保证单一功能的可复用性
+    """
 
     def __init__(self, sn):
         self.sn = sn
@@ -37,7 +40,8 @@ class Mogo(object):
             return self.product
         return self.product
 
-    def starts_with(self, sn, *args):
+    @staticmethod
+    def starts_with(sn, *args):
         flag = False
         for item in args:
             if sn.startswith(item):

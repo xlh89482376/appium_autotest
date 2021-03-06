@@ -2,10 +2,10 @@ import yaml,os
 from common.utils.FilePathUtil import FilePathUtil
 from xml.dom.minidom import parse
 
-class ParamCheckUtil():
+class ParamCheckUtil(object):
     def __init__(self):
-        self.xml_path = FilePathUtil().get_xml_path()
-        self.yml_path = FilePathUtil().get_yml_path()
+        self.xml_path = FilePathUtil().get_xml_path
+        self.yml_path = FilePathUtil().get_yml_path
 
     def load_yml_data(self, file_name):
         """
@@ -24,11 +24,11 @@ class ParamCheckUtil():
             yaml.dump(data, f, allow_unicode=True)
 
     def load_xml_data(self, file_name):
-        dict = {}
+        xml_dict = {}
         path = self.xml_path + file_name
         doc = parse(path)
         for node in doc.getElementsByTagName("node"):
-            id = node.getAttribute("resource-id")
+            resource_id = node.getAttribute("resource-id")
             text = node.getAttribute("text")
             bounds = node.getAttribute("bounds")
             bound = bounds.strip('[').strip(']').replace('[','').replace(']',',')
@@ -39,9 +39,9 @@ class ParamCheckUtil():
             x = int((x2 - x1)/2 + x1)
             y = int((y2 - y1)/2 + y1)
             xy = str([x, y])
-            dict[xy] = {"id":id,"text":text}
+            xml_dict[xy] = {"id":resource_id,"text":text}
 
-        return dict
+        return xml_dict
 
 
 if __name__ == '__main__':

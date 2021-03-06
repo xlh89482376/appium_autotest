@@ -170,7 +170,7 @@ def pytest_runtest_makereport(item, call):
             # print(file)
             # allure.attach(str(file), "失败log", attachment_type=allure.attachment_type.TEXT)
             # log_name = "dt.getCurrentDateTime() + r".txt"
-            log_path = fp.get_logcat_path() + dt.getCurrentDateTime() + r".txt"
+            log_path = fp.get_logcat_path + dt.getCurrentDateTime() + r".txt"
             logcat_file = open(log_path, 'w')
             logcat_cmd = "adb logcat -v time"
             logcat = subprocess.Popen(logcat_cmd, shell=True, stdout=logcat_file, stderr=subprocess.PIPE)

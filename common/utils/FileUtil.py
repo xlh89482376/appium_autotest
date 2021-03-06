@@ -8,7 +8,8 @@ class FileUtil():
         # self.time = DateTimeManager().getCurrentDate()
         pass
 
-    def getCrashHash(self, f):
+    @staticmethod
+    def getCrashHash(f):
         hash = hashlib.md5()
         # Crash log首行pid不同，去掉首行进行比对
         for line in islice(f , 1 , None):

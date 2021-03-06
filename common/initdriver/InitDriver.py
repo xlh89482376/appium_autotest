@@ -1,12 +1,10 @@
-import subprocess, re, multiprocessing, os, time, pytest
-from time import ctime
+import subprocess, re
 from appium import webdriver
 from common.initdriver.InitConfig import InitConfiger
 from common.base.Command import Cmd
 from common.utils.LoggingUtil import LoggingController
 from common.utils.FilePathUtil import FilePathUtil
 from common.utils.ConfigUtil import ConfigController
-from concurrent.futures import ProcessPoolExecutor
 
 
 class InitDriver(object):
@@ -14,7 +12,7 @@ class InitDriver(object):
         self.log4py = LoggingController()
         self.run_config = InitConfiger()
         self.cmd = Cmd()
-        self.service_path = FilePathUtil().get_service_path()
+        self.service_path = FilePathUtil().get_service_path
         self.config = ConfigController(self.service_path)
 
     def get_port(self, sno):
@@ -24,6 +22,7 @@ class InitDriver(object):
                 self.log4py.info("设备：{} 服务端口：{}".format(sno, port))
             return port
         except Exception as e:
+            print("Error: %s" % e)
             self.log4py.debug("设备：{} 服务端口：未启动".format(sno))
             return None
 
@@ -63,6 +62,7 @@ class InitDriver(object):
                 try:
                     driver = webdriver.Remote(url, desired_caps)
                 except Exception as e:
+                    print("Error: %s" % e)
                     self.log4py.error("连接appium服务，实例化driver时出错，尝试重连...({})".format(num))
                     num = num + 1
                     continue

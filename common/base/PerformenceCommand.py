@@ -2,8 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-@author  :  Xuanlh  
-@file    :  PerformenceCommand.py
+@author  :  Xuanlh
 @since   :  2021/2/28 8:10 PM
 @desc    :  抓取所有性能参数
 """
@@ -16,23 +15,23 @@ class PerformenceCmd(Cmd):
     def __init__(self):
         Cmd.__init__(self)
 
-    def get_pid(self, packageName):
+    def get_pid(self, package_name):
         """
         通过包名获取进程id
-        @param packageName: 包名
-        @return: 进程id
+        @param package_name: 包名
+        @return 进程id
         """
         try:
-            pid = self.shell("ps | %s %s" % (self.find_type, packageName)).stdout.readlines()[0].decode('utf-8').split()
+            pid = self.shell("ps | %s %s" % (self.find_type, package_name)).stdout.readlines()[0].decode('utf-8').split()
             # print(pid)
-            if pid[8] == packageName:
+            if pid[8] == package_name:
                 # print(pid[1])
                 return pid[1]
             else:
                 print("unknown error")
                 return None
         except Exception as e:
-            print("this process doesn't exist")
+            print("Error: %s" % e)
             return None
 
     @property
@@ -58,8 +57,8 @@ class PerformenceCmd(Cmd):
         try:
             battery = self.shell("dumpsys battery").stdout.readlines()[10].decode('utf-8').split()[1]
             return int(battery.rstrip())
-        except:
-            print("confirm the device is connected")
+        except Exception as e:
+            print("Error: %s" % e)
 
     @property
     def get_cpu_time(self):
@@ -105,8 +104,8 @@ class PerformenceCmd(Cmd):
             else:
                 print('unknown error')
                 cpu_time = 0
-        except:
-            print("cpu time except")
+        except Exception as e:
+            print("Error: %s" % e)
             cpu_time = 0
         return cpu_time
 
@@ -166,18 +165,18 @@ class PerformenceCmd(Cmd):
             cutime = result[15]
             cstime = result[16]
             pid_cpu_jiff = int(utime) + int(stime) + int(cutime) + int(cstime)
-        except:
-            print("cpu jiff except")
+        except Exception as e:
+            print("Error: %s" % e)
             pid_cpu_jiff = 0
         return pid_cpu_jiff
 
-    def get_cpu_jiff_rate(self, packageName):
+    def get_cpu_jiff_rate(self, package_name):
         """
         cpu占用
-        @param packageName: 包名
+        @param package_name: 包名
         @return: 瞬时cpu占用
         """
-        pid = self.get_pid(packageName)
+        pid = self.get_pid(package_name)
         if int(Cmd().get_android_os_version().split('.')[0]) < 8:
             cpu_jiff_rate = self.shell("top -s cpu -n 1 | %s %s" % (self.find_type, pid)).stdout.read().decode('utf-8').split()[4][:-1]
             return int(cpu_jiff_rate)
@@ -197,14 +196,14 @@ class PerformenceCmd(Cmd):
 
             return int(cpu_jiff_rate)
 
-    def get_mem(self, packageName):
-        mem_KB = self.shell("dumpsys meminfo %s | %s TOTAL" % (packageName, self.find_type)).stdout.readlines()[0].split()[1].decode('utf-8')
+    def get_mem(self, package_name):
+        mem_KB = self.shell("dumpsys meminfo %s | %s TOTAL" % (package_name, self.find_type)).stdout.readlines()[0].split()[1].decode('utf-8')
         mem_MB = round(int(mem_KB) / 1024)
         print("mem_MB" + str(mem_MB))
 
         return mem_MB
 
-    def get_fps(self, packageName):
+    def get_fps(self, package_name):
         """
         获取fps
 
@@ -232,20 +231,20 @@ class PerformenceCmd(Cmd):
         计算结果:
         通过以上数据，就可以获取到每一帧的时间、总帧数；从而就可以计算出jank数、vsync数，进而就可以得到最终的FPS和丢帧率数据
 
-        @param packageName: 包名
+        @param package_name: 包名
         @return: fps total_frames jumping_frames 输出总帧数和丢帧数 用于后续统计丢帧率
         """
-        result = self.shell("dumpsys gfxinfo %s" % packageName).stdout.readlines()
+        result = self.shell("dumpsys gfxinfo %s" % package_name).stdout.readlines()
 
-        _fps = 0
+        # _fps = 0
         # jank数
         jumping_frames = 0
         # 总帧数
         total_frames = 0
         # 丢帧率(暂时不需要)
-        lose_frame_rate = 0
+        # lose_frame_rate = 0
         # 单帧时长 Draw + Prepare + Process + Execute 通过 / 16.67 计算fps
-        render_time = 0
+        # render_time = 0
         # 额外花费垂直同步脉冲的数量
         vsync_time = 0
         flag = False
@@ -261,7 +260,7 @@ class PerformenceCmd(Cmd):
 
             if flag:
                 line_list = line.decode('utf-8').split()
-                if line_list != []:
+                if line_list is not []:
                     total_frames += 1
                     # print(line_list)
                     render_time = float(line_list[0]) + float(line_list[1]) + float(line_list[2]) + float(line_list[3])

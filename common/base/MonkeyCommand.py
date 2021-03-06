@@ -14,7 +14,7 @@ Project_Path = os.getcwd().split('appium_autotest')[0] + 'appium_autotest' + os.
 
 cmd = Cmd()
 
-class MonkeyCmd():
+class MonkeyCmd(object):
 
     def __init__(self, serialno, config_path):
         self.config_path = config_path
@@ -231,11 +231,12 @@ class MonkeyCmd():
             for item in pid:
                 if item.split()[8].decode() == monkey_name:
                     monkey_pid = item.split()[1].decode()
-                    cmd_monkey = 'adb -s ' + self.__serialno + ' shell kill %s' % (monkey_pid)
+                    cmd_monkey = 'adb -s ' + self.__serialno + ' shell kill %s' % monkey_pid
                     os.popen(cmd_monkey)
                     print('Monkey in %s was killed' % self.__serialno)
                     time.sleep(2)
 
+    # ToDo：这块写的乱七八糟 有时间了再捋一下 输出到jinja2模版内的参数 全部以类字段的方式
     def send_log(self, rcpt_list, anr_cnt, crash_cnt, att_list, apps_list, tester, time, app_name, sn, total_time, crash_file_dict, anr_file_dict):
 
         subject = u"【质量中心】【稳定性测试报告】「%s」-%s-%s" % (self.app_name, self.tester, self.time)
@@ -247,11 +248,12 @@ class MonkeyCmd():
             self.result = "FAIL"
             self.color = "red"
 
-
         env = Environment(loader=PackageLoader('templates', 'temp'))
 
         template = env.get_template("report.html")
 
+        # 邮件不能发送js 怎么展示pyecharts是个问题
+        # ToDo: 把pyecharts生成的图表转换为图片添加至邮件
         # report_path = os.getcwd().split('appium_autotest')[0] + 'appium_autotest' + os.sep + 'performence' + os.sep + 'report' + os.sep + 'report.html'
         #
         # performence_report = ""
@@ -268,8 +270,6 @@ class MonkeyCmd():
         #
         # print(performence_report)
 
-
-
         content = template.render(apps_list=apps_list, crash_cnt=crash_cnt, anr_cnt=anr_cnt, result=self.result, tester=tester, time=time, app_name=app_name, device_name=self.device_name, sn=self.sn, total_time=total_time, crash_file_dict=crash_file_dict, anr_file_dict=anr_file_dict, color=self.color)
 
         status, reason = SendMail(self.config_path).send_mail(rcpt_list, subject, content, att_list=att_list)
@@ -279,11 +279,4 @@ class MonkeyCmd():
             print("send email failed")
 
 if __name__ == '__main__':
-    cmd = Cmd()
-    sn = cmd.get_device_sno()
-    mk = MonkeyCmd(sn)
-    # mk.init()
-    # mk.monkey_test()
-    # mk.monkey_stop()
-
-    # mk.init()
+    pass

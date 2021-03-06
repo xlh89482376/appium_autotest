@@ -13,6 +13,9 @@ class ConfigController(object):
     def get(self, section, key):
         """
         读取配置文件
+        @param section: 节点
+        @param key: key
+        @return:
         """
         result = self.config.get(section, key)
 
@@ -21,11 +24,16 @@ class ConfigController(object):
     def set(self, section, key, value):
         """
         写入配置文件
+        @param section: 节点
+        @param key: key
+        @param value: value
+        @return: set成功 or 失败
         """
         try:
             self.config.set(section, key, value)
             self.config.write(open(self.path, 'w'))
         except Exception as e:
+            print("Error: %s" % e)
             return False
         return True
 

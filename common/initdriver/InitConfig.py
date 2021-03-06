@@ -9,7 +9,7 @@ class InitConfiger(object):
 
     def __init__(self):
         self.cmd = Cmd()
-        self.path = FilePathUtil().get_config_run_path()
+        self.path = FilePathUtil().get_config_run_path
         self.config = ConfigController(self.path)
         self.log4py = LoggingController()
         self.dev_info = DeviceInfo().get_infos_as_dict()
@@ -48,7 +48,8 @@ class InitConfiger(object):
 
         return desired_caps_dict
 
-    def get_host_port(self):
+    @staticmethod
+    def get_host_port():
         host_port_list = ['127.0.0.1:4723', '127.0.0.1:4724']
         return host_port_list
 
