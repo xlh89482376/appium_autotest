@@ -23,6 +23,7 @@ class PerformenceManager():
             self.monitor.write_cpu_rate()
             self.monitor.write_mem()
             self.monitor.write_fps()
+            self.monitor.write_usable_mem()
             # 采集频率
             time.sleep(5)
             if self.flag:
@@ -55,8 +56,8 @@ if __name__ == '__main__':
     packageName = "com.mogo.launcher.f"
     serialno = "ZD80123823728"
     pm = PerformenceManager(packageName, serialno)
-    pm.run()
-    time.sleep(100)
-    pm.stop()
+    # pm.run()
+    # time.sleep(100)
+    # pm.stop()
     pm.create_report()
 

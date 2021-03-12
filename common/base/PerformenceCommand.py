@@ -197,9 +197,23 @@ class PerformenceCmd(Cmd):
             return int(cpu_jiff_rate)
 
     def get_mem(self, package_name):
+        """
+        获取单应用 mem 占用
+        @param package_name: 应用包名
+        @return: mem
+        """
         mem_KB = self.shell("dumpsys meminfo %s | %s TOTAL" % (package_name, self.find_type)).stdout.readlines()[0].split()[1].decode('utf-8')
         mem_MB = round(int(mem_KB) / 1024)
-        print("mem_MB" + str(mem_MB))
+
+        return mem_MB
+
+    def get_usable_mem(self):
+        """
+        获取系统可用 mem
+        @return: mem
+        """
+        mem_KB = self.shell("cat /proc/meminfo").stdout.readlines()[2].split()[1].decode('utf-8')
+        mem_MB = round(int(mem_KB) / 1024)
 
         return mem_MB
 
@@ -278,11 +292,23 @@ class PerformenceCmd(Cmd):
 
         return _fps, total_frames, jumping_frames
 
+    def get_gpu_usage_rate(self):
+        """
+        获取 gpu 使用率
+        目前只支持高通芯片获取 后续补充 目前控制先放到上层
+        @return: gpu使用率
+        """
+        gpu_usage_rate = self.shell("cat /sys/class/kgsl/kgsl-3d0/gpu_busy_percentage").stdout.readlines()[0].split()[0].decode('utf-8')
+
+        return int(gpu_usage_rate)
+
 
 if __name__ == '__main__':
     # packageName = "com.android.settings"
     packageName = "com.mogo.launcher.f"
-    pc = PerformenceCmd().get_cpu_time
+    # pc = PerformenceCmd().get_cpu_time
     # PerformenceCmd().get_cpu_jiff_rate(packageName)
-    PerformenceCmd().get_fps(packageName)
+    # PerformenceCmd().get_fps(packageName)
+    # PerformenceCmd().get_usable_mem()
+    PerformenceCmd().get_gpu_usage_rate()
 
