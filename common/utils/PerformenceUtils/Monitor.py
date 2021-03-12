@@ -119,6 +119,7 @@ class Monitor(object):
     def report(self):
         """
         发送报告功能文件路径和初始化都抽离到这里，所有报告功能在此处实现
+        Todo:监控数据需要分离 方便后面单独抓取某个数据
         """
         cpu_rate_list = pick.readInfo(self.cpu_path)
         mem_list = pick.readInfo(self.mem_path)

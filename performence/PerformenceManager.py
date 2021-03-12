@@ -56,8 +56,8 @@ if __name__ == '__main__':
     packageName = "com.mogo.launcher.f"
     serialno = "ZD80123823728"
     pm = PerformenceManager(packageName, serialno)
-    # pm.run()
-    # time.sleep(100)
-    # pm.stop()
+    pm.run()
+    time.sleep(100)
+    pm.stop()
     pm.create_report()
 

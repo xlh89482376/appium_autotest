@@ -22,14 +22,10 @@ class PerformenceCmd(Cmd):
         @return 进程id
         """
         try:
-            pid = self.shell("ps | %s %s" % (self.find_type, package_name)).stdout.readlines()[0].decode('utf-8').split()
-            # print(pid)
-            if pid[8] == package_name:
-                # print(pid[1])
-                return pid[1]
-            else:
-                print("unknown error")
-                return None
+            pid = self.shell("ps | %s %s" % (self.find_type, package_name)).stdout.readlines()[0].decode('utf-8').split()[1]
+
+            return pid
+
         except Exception as e:
             print("Error: %s" % e)
             return None
@@ -177,7 +173,9 @@ class PerformenceCmd(Cmd):
         @return: 瞬时cpu占用
         """
         pid = self.get_pid(package_name)
+        print("pid: " + str(pid))
         if int(Cmd().get_android_os_version().split('.')[0]) < 8:
+            print(11111)
             cpu_jiff_rate = self.shell("top -s cpu -n 1 | %s %s" % (self.find_type, pid)).stdout.read().decode('utf-8').split()[4][:-1]
             return int(cpu_jiff_rate)
         else:
@@ -310,5 +308,9 @@ if __name__ == '__main__':
     # PerformenceCmd().get_cpu_jiff_rate(packageName)
     # PerformenceCmd().get_fps(packageName)
     # PerformenceCmd().get_usable_mem()
-    PerformenceCmd().get_gpu_usage_rate()
+    # PerformenceCmd().get_gpu_usage_rate()
+
+    while True:
+        PerformenceCmd().get_cpu_jiff_rate(packageName)
+        time.sleep(3)
 
