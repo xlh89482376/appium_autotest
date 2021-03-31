@@ -43,6 +43,7 @@ class Monitor(object):
         if os.path.exists(self.info_path):
             shutil.rmtree(self.info_path)
         os.makedirs(self.info_path)
+        # 初始化report目录
         if os.path.exists(self.report_path):
             shutil.rmtree(self.report_path)
         os.makedirs(self.report_path)
