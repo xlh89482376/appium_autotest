@@ -136,7 +136,6 @@ def get_logcat():
 def timer_session_scope():
     start = dt.get_timestamp()
     start_time = dt.formated_time(DATE_FORMAT)
-    print(start_time)
     log.info("测试开始时间:%s" % start_time)
 
     yield

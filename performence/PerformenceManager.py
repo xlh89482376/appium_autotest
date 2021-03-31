@@ -10,10 +10,10 @@
 import time, threading
 from common.utils.PerformenceUtils.Monitor import Monitor
 
-class PerformenceManager():
+class PerformenceManager(object):
 
-    def __init__(self, packageName, serialno):
-        self.monitor = Monitor(packageName, serialno)
+    def __init__(self, package_name, serialno):
+        self.monitor = Monitor(package_name, serialno)
         self.t1 = threading.Thread(target=self.write_pickle)
         self.flag = False
         self.__serialno = serialno
@@ -24,6 +24,7 @@ class PerformenceManager():
             self.monitor.write_mem()
             self.monitor.write_fps()
             self.monitor.write_usable_mem()
+            self.monitor.write_gpu_usage_rate()
             # 采集频率
             time.sleep(5)
             if self.flag:

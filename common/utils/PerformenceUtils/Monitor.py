@@ -186,17 +186,17 @@ class Monitor(object):
         page.add(usable_mem_overlap)
 
         # gpu_usage_rate 数据绘制
-        usable_mem_bar = Bar()
-        usable_mem_bar.add('ROKI_bar', gpu_usage_rate1, gpu_usage_rate2)
-        usable_mem_line = Line("性能测试报告" + '-' + '可用MEM', width=1200, height=400)
-        usable_mem_line.add('ROKI_line', gpu_usage_rate1, usable_mem2, is_stack=True, is_label_show=True, is_smooth=False,
+        gpu_usage_bar = Bar()
+        gpu_usage_bar.add('ROKI_bar', gpu_usage_rate1, gpu_usage_rate2)
+        gpu_usage_line = Line("性能测试报告" + '-' + 'GPU使用率', width=1200, height=400)
+        gpu_usage_line.add('ROKI_line', gpu_usage_rate1, gpu_usage_rate2, is_stack=True, is_label_show=True, is_smooth=False,
                             is_more_utils=True,
                             is_datazoom_show=False, yaxis_formatter='%', mark_point=['max', 'min'],
                             mark_line=['average'])
-        usable_mem_overlap = Overlap(width=1200, height=400)
-        usable_mem_overlap.add(usable_mem_line)
-        usable_mem_overlap.add(usable_mem_bar)
-        page.add(usable_mem_overlap)
+        gpu_usage_overlap = Overlap(width=1200, height=400)
+        gpu_usage_overlap.add(gpu_usage_line)
+        gpu_usage_overlap.add(gpu_usage_bar)
+        page.add(gpu_usage_overlap)
 
         # render
         page.render(self.report_path + 'report.html')

@@ -32,12 +32,12 @@ class Test_share():
     # @allure.feature('分享')
     # @allure.story('验证点击分享按钮')
     # @allure.severity('blocker')
-    def test_share(self, re_share_obj, apm):
-        apm.do_start_activity("com.mogo.launcher.app",
-                              "com.zhidao.mogo.module.main.independent.MainIndependentActivity")
-        re_share_obj.click_share_btn()
-<<<<<<< Updated upstream
-        apm.do_sleep(2)
+#     def test_share(self, re_share_obj, apm):
+#         apm.do_start_activity("com.mogo.launcher.app",
+#                               "com.zhidao.mogo.module.main.independent.MainIndependentActivity")
+#         re_share_obj.click_share_btn()
+# <<<<<<< Updated upstream
+#         apm.do_sleep(2)
 
     @allure.step('点击事故按钮')
     @pytest.mark.usefixtures('fake_location', '点击分享按钮')
