@@ -3,16 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="397d5a09-15ea-40e2-a94b-05d68f70c1fb" name="Default" comment="1.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/common/utils/PerformenceUtils/Monitor.py" afterPath="$PROJECT_DIR$/common/utils/PerformenceUtils/Monitor.py" />
-      <change beforePath="$PROJECT_DIR$/performence/PerformenceManager.py" afterPath="$PROJECT_DIR$/performence/PerformenceManager.py" />
-      <change beforePath="$PROJECT_DIR$/performence/report/report.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/performence/result/info/ZD80123823728/cpu.pickle" afterPath="$PROJECT_DIR$/performence/result/info/ZD80123823728/cpu.pickle" />
-      <change beforePath="$PROJECT_DIR$/performence/result/info/ZD80123823728/fps.pickle" afterPath="$PROJECT_DIR$/performence/result/info/ZD80123823728/fps.pickle" />
-      <change beforePath="$PROJECT_DIR$/performence/result/info/ZD80123823728/memory.pickle" afterPath="$PROJECT_DIR$/performence/result/info/ZD80123823728/memory.pickle" />
-      <change beforePath="$PROJECT_DIR$/performence/result/info/ZD80123823728/usable.pickle" afterPath="$PROJECT_DIR$/performence/result/info/ZD80123823728/usable.pickle" />
-      <change beforePath="$PROJECT_DIR$/pytest.ini" afterPath="$PROJECT_DIR$/pytest.ini" />
-      <change beforePath="$PROJECT_DIR$/scripts/conftest.py" afterPath="$PROJECT_DIR$/scripts/conftest.py" />
-      <change beforePath="$PROJECT_DIR$/scripts/test_share.py" afterPath="$PROJECT_DIR$/scripts/test_share.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -90,18 +80,18 @@
       <file leaf-file-name="PerformenceManager.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/performence/PerformenceManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="51" column="23" lean-forward="false" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+            <state relative-caret-position="-174">
+              <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Monitor.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Monitor.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/utils/PerformenceUtils/Monitor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3030">
-              <caret line="35" column="49" lean-forward="false" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="49" />
+            <state relative-caret-position="1630">
+              <caret line="190" column="54" lean-forward="false" selection-start-line="190" selection-start-column="54" selection-end-line="190" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -117,11 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MonkeyCommand.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MonkeyCommand.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/base/MonkeyCommand.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-993">
-              <caret line="202" column="8" lean-forward="false" selection-start-line="202" selection-start-column="8" selection-end-line="202" selection-end-column="8" />
+            <state relative-caret-position="3696">
+              <caret line="185" column="32" lean-forward="false" selection-start-line="185" selection-start-column="19" selection-end-line="185" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -131,7 +121,7 @@
         <entry file="file://$PROJECT_DIR$/monkey/config/launcher.ini">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="504">
-              <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+              <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -140,7 +130,7 @@
       <file leaf-file-name="PerformenceCommand.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/base/PerformenceCommand.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
+            <state relative-caret-position="6258">
               <caret line="299" column="0" lean-forward="false" selection-start-line="299" selection-start-column="0" selection-end-line="299" selection-end-column="0" />
               <folding />
             </state>
@@ -278,11 +268,11 @@
         <option value="$PROJECT_DIR$/common/initdriver/InitConfig.py" />
         <option value="$PROJECT_DIR$/common/initdriver/InitDriver.py" />
         <option value="$PROJECT_DIR$/common/base/PerformenceCommand.py" />
-        <option value="$PROJECT_DIR$/common/utils/PerformenceUtils/Monitor.py" />
-        <option value="$PROJECT_DIR$/performence/PerformenceManager.py" />
         <option value="$PROJECT_DIR$/pytest.ini" />
         <option value="$PROJECT_DIR$/scripts/test_share.py" />
         <option value="$PROJECT_DIR$/scripts/conftest.py" />
+        <option value="$PROJECT_DIR$/common/utils/PerformenceUtils/Monitor.py" />
+        <option value="$PROJECT_DIR$/performence/PerformenceManager.py" />
       </list>
     </option>
   </component>
@@ -365,8 +355,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -700,7 +690,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33039647" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270925" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" x="-1899" y="375" width="1878" height="298" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32649842" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.9273128" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.92710704" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25702077" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -985,7 +975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -993,7 +982,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="10" column="69" lean-forward="false" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1008,7 +996,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1176">
           <caret line="62" column="45" lean-forward="false" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1047,31 +1034,15 @@
     <entry file="file://$PROJECT_DIR$/monkey/config/launcher.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
-          <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/performence/PerformenceManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="51" column="23" lean-forward="false" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+          <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/base/PerformenceCommand.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
+        <state relative-caret-position="6258">
           <caret line="299" column="0" lean-forward="false" selection-start-line="299" selection-start-column="0" selection-end-line="299" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/utils/PerformenceUtils/Monitor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3030">
-          <caret line="35" column="49" lean-forward="false" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="49" />
           <folding />
         </state>
       </provider>
@@ -1086,8 +1057,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/base/MonkeyCommand.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-993">
-          <caret line="202" column="8" lean-forward="false" selection-start-line="202" selection-start-column="8" selection-end-line="202" selection-end-column="8" />
+        <state relative-caret-position="3696">
+          <caret line="185" column="32" lean-forward="false" selection-start-line="185" selection-start-column="19" selection-end-line="185" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performence/PerformenceManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-174">
+          <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/utils/PerformenceUtils/Monitor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1630">
+          <caret line="190" column="54" lean-forward="false" selection-start-line="190" selection-start-column="54" selection-end-line="190" selection-end-column="54" />
           <folding />
         </state>
       </provider>

@@ -43,7 +43,10 @@ class Monitor(object):
         if os.path.exists(self.info_path):
             shutil.rmtree(self.info_path)
         os.makedirs(self.info_path)
-        # 电量 内存 cpu jiff fps... 的 pickle文件创建
+        if os.path.exists(self.report_path):
+            shutil.rmtree(self.report_path)
+        os.makedirs(self.report_path)
+        # 电量 内存 cpu jiff fps gpu... 的 pickle文件创建
         OperateFileUtil(self.battery_path).touch_file()
         OperateFileUtil(self.mem_path).touch_file()
         OperateFileUtil(self.usable_mem_path).touch_file()
